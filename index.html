@@ -1,0 +1,3026 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cultura Madrid 2026 — Guía Cultural Completa</title>
+  <meta name="description" content="Guía cultural completa de Madrid 2026: museos gratis, ópera, teatro, conciertos, exposiciones. Calendario interactivo con 90+ eventos." />
+  <meta property="og:title" content="Cultura Madrid 2026" />
+  <meta property="og:description" content="Museos gratis, ópera, teatro, música clásica, exposiciones. 90+ eventos con calendario interactivo." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎭</text></svg>" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --rojo: #C8102E; --oro: #D4A847; --oscuro: #1a1208;
+      --crema: #F5F0E8; --texto: #2a2015; --gris: #7a7060;
+      --verde: #1a5c38; --azul: #1a3a5c;
+      --borde: #e0d8c8; --fondo-card: #ffffff;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'DM Sans',sans-serif; background:var(--crema); color:var(--texto); font-size:15px; line-height:1.65; }
+
+    /* ── HEADER ── */
+    header { background:linear-gradient(135deg,#0e0c06 0%,#1a1208 50%,#110e05 100%); color:var(--crema); padding:70px 40px 60px; position:relative; overflow:hidden; }
+    header::before { content:''; position:absolute; inset:0; background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4A847' fill-opacity='0.07'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+    header::after { content:''; position:absolute; bottom:0; left:0; right:0; height:3px; background:linear-gradient(90deg,transparent 0%,var(--oro) 30%,var(--rojo) 70%,transparent 100%); }
+    header .inner { position:relative; max-width:1100px; margin:0 auto; }
+    .eyebrow { font-size:11px; letter-spacing:3px; text-transform:uppercase; color:var(--oro); margin-bottom:16px; font-weight:600; }
+    header h1 { font-family:'Playfair Display',serif; font-size:clamp(2.2rem,5vw,3.8rem); font-weight:900; line-height:1.1; margin-bottom:18px; }
+    header h1 span { color:var(--oro); }
+    .subtitulo { font-size:1.05rem; color:rgba(245,240,232,0.75); max-width:580px; line-height:1.7; }
+    .badge-actualizado { display:inline-flex; align-items:center; gap:8px; margin-top:24px; background:rgba(212,168,71,0.15); border:1px solid rgba(212,168,71,0.3); padding:7px 16px; border-radius:20px; font-size:12px; color:var(--oro); }
+    .badge-actualizado span { width:7px; height:7px; border-radius:50%; background:var(--oro); display:block; animation:pulso 2s infinite; }
+    @keyframes pulso { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+    /* ── NAV ── */
+    nav { background:rgba(20,15,5,0.97); backdrop-filter:blur(12px); padding:0 40px; position:sticky; top:0; z-index:100; box-shadow:0 2px 20px rgba(0,0,0,0.4); border-bottom:1px solid rgba(212,168,71,0.15); }
+    nav ul { list-style:none; display:flex; flex-wrap:wrap; max-width:1100px; margin:0 auto; }
+    nav ul li a { display:block; color:#a09880; text-decoration:none; font-size:11px; letter-spacing:1px; text-transform:uppercase; font-weight:600; padding:16px 13px; white-space:nowrap; transition:color .2s,border-color .2s; border-bottom:2px solid transparent; }
+    nav ul li a:hover { color:var(--oro); border-bottom-color:rgba(212,168,71,0.5); }
+    nav ul li a.nav-activo { color:var(--oro); border-bottom-color:var(--oro); }
+
+    /* ── NOTA TOP ── */
+    .nota-top { background:linear-gradient(90deg,rgba(212,168,71,0.1) 0%,transparent 100%); border-left:3px solid var(--oro); padding:14px 28px; font-size:13px; color:var(--gris); }
+    .nota-top strong { color:var(--texto); }
+
+    /* ── MAIN ── */
+    main { max-width:1100px; margin:0 auto; padding:0 40px 60px; }
+
+    /* ── SECTION ── */
+    .seccion { padding:48px 0 32px; border-bottom:1px solid var(--borde); }
+    .seccion:last-child { border-bottom:none; }
+    .seccion-header { display:flex; gap:18px; align-items:flex-start; margin-bottom:28px; }
+    .seccion-icon { font-size:26px; background:linear-gradient(135deg,var(--oscuro) 0%,#2a2015 100%); color:var(--oro); width:54px; height:54px; display:grid; place-items:center; border-radius:14px; flex-shrink:0; box-shadow:0 4px 12px rgba(0,0,0,0.2); }
+    .seccion-header h2 { font-family:'Playfair Display',serif; font-size:clamp(1.5rem,3vw,2rem); color:var(--oscuro); line-height:1.2; }
+    .seccion-header h2 small { display:block; font-size:0.7rem; letter-spacing:2px; text-transform:uppercase; color:var(--gris); font-family:'DM Sans',sans-serif; font-weight:600; margin-bottom:4px; }
+    .subseccion-titulo { font-family:'Playfair Display',serif; font-size:1.2rem; color:var(--oscuro); margin:28px 0 16px; padding-bottom:8px; border-bottom:2px solid var(--borde); }
+
+    /* ── GRID ── */
+    .grid-2 { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; }
+    .grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+
+    /* ── CARD ── */
+    .card { background:var(--fondo-card); border:1px solid var(--borde); border-radius:16px; overflow:hidden; transition:transform .22s,box-shadow .22s; }
+    .card:hover { transform:translateY(-4px); box-shadow:0 16px 40px rgba(0,0,0,0.12); }
+    .card-header { background:var(--oscuro); color:var(--crema); padding:18px 22px; }
+    .card-header h4 { font-family:'Playfair Display',serif; font-size:1.05rem; }
+    .card-header .cat { font-size:10px; letter-spacing:1.5px; text-transform:uppercase; color:var(--oro); margin-bottom:4px; font-weight:600; }
+    .card-body { padding:18px 22px; font-size:14px; }
+    .card-body p { color:var(--gris); line-height:1.6; }
+    .card-meta { display:flex; justify-content:space-between; align-items:center; margin-top:14px; flex-wrap:wrap; gap:8px; }
+    .precio-tag { font-size:12px; font-weight:700; }
+    .precio-gratis { color:var(--verde); }
+    .precio-pago { color:var(--rojo); }
+    .btn-link { display:inline-block; font-size:12px; font-weight:600; padding:6px 14px; border-radius:20px; text-decoration:none; transition:all .15s; }
+    .btn-link-rojo { background:var(--rojo); color:white; }
+    .btn-link-rojo:hover { background:#a00020; }
+    .btn-link-verde { background:var(--verde); color:white; }
+    .btn-link-verde:hover { background:#154a2e; }
+
+    /* ── TABLE ── */
+    .tabla-wrap { overflow-x:auto; margin-bottom:24px; border-radius:12px; border:1px solid var(--borde); }
+    table { width:100%; border-collapse:collapse; font-size:13.5px; }
+    thead th { background:var(--oscuro); color:var(--oro); padding:12px 16px; text-align:left; font-weight:600; letter-spacing:0.3px; }
+    tbody tr:nth-child(even) { background:#f9f5ed; }
+    tbody td { padding:11px 16px; border-bottom:1px solid var(--borde); vertical-align:top; }
+    tbody tr:last-child td { border-bottom:none; }
+    .gratis-td { color:var(--verde); font-weight:600; font-size:12.5px; }
+
+    /* ── BLOQUE DESTAQUE ── */
+    .bloque-destaque { background:linear-gradient(135deg,#100e05 0%,#1a1208 60%,#0e0c06 100%); color:var(--crema); border-radius:18px; padding:34px 38px; margin-bottom:28px; position:relative; overflow:hidden; border:1px solid rgba(212,168,71,0.2); box-shadow:0 8px 32px rgba(0,0,0,0.2); }
+    .bloque-destaque::before { content:''; position:absolute; inset:0; background:url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23D4A847' fill-opacity='0.05'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5 4.5-10 10-10s10 4.5 10 10-4.5 10-10 10-10-4.5-10-10z'/%3E%3C/g%3E%3C/svg%3E"); }
+    .bloque-destaque h3 { font-family:'Playfair Display',serif; font-size:1.3rem; color:var(--oro); margin-bottom:8px; position:relative; }
+    .bloque-destaque p { color:rgba(245,240,232,0.8); font-size:14px; line-height:1.7; position:relative; }
+    .bloque-destaque ul { list-style:none; position:relative; }
+    .bloque-destaque ul li { padding:6px 0; color:rgba(245,240,232,0.85); font-size:14px; border-bottom:1px solid rgba(255,255,255,0.07); }
+    .bloque-destaque ul li:last-child { border-bottom:none; }
+    .bloque-destaque ul li::before { content:'›'; color:var(--oro); margin-right:10px; font-weight:700; }
+
+    /* ── PROGRAMA LIST ── */
+    .programa-item { display:flex; gap:16px; padding:14px 0; border-bottom:1px solid var(--borde); align-items:flex-start; }
+    .programa-item:last-child { border-bottom:none; }
+    .prog-fecha { min-width:60px; text-align:center; background:var(--oscuro); color:var(--crema); border-radius:10px; padding:10px 6px; flex-shrink:0; }
+    .prog-fecha .dia { font-size:22px; font-weight:800; line-height:1; }
+    .prog-fecha .mes { font-size:9px; text-transform:uppercase; letter-spacing:1px; color:var(--oro); font-weight:600; }
+    .prog-info h5 { font-size:14px; font-weight:700; margin-bottom:3px; }
+    .prog-info p { font-size:13px; color:var(--gris); }
+    .prog-precio { margin-left:auto; font-size:12px; font-weight:700; flex-shrink:0; }
+
+    /* ── TAGS ── */
+    .tag { display:inline-block; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; margin:3px 3px 3px 0; }
+    .tag-gratis { background:#e8f5ee; color:var(--verde); }
+    .tag-pago { background:#fce8e8; color:var(--rojo); }
+
+    /* ── TAG PRECIO GENERAL ── */
+    .tag-precio { font-size:11px; font-weight:700; padding:3px 9px; border-radius:10px; white-space:nowrap; }
+    .tag-precio.gratis { background:#e8f5ee; color:var(--verde); }
+    .tag-precio.pago { background:#fce8e8; color:var(--rojo); }
+
+    /* ══════════════════════════════
+       SECCIÓN CALENDARIO
+    ══════════════════════════════ */
+    #seccion-calendario { padding:0; box-sizing:border-box; }  /* show/hide via JS only */
+    #contenido-guia { display:block; }
+
+    /* ── MIS ENTRADAS PANEL ── */
+    .mis-entradas-panel { background:linear-gradient(135deg,#fffbf0 0%,#fff8e8 100%); border:1.5px solid rgba(212,168,71,0.4); border-radius:18px; padding:20px 24px; margin-bottom:20px; box-shadow:0 4px 20px rgba(212,168,71,0.1); }
+    .mei-header { display:flex; justify-content:space-between; align-items:center; cursor:pointer; user-select:none; gap:12px; }
+    .mei-header h3 { font-family:'Playfair Display',serif; font-size:1.1rem; }
+    .mei-header .sub { font-size:12px; color:var(--gris); margin-top:2px; }
+    .mei-arrow { font-size:16px; color:var(--oro); transition:transform .25s; flex-shrink:0; }
+    .mei-arrow.open { transform:rotate(180deg); }
+    .mei-body { margin-top:14px; display:none; }
+    .mei-body.open { display:block; }
+    .mei-grupo { margin-bottom:12px; }
+    .mei-grupo-titulo { font-size:10px; font-weight:800; letter-spacing:2px; text-transform:uppercase; margin-bottom:8px; }
+    .titulo-comprada { color:#1a7a3c; }
+    .titulo-posible { color:#8a6a00; }
+    .mei-item { display:flex; align-items:center; gap:10px; padding:8px 12px; border-radius:10px; background:white; border:1px solid var(--borde); margin-bottom:5px; cursor:pointer; transition:box-shadow .15s; }
+    .mei-item:hover { box-shadow:0 3px 12px rgba(0,0,0,0.08); }
+    .mei-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+    .mei-dot.opera{background:#9b4ab8} .mei-dot.musica{background:#3a6aac} .mei-dot.teatro{background:#d07030} .mei-dot.humor{background:#c09020} .mei-dot.exposicion{background:#2a8c58} .mei-dot.museo{background:#e0102a} .mei-dot.libro{background:#a06820}
+    .mei-info { flex:1; min-width:0; }
+    .mei-nombre { font-size:13px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .mei-meta { font-size:11px; color:var(--gris); }
+    .mei-nota { font-size:11px; color:var(--gris); font-style:italic; }
+    .mei-del { background:none; border:none; color:#ccc; cursor:pointer; font-size:14px; padding:4px 6px; border-radius:4px; transition:color .15s,background .15s; }
+    .mei-del:hover { color:var(--rojo); background:#fce8e8; }
+
+    /* ── LEYENDA ── */
+    .cal-leyenda { display:flex; flex-wrap:wrap; gap:6px 14px; align-items:center; padding:10px 16px; background:white; border:1px solid var(--borde); border-radius:12px; margin-bottom:14px; font-size:11.5px; }
+    .ley-item { display:flex; align-items:center; gap:6px; color:var(--gris); }
+    .ley-dot { width:26px; height:13px; border-radius:3px; display:inline-block; flex-shrink:0; border-left:3px solid transparent; }
+    .ley-dot.mus{background:#e8f0f8;border-left-color:#3a6aac} .ley-dot.op{background:#f5e8f8;border-left-color:#9b4ab8} .ley-dot.te{background:#fdf2e9;border-left-color:#d07030} .ley-dot.hu{background:#fff8e0;border-left-color:#c09020} .ley-dot.ex{background:#ecf8f2;border-left-color:#2a8c58} .ley-dot.mu{background:#fce8e8;border-left-color:#e0102a}
+    .ley-dot.comprada { background:white; border:2px solid #1a7a3c; border-radius:3px; position:relative; }
+    .ley-dot.posible { background:white; border:2px solid var(--oro); border-radius:3px; }
+    .ley-sep { width:1px; height:16px; background:var(--borde); }
+
+    /* ── FILTROS ── */
+    .cal-toolbar { background:white; border:1px solid var(--borde); border-radius:14px; padding:16px 18px; margin-bottom:14px; display:flex; flex-wrap:wrap; gap:14px; }
+    .filtro-grupo { display:flex; flex-direction:column; gap:6px; }
+    .filtro-label { font-size:9px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:var(--gris); }
+    .filtro-pills { display:flex; flex-wrap:wrap; gap:5px; }
+    .filtro-btn { border:1.5px solid var(--borde); background:#fafaf8; color:var(--gris); font-size:11.5px; font-family:'DM Sans',sans-serif; padding:5px 12px; border-radius:20px; cursor:pointer; transition:all .15s; font-weight:500; }
+    .filtro-btn:hover { border-color:#c0b898; color:var(--texto); }
+    .filtro-btn.on { background:var(--oscuro); color:var(--oro); border-color:var(--oscuro); }
+    .filtro-btn.gratis-on { background:var(--verde); color:white; border-color:var(--verde); }
+    .filtro-btn.comprada-on { background:#1a7a3c; color:white; border-color:#1a7a3c; }
+    .filtro-btn.posible-on { background:var(--oro); color:var(--oscuro); border-color:var(--oro); }
+    .cal-search { flex:1; min-width:160px; }
+    .cal-search input { width:100%; border:1.5px solid var(--borde); padding:6px 14px; border-radius:20px; font-family:'DM Sans',sans-serif; font-size:13px; outline:none; background:#fafaf8; transition:border-color .15s; }
+    .cal-search input:focus { border-color:var(--oro); background:white; }
+
+    /* ── TOPBAR ── */
+    .cal-topbar { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-bottom:14px; }
+    .vista-tabs { display:flex; background:white; border:1.5px solid var(--borde); border-radius:22px; overflow:hidden; }
+    .vista-tab { background:none; border:none; padding:8px 16px; font-family:'DM Sans',sans-serif; font-size:12px; font-weight:600; cursor:pointer; color:var(--gris); transition:all .15s; letter-spacing:0.3px; }
+    .vista-tab.activo { background:var(--oscuro); color:var(--oro); }
+    .cal-nav { display:flex; align-items:center; gap:10px; }
+    .cal-nav button { background:var(--oscuro); color:var(--crema); border:none; width:34px; height:34px; border-radius:50%; cursor:pointer; font-size:18px; display:grid; place-items:center; transition:background .15s; }
+    .cal-nav button:hover { background:var(--rojo); }
+    .cal-nav h3 { font-family:'Playfair Display',serif; font-size:1.15rem; min-width:180px; text-align:center; }
+    .btn-hoy { padding:7px 16px; border-radius:20px; background:white; border:1.5px solid var(--borde); font-family:'DM Sans',sans-serif; font-size:12px; font-weight:600; cursor:pointer; color:var(--texto); transition:all .15s; }
+    .btn-hoy:hover { border-color:var(--oro); color:var(--oscuro); }
+
+    /* ── CALENDARIO MES ── */
+    .cal-grid-header { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:3px; margin-bottom:3px; width:100%; }
+    .cal-dow { text-align:center; font-size:10px; font-weight:800; letter-spacing:1.5px; text-transform:uppercase; color:var(--oscuro); padding:9px 0 7px; background:rgba(212,168,71,0.08); border-radius:6px; }
+    .cal-dow.finde { color:var(--rojo); background:rgba(200,16,46,0.05); }
+    .cal-grid { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:3px; width:100%; }
+    .cal-day { min-height:95px; background:white; border:1px solid #ede8de; border-radius:8px; overflow:hidden; min-width:0; padding:7px 7px 5px; transition:box-shadow .18s,border-color .18s; }
+    .cal-day:hover { box-shadow:0 4px 16px rgba(0,0,0,0.1); border-color:#d4c8b0; }
+    .cal-day.vacio { background:transparent; border:none; box-shadow:none; pointer-events:none; }
+    .cal-day.finde { background:#fdfbf5; }
+    .cal-day.hoy { border:2px solid var(--oro); background:#fffdf5; }
+    .cal-day.pasado { opacity:.55; }
+    .num-dia { font-size:12px; font-weight:700; color:var(--gris); margin-bottom:4px; line-height:1; }
+    .cal-day.hoy .num-dia { background:var(--rojo); color:white; width:20px; height:20px; border-radius:50%; display:grid; place-items:center; font-size:10px; }
+
+    /* ── EVENT PILLS ── */
+    .cal-evento { font-size:9.5px; padding:2px 6px 2px 8px; border-radius:4px; margin-bottom:2px; cursor:pointer; white-space:nowrap; overflow:hidden; min-width:0; display:block; text-overflow:ellipsis; max-width:100%; font-weight:600; letter-spacing:0.1px; transition:opacity .15s,transform .1s; border-left:2.5px solid transparent; display:block; }
+    .cal-evento:hover { opacity:.82; transform:translateX(1px); }
+    .cal-evento.opera{background:#f5e8f8;color:#6a1a80;border-left-color:#9b4ab8}
+    .cal-evento.musica{background:#e8f0f8;color:#1a3a5c;border-left-color:#3a6aac}
+    .cal-evento.teatro{background:#fdf2e9;color:#9a4a0d;border-left-color:#d07030}
+    .cal-evento.humor{background:#fff8e0;color:#7a5800;border-left-color:#c09020}
+    .cal-evento.exposicion{background:#ecf8f2;color:#1a5c38;border-left-color:#2a8c58}
+    .cal-evento.museo{background:#fce8e8;color:#b80820;border-left-color:#e0102a}
+    .cal-evento.libro{background:#f8f0e0;color:#6a4010;border-left-color:#a06820}
+    .cal-evento.gratis-tag::after{content:' 🆓'}
+    .cal-evento.ev-comprada{outline:1.5px solid #1a7a3c;outline-offset:1px}
+    .cal-evento.ev-posible{outline:1.5px solid var(--oro);outline-offset:1px}
+    .cal-mas { font-size:9px; color:var(--gris); cursor:pointer; padding:1px 5px; font-weight:700; }
+    .cal-mas:hover { color:var(--rojo); }
+
+    /* ── VISTA SEMANA ── */
+    .semana-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:4px; width:100%; overflow:hidden; }
+    .semana-col { background:white; border:1px solid var(--borde); border-radius:10px; overflow:hidden; min-height:220px; }
+    .semana-col.finde { background:#fdfbf5; }
+    .semana-col.pasado { opacity:.6; }
+    .semana-header { padding:8px 8px 6px; border-bottom:1px solid var(--borde); text-align:center; background:#fafaf8; }
+    .semana-header.es-hoy { background:var(--oscuro); }
+    .semana-dia-nombre { display:block; font-size:9px; font-weight:800; letter-spacing:1.5px; text-transform:uppercase; color:var(--gris); }
+    .semana-header.es-hoy .semana-dia-nombre { color:rgba(255,255,255,0.6); }
+    .semana-dia-num { display:block; font-size:20px; font-weight:800; color:var(--texto); line-height:1.3; }
+    .semana-header.es-hoy .semana-dia-num { color:var(--oro); }
+    .semana-eventos { padding:7px 6px; display:flex; flex-direction:column; gap:3px; }
+    .semana-vacio { font-size:11px; color:#ccc; text-align:center; padding:16px 0; }
+    .semana-evento { font-size:9.5px; padding:4px 7px 4px 9px; border-radius:5px; cursor:pointer; border-left:2.5px solid transparent; font-weight:600; transition:opacity .15s; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .semana-evento:hover { opacity:.8; }
+    .semana-evento.opera{background:#f5e8f8;color:#6a1a80;border-left-color:#9b4ab8}
+    .semana-evento.musica{background:#e8f0f8;color:#1a3a5c;border-left-color:#3a6aac}
+    .semana-evento.teatro{background:#fdf2e9;color:#9a4a0d;border-left-color:#d07030}
+    .semana-evento.humor{background:#fff8e0;color:#7a5800;border-left-color:#c09020}
+    .semana-evento.exposicion{background:#ecf8f2;color:#1a5c38;border-left-color:#2a8c58}
+    .semana-evento.museo{background:#fce8e8;color:#b80820;border-left-color:#e0102a}
+    .semana-evento.libro{background:#f8f0e0;color:#6a4010;border-left-color:#a06820}
+    .semana-evento.ev-comprada{outline:1.5px solid #1a7a3c;outline-offset:1px}
+    .semana-evento.ev-posible{outline:1.5px solid var(--oro);outline-offset:1px}
+
+    /* ── VISTA LISTA ── */
+    .lista-mes-grupo { margin-bottom:28px; }
+    .lista-mes-titulo { font-family:'Playfair Display',serif; font-size:1rem; font-weight:700; padding:8px 0; margin-bottom:8px; border-bottom:2px solid var(--borde); }
+    .lista-evento-item { background:white; border:1px solid var(--borde); border-radius:12px; padding:13px 18px; margin-bottom:7px; display:flex; gap:14px; align-items:center; cursor:pointer; transition:box-shadow .18s,transform .18s; }
+    .lista-evento-item:hover { box-shadow:0 5px 18px rgba(0,0,0,0.09); transform:translateX(2px); }
+    .lista-evento-item.tiene-entrada { border-left:3px solid var(--oro); background:#fffdf8; }
+    .lista-evento-item.lista-pasado { opacity:.55; }
+    .lista-cat-dot { width:4px; min-width:4px; align-self:stretch; border-radius:4px; flex-shrink:0; }
+    .lista-cat-dot.opera{background:#9b4ab8} .lista-cat-dot.musica{background:#3a6aac} .lista-cat-dot.teatro{background:#d07030} .lista-cat-dot.humor{background:#c09020} .lista-cat-dot.exposicion{background:#2a8c58} .lista-cat-dot.museo{background:#e0102a} .lista-cat-dot.libro{background:#a06820}
+    .lista-fecha-col { min-width:38px; text-align:center; flex-shrink:0; }
+    .lista-dia { font-size:22px; font-weight:800; color:var(--oscuro); line-height:1; }
+    .lista-mes-abrev { font-size:9.5px; text-transform:uppercase; letter-spacing:.5px; color:var(--gris); font-weight:700; }
+    .lista-info { flex:1; min-width:0; }
+    .lista-nombre { font-size:13.5px; font-weight:600; }
+    .lista-meta { font-size:12px; color:var(--gris); margin-top:2px; }
+    .lista-precio-col { flex-shrink:0; }
+    .badge-comprada { display:inline-block; font-size:10px; font-weight:700; background:#e8f5ee; color:#1a7a3c; padding:1px 7px; border-radius:10px; margin-left:6px; vertical-align:middle; border:1px solid #aadcbc; }
+    .badge-posible { display:inline-block; font-size:10px; font-weight:700; background:#fffaed; color:#8a6a00; padding:1px 7px; border-radius:10px; margin-left:6px; vertical-align:middle; border:1px solid #f0d070; }
+
+    /* ── MODAL ── */
+    .modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.55); backdrop-filter:blur(4px); z-index:1000; align-items:center; justify-content:center; padding:20px; }
+    .modal-overlay.abierto { display:flex; }
+    .modal-box { background:var(--crema); border-radius:22px; padding:36px 40px; max-width:560px; width:100%; position:relative; max-height:90vh; overflow-y:auto; overflow-x:hidden; animation:slideUp .28s cubic-bezier(.34,1.56,.64,1); box-shadow:0 24px 64px rgba(0,0,0,0.35); border:1px solid rgba(212,168,71,0.15); }
+    @keyframes slideUp { from{transform:translateY(24px);opacity:0} to{transform:translateY(0);opacity:1} }
+    .modal-close { position:absolute; top:16px; right:16px; background:none; border:1px solid var(--borde); border-radius:50%; width:32px; height:32px; display:grid; place-items:center; cursor:pointer; font-size:16px; color:var(--gris); transition:all .15s; }
+    .modal-close:hover { background:var(--rojo); color:white; border-color:var(--rojo); }
+    .modal-tipo { font-size:10px; font-weight:800; letter-spacing:2px; text-transform:uppercase; margin-bottom:6px; }
+    .modal-titulo { font-family:'Playfair Display',serif; font-size:1.4rem; font-weight:700; margin-bottom:16px; line-height:1.3; }
+    .info-list { list-style:none; margin-bottom:12px; }
+    .info-list li { padding:7px 0; border-bottom:1px dotted var(--borde); font-size:13.5px; display:flex; gap:10px; align-items:baseline; }
+    .info-list li:last-child { border-bottom:none; }
+    .info-list .lbl { font-size:10px; font-weight:800; letter-spacing:1.5px; text-transform:uppercase; color:var(--gris); min-width:75px; flex-shrink:0; }
+    .modal-desc { font-size:14px; color:var(--gris); line-height:1.65; margin:12px 0 18px; }
+    .modal-compra-row { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px; }
+    .btn-compra { display:inline-block; background:var(--rojo); color:white; padding:9px 18px; border-radius:20px; text-decoration:none; font-size:13px; font-weight:700; transition:background .15s; }
+    .btn-compra:hover { background:#a00020; }
+    .btn-gratis-link { display:inline-block; background:var(--verde); color:white; padding:9px 18px; border-radius:20px; text-decoration:none; font-size:13px; font-weight:700; transition:background .15s; }
+    .btn-gratis-link:hover { background:#154a2e; }
+    .modal-entradas-titulo { font-size:10px; font-weight:800; letter-spacing:1.5px; text-transform:uppercase; color:var(--gris); margin-bottom:8px; }
+    .modal-entradas-btns { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px; }
+    .btn-estado { padding:8px 16px; border-radius:20px; font-size:13px; font-family:'DM Sans',sans-serif; font-weight:700; cursor:pointer; border:2px solid; transition:all .15s; }
+    .btn-estado.comprada { border-color:#1a7a3c; color:#1a7a3c; background:white; }
+    .btn-estado.comprada:hover, .btn-estado.comprada.activo { background:#1a7a3c; color:white; }
+    .btn-estado.posible { border-color:#c09020; color:#8a6a00; background:white; }
+    .btn-estado.posible:hover, .btn-estado.posible.activo { background:#c09020; color:#1a1208; }
+    .btn-estado.quitar { border-color:#ddd; color:#888; background:white; }
+    .btn-estado.quitar:hover { border-color:#e0102a; color:#e0102a; }
+    .btn-estado.comprada { border-color:#1a7a3c; color:#1a7a3c; background:white; }
+    .btn-estado.comprada:hover,.btn-estado.comprada.activo { background:#1a7a3c; color:white; }
+    .btn-estado.posible { border-color:var(--oro); color:#7a5a00; background:white; }
+    .btn-estado.posible:hover,.btn-estado.posible.activo { background:var(--oro); color:var(--oscuro); }
+    .btn-estado.quitar { border-color:#ddd; color:var(--gris); background:white; }
+    .btn-estado.quitar:hover { border-color:var(--rojo); color:var(--rojo); }
+    .modal-notas-titulo { font-size:10px; font-weight:800; letter-spacing:1.5px; text-transform:uppercase; color:var(--gris); margin-bottom:8px; }
+    .modal-notas textarea { width:100%; border:1.5px solid var(--borde); border-radius:10px; padding:10px 14px; font-family:'DM Sans',sans-serif; font-size:13px; resize:vertical; min-height:72px; outline:none; transition:border-color .15s; }
+    .modal-notas textarea:focus { border-color:var(--oro); }
+    .btn-guardar-nota { margin-top:8px; padding:7px 16px; background:var(--oscuro); color:var(--oro); border:none; border-radius:20px; font-family:'DM Sans',sans-serif; font-size:12px; font-weight:700; cursor:pointer; transition:background .15s; }
+    .btn-guardar-nota:hover { background:var(--rojo); color:white; }
+
+    /* ── SUB ── */
+    .sub { font-size:13px; color:var(--gris); margin-top:4px; }
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:900px){
+      .grid-3{grid-template-columns:repeat(2,1fr)}
+    }
+      .semana-grid{grid-template-columns:repeat(4,1fr)}
+    }
+    @media(max-width:700px){
+      main{padding:0 18px 40px}
+      header{padding:44px 18px 40px}
+      nav{padding:0 12px}
+      .grid-2,.grid-3{grid-template-columns:1fr}
+      .cal-grid,.cal-grid-header,.semana-grid{gap:2px}
+      .cal-day{min-height:62px;padding:4px}
+      .cal-evento{font-size:8.5px}
+      .modal-box{padding:24px 20px}
+      .cal-toolbar{gap:10px}
+    }
+  
+    /* ── CINE SECTION ── */
+    #seccion-cine { display:none; }
+    .cine-header { display:flex; align-items:center; gap:16px; margin-bottom:28px; padding-bottom:18px; border-bottom:2px solid var(--borde); }
+    .cine-header h2 { font-family:'Playfair Display',serif; font-size:1.8rem; font-weight:700; color:var(--oscuro); }
+    .cine-semana-badge { background:var(--oscuro); color:var(--crema); font-size:11px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; padding:5px 12px; border-radius:20px; }
+    
+    /* Película card */
+    .pelicula-card {
+      background:white; border:1px solid var(--borde); border-radius:16px;
+      margin-bottom:20px; overflow:hidden;
+      box-shadow:0 2px 8px rgba(0,0,0,0.05);
+      transition: box-shadow .2s, transform .15s;
+    }
+    .pelicula-card:hover { box-shadow:0 6px 24px rgba(0,0,0,0.1); transform:translateY(-1px); }
+    
+    .pelicula-header {
+      display:grid; grid-template-columns:auto 1fr auto; gap:16px; align-items:start;
+      padding:20px 22px 16px;
+    }
+    .pelicula-genero-dot {
+      width:36px; height:36px; border-radius:10px; display:flex; align-items:center;
+      justify-content:center; font-size:18px; flex-shrink:0; margin-top:2px;
+    }
+    .pelicula-info h3 { font-size:17px; font-weight:700; color:var(--oscuro); margin-bottom:4px; line-height:1.3; }
+    .pelicula-meta { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-top:5px; }
+    .pelicula-genero { font-size:11.5px; font-weight:600; letter-spacing:.5px; text-transform:uppercase; padding:2px 8px; border-radius:4px; }
+    .pelicula-dur { font-size:12px; color:var(--gris); }
+    .pelicula-director { font-size:12px; color:var(--gris); font-style:italic; }
+    .pelicula-desc { font-size:13px; color:#444; line-height:1.65; padding:0 22px 16px; }
+    
+    .pelicula-estreno { text-align:right; flex-shrink:0; }
+    .estreno-label { font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--gris); }
+    .estreno-fecha { font-size:13px; font-weight:700; color:var(--oscuro); }
+    .vo-badge { display:inline-block; background:#1a3a5c; color:white; font-size:9.5px; font-weight:800; letter-spacing:.8px; padding:2px 6px; border-radius:4px; margin-top:4px; }
+    
+    /* Tabla de cines por película */
+    .cines-tabla-titulo {
+      font-size:11px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase;
+      color:var(--gris); padding:10px 22px; background:#faf8f4; border-top:1px solid var(--borde);
+      display:flex; align-items:center; gap:8px;
+    }
+    .cines-tabla { border-top:1px solid var(--borde); }
+    .cine-fila {
+      display:grid; grid-template-columns:1fr auto auto;
+      gap:12px; align-items:center;
+      padding:11px 22px; border-bottom:1px solid #f0ebe0;
+      transition:background .15s;
+    }
+    .cine-fila:last-child { border-bottom:none; }
+    .cine-fila:hover { background:#faf8f4; }
+    .cine-nombre { font-size:13.5px; font-weight:600; color:var(--oscuro); }
+    .cine-zona { font-size:11.5px; color:var(--gris); font-weight:400; margin-top:1px; }
+    .cine-formato { font-size:11px; font-weight:700; padding:2px 7px; border-radius:4px; background:#f0ebe0; color:#6a5020; }
+    .cine-formato.vo { background:#e8eef8; color:#1a3a5c; }
+    .precio-tag {
+      font-size:14px; font-weight:800; color:var(--oscuro);
+      white-space:nowrap;
+    }
+    .precio-tag .precio-normal { font-size:10px; font-weight:500; color:var(--gris); text-decoration:line-through; margin-left:4px; }
+    .precio-tag.mas-barato { color:var(--verde); }
+    .precio-tag.mas-caro { color:var(--gris); }
+    .btn-cine { 
+      font-size:11px; font-weight:700; padding:5px 10px; border-radius:6px; 
+      background:var(--oscuro); color:white; text-decoration:none;
+      transition:background .15s;
+    }
+    .btn-cine:hover { background:var(--rojo); }
+    
+    /* Tip banner */
+    .cine-tip {
+      background:linear-gradient(135deg,#f8f4ed,#fff); border:1px solid var(--borde);
+      border-left:3px solid var(--oro); border-radius:0 10px 10px 0;
+      padding:12px 16px; margin:0 0 20px; font-size:13px; color:#5a4020;
+      display:flex; align-items:center; gap:10px;
+    }
+
+    /* ── MEJORAS MODAL ── */
+    .modal-box {
+      max-height:90vh; overflow-y:auto;
+    }
+    .modal-tipo {
+      font-size:10.5px; font-weight:800; letter-spacing:2px; text-transform:uppercase;
+      margin-bottom:6px; display:flex; align-items:center; gap:6px;
+    }
+    .modal-tipo::before { content:''; display:block; width:24px; height:2px; background:currentColor; border-radius:2px; }
+    .modal-titulo {
+      font-family:'Playfair Display',serif; font-size:1.45rem; font-weight:700;
+      color:var(--oscuro); line-height:1.3; margin-bottom:16px;
+    }
+    .info-list {
+      list-style:none; border:1px solid var(--borde); border-radius:10px;
+      overflow:hidden; margin-bottom:16px;
+    }
+    .info-list li {
+      display:grid; grid-template-columns:80px 1fr;
+      padding:10px 14px; font-size:13px; border-bottom:1px solid var(--borde);
+      gap:8px;
+    }
+    .info-list li:last-child { border-bottom:none; }
+    .info-list .lbl {
+      font-size:10.5px; font-weight:700; letter-spacing:.8px; text-transform:uppercase;
+      color:var(--gris); padding-top:1px;
+    }
+    .tag-precio.gratis {
+      background:#e8f5ee; color:#1a5c38; border:1px solid #b0d8c0;
+      font-weight:700; padding:2px 8px; border-radius:5px; font-size:12px;
+    }
+    .tag-precio.pago {
+      background:#fef3e2; color:#7a4a00; border:1px solid #ddc080;
+      font-weight:700; padding:2px 8px; border-radius:5px; font-size:12px;
+    }
+    .modal-desc {
+      font-size:13.5px; color:#444; line-height:1.7; margin-bottom:18px;
+      padding:14px; background:#faf8f4; border-radius:10px;
+      border-left:3px solid var(--borde);
+    }
+    .modal-compra-row { margin-bottom:20px; }
+    .btn-compra {
+      display:inline-flex; align-items:center; gap:8px;
+      background:var(--oscuro); color:var(--crema); font-weight:700;
+      font-size:13px; padding:10px 20px; border-radius:10px;
+      text-decoration:none; transition:background .15s;
+    }
+    .btn-compra:hover { background:var(--rojo); }
+    .btn-gratis-link {
+      display:inline-flex; align-items:center; gap:8px;
+      background:var(--verde); color:white; font-weight:700;
+      font-size:13px; padding:10px 20px; border-radius:10px;
+      text-decoration:none; transition:background .15s;
+    }
+    .modal-entradas-titulo, .modal-notas-titulo {
+      font-size:10.5px; font-weight:800; letter-spacing:1.5px; text-transform:uppercase;
+      color:var(--gris); margin-bottom:10px; margin-top:20px;
+    }
+    .modal-notas textarea {
+      width:100%; border:1px solid var(--borde); border-radius:8px; padding:10px 12px;
+      font-family:'DM Sans',sans-serif; font-size:13px; resize:vertical;
+      min-height:72px; color:var(--oscuro);
+    }
+    .modal-notas textarea:focus { outline:none; border-color:var(--oro); }
+    .btn-guardar-nota {
+      margin-top:8px; background:var(--oscuro); color:var(--crema);
+      font-size:12px; font-weight:700; padding:7px 14px; border-radius:7px;
+      border:none; cursor:pointer; transition:background .15s;
+    }
+    .btn-guardar-nota:hover { background:var(--verde); }
+
+    /* Cine genre colors */
+    .cal-evento.cine{background:#f0e8f8;color:#4a1870;border-left-color:#7a3ab0}
+
+
+    /* ── MAPA SECTION ── */
+    #seccion-mapa { display:none; }
+    .mapa-header { display:flex; align-items:center; gap:16px; margin-bottom:24px; padding-bottom:18px; border-bottom:2px solid var(--borde); }
+    .mapa-header h2 { font-family:'Playfair Display',serif; font-size:1.8rem; font-weight:700; color:var(--oscuro); }
+    .mapa-container { border-radius:16px; overflow:hidden; border:1px solid var(--borde); margin-bottom:20px; box-shadow:0 4px 16px rgba(0,0,0,0.08); }
+    .mapa-legend {
+      background:white; border:1px solid var(--borde); border-radius:14px;
+      padding:18px 22px; margin-top:16px;
+      display:flex; flex-wrap:wrap; gap:10px; align-items:center;
+    }
+    .mapa-legend-title { font-size:11px; font-weight:800; letter-spacing:1.5px; text-transform:uppercase; color:var(--gris); margin-right:4px; }
+    .legend-item { display:flex; align-items:center; gap:6px; font-size:12.5px; color:var(--oscuro); }
+    .legend-dot { width:12px; height:12px; border-radius:50%; flex-shrink:0; }
+    .mapa-filtros { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; }
+    .mapa-filtro-btn {
+      font-size:12px; font-weight:600; padding:6px 14px; border-radius:20px;
+      border:1.5px solid var(--borde); background:white; color:var(--oscuro);
+      cursor:pointer; transition:all .15s;
+    }
+    .mapa-filtro-btn.activo { border-color:var(--oscuro); background:var(--oscuro); color:var(--crema); }
+    .mapa-iframe { width:100%; height:520px; border:none; }
+
+</style>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <p class="eyebrow">Guía Cultural 2026</p>
+    <h1>Cultura en <span>Madrid</span></h1>
+    <p class="subtitulo">Museos gratis, ópera, teatro, conciertos de música clásica, monólogos, exposiciones y mucho más. Todo el año, actualizable.</p>
+    <div class="badge-actualizado"><span></span> Última actualización: marzo 2026</div>
+  </div>
+</header>
+
+<div class="nota-top">
+  <strong>⚠ Nota:</strong> Horarios y precios pueden cambiar. Consulta siempre la web oficial antes de ir. Algunos museos requieren reserva previa para el acceso gratuito.
+</div>
+
+<nav>
+  <ul>
+    <li><a href="#" onclick="mostrarGuia(event)">📖 Guía</a></li>
+    <li><a href="#museos" onclick="irSeccion(event,'museos')">🏛 Museos</a></li>
+    <li><a href="#opera" onclick="irSeccion(event,'opera')">🎭 Ópera</a></li>
+    <li><a href="#clasica" onclick="irSeccion(event,'clasica')">🎻 Clásica</a></li>
+    <li><a href="#teatro" onclick="irSeccion(event,'teatro')">🎭 Teatro</a></li>
+    <li><a href="#humor" onclick="irSeccion(event,'humor')">😂 Humor</a></li>
+    <li><a href="#exposiciones" onclick="irSeccion(event,'exposiciones')">🖼 Exposiciones</a></li>
+    <li><a href="#libros" onclick="irSeccion(event,'libros')">📚 Libros</a></li>
+    <li><a href="#gratuitos" onclick="irSeccion(event,'gratuitos')">🆓 Gratuitos</a></li>
+    <li><a href="#" onclick="mostrarCalendario(event)" style="color:var(--oro);font-weight:700">📅 Calendario</a></li>
+      <li><a href="#" onclick="mostrarCine(event)">🎬 Cine</a></li>
+    <li><a href="#" onclick="mostrarMapa(event)" style="color:var(--oro)">🗺 Mapa</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<!-- ══ SECCIÓN CALENDARIO ══ -->
+<div id="seccion-calendario">
+  <div style="padding:24px 0 40px;">
+
+    <!-- MIS ENTRADAS -->
+    <div class="mis-entradas-panel">
+      <div class="mei-header" onclick="togglePanel()">
+        <div>
+          <h3>🎟 Mis Entradas & Reservas</h3>
+          <div class="sub" id="sub-entradas">Sin entradas guardadas · haz clic en un evento para añadir</div>
+        </div>
+        <span class="mei-arrow" id="mei-arrow">▾</span>
+      </div>
+      <div class="mei-body" id="mei-body"></div>
+    </div>
+
+    <!-- LEYENDA -->
+    <div class="cal-leyenda">
+      <span class="ley-item"><span class="ley-dot mus"></span>Música</span>
+      <span class="ley-item"><span class="ley-dot op"></span>Ópera</span>
+      <span class="ley-item"><span class="ley-dot te"></span>Teatro/Danza</span>
+      <span class="ley-item"><span class="ley-dot hu"></span>Humor</span>
+      <span class="ley-item"><span class="ley-dot ex"></span>Exposición</span>
+      <span class="ley-item"><span class="ley-dot mu"></span>Museo/Gratis</span>
+      <span class="ley-sep"></span>
+      <span class="ley-item"><span class="ley-dot comprada"></span>Comprada</span>
+      <span class="ley-item"><span class="ley-dot posible"></span>Quiero ir</span>
+    </div>
+
+    <!-- FILTROS -->
+    <div class="cal-toolbar">
+      <div class="filtro-grupo">
+        <span class="filtro-label">Categoría</span>
+        <div class="filtro-pills">
+          <button class="filtro-btn on" data-cat="todos" onclick="setCat(this)">Todos</button>
+          <button class="filtro-btn" data-cat="opera" onclick="setCat(this)">🎭 Ópera</button>
+          <button class="filtro-btn" data-cat="musica" onclick="setCat(this)">🎻 Música</button>
+          <button class="filtro-btn" data-cat="teatro" onclick="setCat(this)">🎪 Teatro</button>
+          <button class="filtro-btn" data-cat="humor" onclick="setCat(this)">😂 Humor</button>
+          <button class="filtro-btn" data-cat="exposicion" onclick="setCat(this)">🖼 Expo</button>
+          <button class="filtro-btn" data-cat="museo" onclick="setCat(this)">🏛 Museo</button>
+          <button class="filtro-btn" data-cat="libro" onclick="setCat(this)">📚 Libros</button>
+        </div>
+      </div>
+      <div class="filtro-grupo">
+        <span class="filtro-label">Precio</span>
+        <div class="filtro-pills">
+          <button class="filtro-btn" id="btn-gratis" onclick="toggleGratis(this)">🆓 Solo gratis</button>
+        </div>
+      </div>
+      <div class="filtro-grupo">
+        <span class="filtro-label">Mis planes</span>
+        <div class="filtro-pills">
+          <button class="filtro-btn" id="btn-compradas" onclick="toggleCompradas(this)">✓ Compradas</button>
+          <button class="filtro-btn" id="btn-posibles" onclick="togglePosibles(this)">♥ Quiero ir</button>
+        </div>
+      </div>
+      <div class="filtro-grupo cal-search">
+        <span class="filtro-label">Buscar</span>
+        <input type="text" id="buscador" placeholder="Obra, lugar, artista…" oninput="render()">
+      </div>
+    </div>
+
+    <!-- TOPBAR -->
+    <div class="cal-topbar">
+      <div class="vista-tabs">
+        <button class="vista-tab activo" onclick="setVista('mes',this)">📅 Mes</button>
+        <button class="vista-tab" onclick="setVista('semana',this)">📆 Semana</button>
+        <button class="vista-tab" onclick="setVista('lista',this)">☰ Lista</button>
+      </div>
+      <div class="cal-nav">
+        <button onclick="anterior()">‹</button>
+        <h3 id="cal-titulo"></h3>
+        <button onclick="siguiente()">›</button>
+      </div>
+      <button class="btn-hoy" onclick="hoy()">Hoy</button>
+    </div>
+
+    <!-- VISTAS -->
+    <div id="v-mes" style="overflow:hidden;width:100%;"></div>
+    <div id="v-semana" style="display:none"></div>
+    <div id="v-lista" style="display:none"></div>
+
+  </div>
+</div>
+<!-- FIN CALENDARIO -->
+
+
+
+<div id="contenido-guia">
+  <section class="seccion" id="museos">
+    <div class="seccion-header">
+      <div class="seccion-icon">🏛</div>
+      <h2><small>Museos de Madrid</small>Horarios de Entrada Gratuita</h2>
+    </div>
+
+    <p style="font-size:14px;color:var(--gris);margin-bottom:28px;">Madrid tiene algunos de los mejores museos del mundo. La mayoría abren gratis en franjas horarias concretas. A continuación, la guía completa ordenada por importancia.</p>
+
+    <!-- TABLA RESUMEN -->
+    <h3 class="subseccion-titulo">Tabla resumen rápido</h3>
+    <div class="tabla-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Museo</th>
+            <th>Gratuito cuándo</th>
+            <th>Festivos gratuitos</th>
+            <th>Metro</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Museo del Prado ★</td>
+            <td class="gratis-td">Lun–Sáb 18:00–20:00 · Dom/Fest 17:00–19:00 · 1er sáb/mes 20:30–23:30</td>
+            <td>18 may · 12 oct · 19 nov</td>
+            <td>Banco de España / Atocha</td>
+          </tr>
+          <tr>
+            <td>Reina Sofía ★</td>
+            <td class="gratis-td">Lun, Mié–Sáb 19:00–21:00 · Dom 12:30–14:30</td>
+            <td>18 may · 12 oct</td>
+            <td>Atocha Renfe</td>
+          </tr>
+          <tr>
+            <td>Thyssen-Bornemisza ★</td>
+            <td class="gratis-td">Lunes (todo el horario) · Sáb Noches: 21:00–23:00</td>
+            <td>12 oct</td>
+            <td>Banco de España</td>
+          </tr>
+          <tr>
+            <td>Museo Arqueológico Nacional</td>
+            <td class="gratis-td">Sábados desde 14:00 · Domingos (mañana completa)</td>
+            <td>18 abr · 18 may · 12 oct · 6 dic</td>
+            <td>Serrano / Colón</td>
+          </tr>
+          <tr>
+            <td>Museo Cerralbo</td>
+            <td class="gratis-td">Jueves (exc. festivos) 17:00–20:00 · Domingos 10:00–15:00</td>
+            <td>18 may · 12 oct · 6 dic</td>
+            <td>Ventura Rodríguez / Plaza España</td>
+          </tr>
+          <tr>
+            <td>Museo de Historia de Madrid</td>
+            <td class="gratis-td">Siempre gratis (todo el año)</td>
+            <td>—</td>
+            <td>Tribunal</td>
+          </tr>
+          <tr>
+            <td>Museo del Traje</td>
+            <td class="gratis-td">Domingos · Jue 17:00–20:00 · Sáb 14:00–15:00</td>
+            <td>18 may · 12 oct</td>
+            <td>Moncloa / Ciudad Universitaria</td>
+          </tr>
+          <tr>
+            <td>Museo de América</td>
+            <td class="gratis-td">Domingos · Jue 17:00–20:00 · Sáb 14:00–15:00</td>
+            <td>18 may · 12 oct</td>
+            <td>Moncloa</td>
+          </tr>
+          <tr>
+            <td>Museo Lázaro Galdiano</td>
+            <td class="gratis-td">Ma–Vi 14:00–15:00</td>
+            <td>18 may</td>
+            <td>Gregorio Marañón</td>
+          </tr>
+          <tr>
+            <td>Real Academia de Bellas Artes de San Fernando</td>
+            <td class="gratis-td">Miércoles no festivos (todo el horario)</td>
+            <td>18 may · 12 oct · 6 dic</td>
+            <td>Sevilla</td>
+          </tr>
+          <tr>
+            <td>Palacio Real ★</td>
+            <td class="gratis-td">Lun–Jue 17:00–19:00 (ciudadanos UE e Iberoamérica)</td>
+            <td>Varios festivos nacionales</td>
+            <td>Ópera</td>
+          </tr>
+          <tr>
+            <td>Galería de las Colecciones Reales</td>
+            <td class="gratis-td">Lun–Jue 18:00–20:00 (ciudadanos UE e Iberoamérica)</td>
+            <td>—</td>
+            <td>Ópera</td>
+          </tr>
+          <tr>
+            <td>Monasterio Descalzas Reales</td>
+            <td class="gratis-td">Mié y Jue 16:00–18:30 (ciudadanos UE e Iberoamérica)</td>
+            <td>—</td>
+            <td>Sol / Callao</td>
+          </tr>
+          <tr>
+            <td>Real Monasterio de la Encarnación</td>
+            <td class="gratis-td">Mié y Jue 16:00–18:30 (ciudadanos UE e Iberoamérica)</td>
+            <td>—</td>
+            <td>Ópera</td>
+          </tr>
+          <tr>
+            <td>Palacio del Pardo</td>
+            <td class="gratis-td">Mié y Dom 15:00–18:00/19:00 (ciudadanos UE e Iberoamérica)</td>
+            <td>—</td>
+            <td>Bus 601 desde Moncloa</td>
+          </tr>
+          <tr>
+            <td>Palacio de Liria</td>
+            <td class="gratis-td">Lunes no festivos a las 10:00 (sesión gratuita, reserva previa)</td>
+            <td>—</td>
+            <td>San Bernardo / Ventura Rodríguez</td>
+          </tr>
+          <tr>
+            <td>Real Jardín Botánico</td>
+            <td class="gratis-td">Martes 10:00–13:00</td>
+            <td>—</td>
+            <td>Atocha</td>
+          </tr>
+          <tr>
+            <td>Casa-Museo Lope de Vega</td>
+            <td class="gratis-td">Siempre gratis (visita guiada, reserva previa)</td>
+            <td>—</td>
+            <td>Antón Martín / Sevilla</td>
+          </tr>
+          <tr>
+            <td>Museo de Ciencias Naturales</td>
+            <td class="gratis-td">Dom y festivos 10:00–15:00 · Lun 10:00–15:00 (verano)</td>
+            <td>18 may</td>
+            <td>Nuevos Ministerios / Alonso Cano</td>
+          </tr>
+          <tr>
+            <td>Museo del Ferrocarril</td>
+            <td class="gratis-td">Martes 9:30–14:00 (gratis)</td>
+            <td>—</td>
+            <td>Delicias</td>
+          </tr>
+          <tr>
+            <td>Museo de la Casa de la Moneda</td>
+            <td class="gratis-td">Siempre gratis (presentar DNI)</td>
+            <td>—</td>
+            <td>Núñez de Balboa / Serrano</td>
+          </tr>
+          <tr>
+            <td>Museo del Romanticismo</td>
+            <td class="gratis-td">Sábados desde 14:00 · Domingos</td>
+            <td>18 may · 12 oct · 6 dic</td>
+            <td>Alonso Martínez / Tribunal</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- FICHAS DETALLADAS MUSEOS ESTRELLA -->
+    <h3 class="subseccion-titulo">Fichas detalladas — Los tres grandes</h3>
+    <div class="grid grid-2">
+
+      <div class="card">
+        <div class="card-head">
+          <h3><a href="https://www.museodelprado.es" target="_blank">Museo Nacional del Prado</a></h3>
+          <span class="tag tag-estrella">⭐ Imprescindible</span>
+        </div>
+        <div class="card-body">
+          <div class="rec-badge">★ Recomendación top</div>
+          <ul class="info-list">
+            <li><span class="lbl">Dirección</span> Calle Ruiz de Alarcón, 23 — Paseo del Prado</li>
+            <li><span class="lbl">Metro</span> Banco de España (L2) · Atocha Renfe (C)</li>
+            <li><span class="lbl">Horario</span> Lun–Sáb 10:00–20:00 · Dom y festivos 10:00–19:00</li>
+            <li><span class="lbl">Precio</span> 15 € general · Reducida 7,50 €</li>
+          </ul>
+          <div class="horario-gratis">
+            <p class="titulo-gratis">🟢 Acceso Gratuito</p>
+            <p><strong>Lun–Sáb 18:00–20:00</strong> y <strong>Dom/Festivos 17:00–19:00</strong><br>
+            1er sábado de cada mes: <strong>20:30–23:30</strong> (noche)<br>
+            Días especiales: 18 mayo, 12 octubre, 19 noviembre (aniversario)</p>
+          </div>
+          <p class="desc">Una de las pinacotecas más importantes del mundo. Las Meninas de Velázquez, Las majas de Goya, El jardín de las delicias de El Bosco. Imprescindible. Llega 30 min antes del horario gratuito para hacer menos cola.</p>
+          <a href="https://www.museodelprado.es" target="_blank" class="enlace-web">↗ Web oficial</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3><a href="https://www.museoreinasofia.es" target="_blank">Museo Nacional Reina Sofía</a></h3>
+          <span class="tag tag-estrella">⭐ Imprescindible</span>
+        </div>
+        <div class="card-body">
+          <div class="rec-badge">★ Recomendación top</div>
+          <ul class="info-list">
+            <li><span class="lbl">Dirección</span> Calle de Santa Isabel, 52</li>
+            <li><span class="lbl">Metro</span> Atocha Renfe (C) · Estación del Arte (L1)</li>
+            <li><span class="lbl">Horario</span> Lun, Mié–Sáb 10:00–21:00 · Dom 10:00–14:30 · Martes cerrado</li>
+            <li><span class="lbl">Precio</span> 10 € general</li>
+          </ul>
+          <div class="horario-gratis">
+            <p class="titulo-gratis">🟢 Acceso Gratuito</p>
+            <p><strong>Lun, Mié–Sáb 19:00–21:00</strong><br>
+            <strong>Domingos 12:30–14:30</strong><br>
+            18 mayo (Día Internacional de los Museos) · 12 octubre</p>
+          </div>
+          <p class="desc">Arte contemporáneo del siglo XX. El Guernica de Picasso, obras de Dalí, Miró, Tàpies. La colección permanente incluye la vanguardia española. Los lunes también abren.</p>
+          <a href="https://www.museoreinasofia.es" target="_blank" class="enlace-web">↗ Web oficial</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3><a href="https://www.museothyssen.org" target="_blank">Museo Nacional Thyssen-Bornemisza</a></h3>
+          <span class="tag tag-estrella">⭐ Imprescindible</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Dirección</span> Paseo del Prado, 8</li>
+            <li><span class="lbl">Metro</span> Banco de España (L2)</li>
+            <li><span class="lbl">Horario</span> Ma–Dom 10:00–19:00 · Sáb hasta 21:00 (Noches Thyssen) · Lunes: 12:00–16:00</li>
+            <li><span class="lbl">Precio</span> 13 € general · 6,50 € reducida</li>
+          </ul>
+          <div class="horario-gratis">
+            <p class="titulo-gratis">🟢 Acceso Gratuito</p>
+            <p><strong>Lunes 12:00–16:00</strong> (colección permanente)<br>
+            <strong>Sábados Noches Thyssen: 21:00–23:00</strong> (exposiciones temporales)<br>
+            12 octubre</p>
+          </div>
+          <p class="desc">Colección que abarca del siglo XIII al XX: Van Eyck, Durero, Caravaggio, Rubens, Monet, Van Gogh, Picasso, Hopper. Complementa perfectamente el Prado y el Reina Sofía.</p>
+          <a href="https://www.museothyssen.org" target="_blank" class="enlace-web">↗ Web oficial</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3><a href="https://www.man.es" target="_blank">Museo Arqueológico Nacional</a></h3>
+          <span class="tag tag-publico">Estatal</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Dirección</span> Calle de Serrano, 13</li>
+            <li><span class="lbl">Metro</span> Serrano (L4) · Colón (L4, L9)</li>
+            <li><span class="lbl">Horario</span> Ma–Sáb 9:30–20:00 · Dom y festivos 9:30–15:00 · Lunes cerrado</li>
+            <li><span class="lbl">Precio</span> 3 € general</li>
+          </ul>
+          <div class="horario-gratis">
+            <p class="titulo-gratis">🟢 Acceso Gratuito</p>
+            <p><strong>Sábados desde 14:00</strong> · <strong>Domingos toda la mañana</strong><br>
+            Festivos especiales: 18 abr, 18 may, 12 oct, 6 dic</p>
+          </div>
+          <p class="desc">De la Prehistoria a la Edad Moderna. La Dama de Elche, tesoros íberos, la Hispania romana y Al-Ándalus. Uno de los museos más ricos e infrautilizados de Madrid.</p>
+          <a href="https://www.man.es" target="_blank" class="enlace-web">↗ Web oficial</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SIEMPRE GRATIS -->
+    <h3 class="subseccion-titulo">Museos siempre gratuitos</h3>
+    <div class="grid grid-3">
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Museo de Historia de Madrid</h3>
+          <span class="tag tag-gratis">Siempre gratis</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Dirección</span> Calle Fuencarral, 78</li>
+            <li><span class="lbl">Metro</span> Tribunal (L1, L10)</li>
+            <li><span class="lbl">Horario</span> Ma–Dom 10:00–20:00 · Lunes cerrado</li>
+          </ul>
+          <p class="desc">Historia de Madrid desde la época de los Austrias hasta el siglo XX. Joya injustamente desconocida.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Casa-Museo Lope de Vega</h3>
+          <span class="tag tag-gratis">Siempre gratis</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Dirección</span> Calle Cervantes, 11 (Barrio de las Letras)</li>
+            <li><span class="lbl">Metro</span> Antón Martín (L1) · Sevilla (L2)</li>
+            <li><span class="lbl">Horario</span> Ma–Dom, visitas guiadas con reserva</li>
+          </ul>
+          <p class="desc">La casa donde vivió y murió el Fénix de los Ingenios. Reserva previa obligatoria: <em><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d1b2b0a2b0bca4a2b4bebdbea1b4b5b4a7b4b6b091bcb0b5a3b8b5ffbea3b6">[email&#160;protected]</a></em></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Museo de la Casa de la Moneda</h3>
+          <span class="tag tag-gratis">Siempre gratis</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Dirección</span> Calle del Doctor Esquerdo, 36</li>
+            <li><span class="lbl">Metro</span> Sainz de Baranda (L9) / O'Donnell (L6, L9)</li>
+            <li><span class="lbl">Horario</span> Ma–Vi 10:00–14:00 y 17:00–19:00 · Sáb 10:00–14:00</li>
+          </ul>
+          <p class="desc">Historia de la moneda y la medalla. Requiere presentar DNI. Colección numismática única.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>CentroCentro (Palacio de Cibeles)</h3>
+          <span class="tag tag-gratis">Colección gratis</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Dirección</span> Plaza de Cibeles, 1</li>
+            <li><span class="lbl">Metro</span> Banco de España (L2)</li>
+            <li><span class="lbl">Horario</span> Ma–Dom 10:00–20:00</li>
+          </ul>
+          <p class="desc">Centro cultural del Ayuntamiento de Madrid con exposiciones, actividades y mirador. Muchas exposiciones de acceso libre.</p>
+          <a href="https://www.centrocentro.org" target="_blank" class="enlace-web">↗ Web oficial</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Museo de los Orígenes (San Isidro)</h3>
+          <span class="tag tag-gratis">Siempre gratis</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Dirección</span> Plaza de San Andrés, 2 (La Latina)</li>
+            <li><span class="lbl">Metro</span> La Latina (L5)</li>
+            <li><span class="lbl">Horario</span> Ma–Dom 9:30–20:00 · Lunes cerrado</li>
+          </ul>
+          <p class="desc">Historia antigua de Madrid y culto a San Isidro. Gratuito siempre. Ubicación inmejorable en La Latina.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Museo del Metro (Chamartín)</h3>
+          <span class="tag tag-gratis">Siempre gratis</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Metro</span> Chamartín (L1, L10)</li>
+            <li><span class="lbl">Horario</span> Requiere reserva previa</li>
+          </ul>
+          <p class="desc">Trenes históricos del Metro de Madrid (1916–1965). Visita guiada de 40 minutos. Reserva en museosmetromadrid.es</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FESTIVOS GRATUITOS ESPECIALES -->
+    <h3 class="subseccion-titulo">Días gratuitos universales (todos los museos estatales)</h3>
+    <div class="grid grid-3">
+      <div class="festival-card verde">
+        <h3>18 de abril</h3>
+        <p class="fecha-fest">Día Internacional de los Monumentos y Sitios</p>
+        <p>Acceso gratuito a todos los monumentos y sitios patrimoniales estatales.</p>
+      </div>
+      <div class="festival-card azul">
+        <h3>18 de mayo</h3>
+        <p class="fecha-fest">Día Internacional de los Museos</p>
+        <p>El día más importante del año para visitar museos. Todos los museos estatales abren gratis.</p>
+      </div>
+      <div class="festival-card verde">
+        <h3>12 de octubre</h3>
+        <p class="fecha-fest">Fiesta Nacional de España</p>
+        <p>Entrada gratuita en la mayoría de museos estatales.</p>
+      </div>
+      <div class="festival-card oro">
+        <h3>19 de noviembre</h3>
+        <p class="fecha-fest">Aniversario del Museo del Prado</p>
+        <p>El Prado abre gratis todo el día para celebrar su fundación.</p>
+      </div>
+      <div class="festival-card">
+        <h3>6 de diciembre</h3>
+        <p class="fecha-fest">Día de la Constitución</p>
+        <p>Museos arqueológicos, de artes decorativas y otros estatales abren gratuitamente.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 2. ÓPERA Y LÍRICA ══ -->
+  <section class="seccion" id="opera">
+    <div class="seccion-header">
+      <div class="seccion-icon">🎭</div>
+      <h2><small>Temporada 2025–2026</small>Ópera, Zarzuela & Lírica</h2>
+    </div>
+
+    <div class="bloque-destaque">
+      <h3>Teatro Real — La gran referencia lírica de Madrid</h3>
+      <p><strong style="color:#c8c0b0">Plaza de Oriente, s/n · Metro: Ópera (L2, L5) · teatroreal.es</strong></p>
+      <p>El coliseo más importante de España y uno de los mejores teatros de ópera de Europa. La temporada 2025–26 está inspirada en Shakespeare y el cuento de Barba Azul, con <strong style="color:var(--crema)">18 producciones de ópera</strong>, danza, conciertos y el programa familiar en el Real Teatro de Retiro.</p>
+      <p style="margin-top:12px">🎟 <strong style="color:var(--oro)">Tarifa Joven</strong> (menores de 30 años): 19 € para ópera · Entradas desde 6 € en algunas funciones</p>
+    </div>
+
+    <h3 class="subseccion-titulo">Producciones de ópera destacadas — Temporada 25/26</h3>
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="card-head">
+          <h3>Carmen — Bizet</h3>
+          <span class="tag tag-estrella">⭐ Destacada</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Fechas</span> Marzo–Abril 2026</li>
+            <li><span class="lbl">Lugar</span> Teatro Real · Sala Principal</li>
+            <li><span class="lbl">Director</span> Gustavo Gimeno (Director Musical)</li>
+          </ul>
+          <p class="desc">Una de las óperas más populares del mundo. La gitana Carmen, el torero Escamillo, la pasión y la tragedia.</p>
+          <a href="https://www.teatroreal.es/es/temporada-actual/opera" target="_blank" class="enlace-web">↗ Entradas y horarios</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Otello — Verdi</h3>
+          <span class="tag tag-estrella">⭐ Destacada</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Fechas</span> Temporada en curso</li>
+            <li><span class="lbl">Lugar</span> Teatro Real</li>
+          </ul>
+          <p class="desc">Shakespeare y Verdi: la tragedia de los celos. Una de las óperas más emocionantes y exigentes del repertorio.</p>
+          <a href="https://www.teatroreal.es" target="_blank" class="enlace-web">↗ Web del Teatro Real</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Romeo y Julieta — Gounod</h3>
+          <span class="tag tag-publico">Público</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Fechas</span> Mayo–Junio 2026</li>
+            <li><span class="lbl">Lugar</span> Teatro Real</li>
+          </ul>
+          <p class="desc">La inmortal historia de amor de Shakespeare convertida en ópera por Gounod. Producción espectacular.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Il Trovatore — Verdi</h3>
+          <span class="tag tag-publico">Público</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Fechas</span> Junio–Julio 2026</li>
+            <li><span class="lbl">Lugar</span> Teatro Real</li>
+          </ul>
+          <p class="desc">Uno de los grandes títulos del repertorio italiano. Drama, venganza y amor imposible.</p>
+          <a href="https://www.teatroreal.es" target="_blank" class="enlace-web">↗ Consultar fechas exactas</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Giulio Cesare in Egitto — Händel</h3>
+          <span class="tag tag-publico">Versión concierto</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Fechas</span> 19 y 21 de febrero 2026</li>
+            <li><span class="lbl">Lugar</span> Teatro Real</li>
+            <li><span class="lbl">Intérpretes</span> Jakub Józef Orliński, Sabine Devieilhe</li>
+          </ul>
+          <p class="desc">Barroco de primer nivel. Il Pomo d'Oro dirigido por Francesco Corti.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Concierto de Anna Netrebko</h3>
+          <span class="tag tag-estrella">⭐ Gran estrella</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Fecha</span> 30 de junio de 2026</li>
+            <li><span class="lbl">Lugar</span> Teatro Real</li>
+          </ul>
+          <p class="desc">La soprano más famosa del mundo en recital. Una de las noches más esperadas de la temporada.</p>
+          <a href="https://www.teatroreal.es" target="_blank" class="enlace-web">↗ Entradas (agotarse rápido)</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- TEATRO DE LA ZARZUELA -->
+    <h3 class="subseccion-titulo">Teatro de la Zarzuela</h3>
+    <div class="card" style="max-width:700px">
+      <div class="card-head">
+        <h3><a href="https://teatrodelazarzuela.mcu.es" target="_blank">Teatro de la Zarzuela</a></h3>
+        <span class="tag tag-publico">Público</span>
+      </div>
+      <div class="card-body">
+        <ul class="info-list">
+          <li><span class="lbl">Dirección</span> Calle de Jovellanos, 4</li>
+          <li><span class="lbl">Metro</span> Sevilla (L2) · Banco de España (L2)</li>
+          <li><span class="lbl">Especialidad</span> Zarzuela y ópera en español</li>
+          <li><span class="lbl">Precios</span> Desde 6 € (sesiones accesibles)</li>
+        </ul>
+        <p class="desc">El único teatro del mundo dedicado exclusivamente a la zarzuela, género lírico español por excelencia. Temporada con grandes títulos del repertorio español. También acoge ópera y conciertos líricos.</p>
+        <a href="https://teatrodelazarzuela.mcu.es" target="_blank" class="enlace-web">↗ Programación oficial</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 3. MÚSICA CLÁSICA Y DE CÁMARA ══ -->
+  <section class="seccion" id="clasica">
+    <div class="seccion-header">
+      <div class="seccion-icon">🎻</div>
+      <h2><small>Temporada 2025–2026</small>Música Clásica, Sinfónica & Cámara</h2>
+    </div>
+
+    <!-- AUDITORIO NACIONAL -->
+    <div class="bloque-destaque">
+      <h3>Auditorio Nacional de Música — El gran templo de la música clásica</h3>
+      <p><strong style="color:#c0b8a8">Calle del Príncipe de Vergara, 146 · Metro: Cruz del Rayo (L9) · Núñez de Balboa (L9)</strong></p>
+      <p>El auditorio de referencia de España. Sala Sinfónica (2.232 butacas) y Sala de Cámara. Programa diario de conciertos de las mejores orquestas nacionales e internacionales durante toda la temporada (oct–junio). Sede del Centro Nacional de Difusión Musical (CNDM).</p>
+      <a href="https://auditorionacional.inaem.gob.es" target="_blank" style="color:var(--oro);font-size:13px">↗ Programación completa</a>
+    </div>
+
+    <h3 class="subseccion-titulo">Orquestas y ciclos destacados</h3>
+    <div class="grid grid-2">
+
+      <div class="card">
+        <div class="card-head">
+          <h3><a href="https://www.lafilarmonica.es" target="_blank">La Filarmónica — Sociedad de Conciertos</a></h3>
+          <span class="tag tag-privado">Privado</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Sede</span> Auditorio Nacional · Sala Sinfónica</li>
+            <li><span class="lbl">Temporada</span> 14ª Temporada 2025–26</li>
+            <li><span class="lbl">Entradas</span> Precios dinámicos · lafilarmonica.koobin.com</li>
+          </ul>
+          <div class="horario-gratis" style="background:#f0f0fa;border-color:#a0a8c8;">
+            <p class="titulo-gratis" style="color:var(--azul)">📅 Próximos conciertos destacados</p>
+            <p>• <strong>24 mar 2026</strong> — Novena de Mahler (Orq. Radio Frankfurt)<br>
+               • <strong>31 mar 2026</strong> — Pasión según San Mateo · Bach (Philippe Herreweghe)<br>
+               • <strong>28 abr 2026</strong> — Tres Últimas Sonatas · Beethoven (Varvara, piano)<br>
+               • <strong>26 may 2026</strong> — Primera de Mahler (Orq. Gürzenich Colonia)</p>
+          </div>
+          <p class="desc">El ciclo de cámara y sinfónico más prestigioso de Madrid. Artistas de nivel internacional en el Auditorio Nacional.</p>
+          <a href="https://www.lafilarmonica.es" target="_blank" class="enlace-web">↗ Temporada completa</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3><a href="https://www.orquestafilarmonia.com" target="_blank">Orquesta Filarmonía de Madrid</a></h3>
+          <span class="tag tag-privado">Privado</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Sede</span> Auditorio Nacional · Sala Sinfónica</li>
+            <li><span class="lbl">Director</span> Pascual Osa</li>
+            <li><span class="lbl">Precio</span> Consultar web</li>
+          </ul>
+          <div class="horario-gratis" style="background:#f0f0fa;border-color:#a0a8c8;">
+            <p class="titulo-gratis" style="color:var(--azul)">📅 Próximos conciertos</p>
+            <p>• <strong>26 mar 2026</strong> — Concierto para Oboe · Mozart<br>
+               • <strong>16 abr 2026</strong> — Clarinete Weber + Carmina Burana · Orff<br>
+               • <strong>16 jun 2026</strong> — Sinfonía de los Mil · Mahler</p>
+          </div>
+          <p class="desc">Orquesta participativa que fusiona los mejores músicos con solistas de la Filarmónica de Múnich.</p>
+          <a href="https://www.orquestafilarmonia.com" target="_blank" class="enlace-web">↗ Entradas</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3><a href="https://madridsinfonica.com" target="_blank">Madrid Sinfónica (MSDA)</a></h3>
+          <span class="tag tag-privado">Privado</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Sede</span> Auditorio Nacional de Música</li>
+            <li><span class="lbl">Ciclo</span> 9 conciertos (2 ciclos: Sinfónico + Especiales)</li>
+          </ul>
+          <div class="horario-gratis" style="background:#f0f0fa;border-color:#a0a8c8;">
+            <p class="titulo-gratis" style="color:var(--azul)">📅 Próximos destacados</p>
+            <p>• Star Wars (homenaje a John Williams)<br>
+               • Carmina Burana + Sinfonía Titán de Mahler<br>
+               • Especial San Isidro: Zarzuela y ópera española (9 mayo 2026)</p>
+          </div>
+          <p class="desc">Ciclos innovadores que mezclan repertorio clásico con temáticas populares (cine, videojuegos) en formato sinfónico.</p>
+          <a href="https://madridsinfonica.com" target="_blank" class="enlace-web">↗ Programación y entradas</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Domingos de Cámara — Teatro Real</h3>
+          <span class="tag tag-publico">Público</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Sede</span> Teatro Real · Sala de Cámara</li>
+            <li><span class="lbl">Horario</span> Domingos a las 12:00 h · 5 conciertos por temporada</li>
+            <li><span class="lbl">Intérpretes</span> Solistas de la Orquesta Titular del Teatro Real</li>
+          </ul>
+          <p class="desc">Ciclo íntimo de música de cámara. Los propios músicos de la Orquesta del Teatro Real ofrecen recitales dominicales. Precios asequibles.</p>
+          <a href="https://www.teatroreal.es/es/temporada-actual/conciertos" target="_blank" class="enlace-web">↗ Programa</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- OSM -->
+    <h3 class="subseccion-titulo">Orquesta Sinfónica de Madrid (OSM)</h3>
+    <div class="card" style="max-width:700px">
+      <div class="card-head">
+        <h3><a href="https://osm.es" target="_blank">Orquesta Sinfónica de Madrid</a></h3>
+        <span class="tag tag-publico">Pública / Teatro Real</span>
+      </div>
+      <div class="card-body">
+        <ul class="info-list">
+          <li><span class="lbl">Sede</span> Teatro Real (orquesta titular)</li>
+          <li><span class="lbl">Historia</span> Fundada en 1903, la más antigua de España</li>
+          <li><span class="lbl">Director</span> Gustavo Gimeno (desde sept 2026)</li>
+        </ul>
+        <p class="desc">La orquesta estable del Teatro Real, presente en todas las producciones de ópera y los grandes conciertos sinfónicos. Temporada completa en teatroreal.es</p>
+        <a href="https://osm.es/temporada/opera/" target="_blank" class="enlace-web">↗ Temporada OSM</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 4. TEATRO ══ -->
+  <section class="seccion" id="teatro">
+    <div class="seccion-header">
+      <div class="seccion-icon">🎭</div>
+      <h2><small>Cartelera 2026</small>Teatro — Grandes Obras en Cartel</h2>
+    </div>
+
+    <p style="font-size:14px;color:var(--gris);margin-bottom:24px">Madrid tiene la cartelera teatral más potente de España. A continuación, una selección de obras imprescindibles para 2026 organizadas por los principales teatros.</p>
+
+    <!-- TEATROS PÚBLICOS -->
+    <h3 class="subseccion-titulo">Teatros públicos y municipales</h3>
+    <div class="grid grid-2">
+
+      <div class="card">
+        <div class="card-head">
+          <h3><a href="https://www.teatroespanol.es" target="_blank">Teatro Español</a></h3>
+          <span class="tag tag-publico">Municipal</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Dirección</span> Calle del Príncipe, 25 (Barrio de las Letras)</li>
+            <li><span class="lbl">Metro</span> Sevilla (L2) · Sol (L1, L2, L3)</li>
+            <li><span class="lbl">Tipo</span> Teatro municipal histórico (siglo XVI)</li>
+            <li><span class="lbl">Precios</span> Desde 10 € · Descuentos jóvenes y jubilados</li>
+          </ul>
+          <p class="desc">El teatro más antiguo de Madrid. Programación de calidad con teatro contemporáneo, clásicos y danza. Consulta su temporada en la web.</p>
+          <a href="https://www.teatroespanol.es" target="_blank" class="enlace-web">↗ Programación actual</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3><a href="https://www.teatrocanal.com" target="_blank">Teatros del Canal</a></h3>
+          <span class="tag tag-publico">Público CAM</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Dirección</span> Calle de Cea Bermúdez, 1</li>
+            <li><span class="lbl">Metro</span> Canal (L2)</li>
+            <li><span class="lbl">Tipo</span> Teatro de la Comunidad de Madrid</li>
+          </ul>
+          <div class="horario-gratis" style="background:#f0f0fa;border-color:#a0a8c8;">
+            <p class="titulo-gratis" style="color:var(--azul)">📅 Destacados 2026</p>
+            <p>• Flamenco Joven (finales septiembre)<br>
+               • Festival Suma Flamenca (oct–nov, 21ª edición)<br>
+               • Festival de Otoño (noviembre)</p>
+          </div>
+          <p class="desc">Centro de creación contemporánea. Artes escénicas, danza, teatro y flamenco de primer nivel.</p>
+          <a href="https://www.teatrocanal.com" target="_blank" class="enlace-web">↗ Programación</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Teatro de La Abadía</h3>
+          <span class="tag tag-publico">Público</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Dirección</span> Calle de Fernández de los Ríos, 42</li>
+            <li><span class="lbl">Metro</span> Quevedo (L2) · Argüelles (L4, L6)</li>
+          </ul>
+          <p class="desc">Referente del teatro independiente madrileño. Texto dramático contemporáneo de calidad. Precios asequibles.</p>
+          <a href="https://www.teatroabadia.com" target="_blank" class="enlace-web">↗ Cartelera</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Matadero Madrid / Naves del Español</h3>
+          <span class="tag tag-publico">Municipal</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Dirección</span> Paseo de la Chopera, 14 (junto a Madrid Río)</li>
+            <li><span class="lbl">Metro</span> Legazpi (L3, L6)</li>
+          </ul>
+          <p class="desc">Centro de creación contemporánea. Naves del Español (teatro) y Centro de Danza. Programación vanguardista e interdisciplinar.</p>
+          <a href="https://www.mataderomadrid.org" target="_blank" class="enlace-web">↗ Web de Matadero</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- OBRAS EN CARTEL -->
+    <h3 class="subseccion-titulo">Obras recomendadas en cartel ahora (2026)</h3>
+    <div class="grid grid-2">
+
+      <div class="card">
+        <div class="card-head">
+          <h3>The Book of Mormon (Musical)</h3>
+          <span class="tag tag-estrella">⭐ Top</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Lugar</span> Teatro Calderón · C. de Atocha, 18</li>
+            <li><span class="lbl">Fechas</span> 25 oct 2025 – 3 may 2026</li>
+            <li><span class="lbl">Metro</span> Tirso de Molina (L1)</li>
+          </ul>
+          <p class="desc">El musical más gamberro y brillante de Broadway llega a Madrid por tercera vez. Premio Talía al Mejor Musical 2024. Humor adulto y feroz.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Los Miserables (Musical)</h3>
+          <span class="tag tag-privado">Privado</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Lugar</span> Teatro Nuevo Apolo · Plaza de Tirso de Molina</li>
+            <li><span class="lbl">Fechas</span> En cartel 2026</li>
+            <li><span class="lbl">Metro</span> Tirso de Molina (L1)</li>
+          </ul>
+          <p class="desc">El gran musical de Victor Hugo vuelve a Madrid. 56 millones de espectadores en el mundo desde 1980. Imprescindible.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Corta el cable rojo (Comedia)</h3>
+          <span class="tag tag-estrella">⭐ Éxito</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Lugar</span> Pequeño Teatro Gran Vía · C. Gran Vía, 66</li>
+            <li><span class="lbl">Fechas</span> Hasta mayo 2026 · Mié–Sáb</li>
+            <li><span class="lbl">Metro</span> Santo Domingo (L2)</li>
+          </ul>
+          <p class="desc">Improvisación y humor en su 14ª temporada con ¡más de 199.999 espectadores! Tres cómicos, proyecciones y música en directo. Brillante.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>La función que sale mal</h3>
+          <span class="tag tag-estrella">⭐ Imprescindible</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Lugar</span> Consultar en esmadrid.com</li>
+            <li><span class="lbl">Tipo</span> Comedia / Farsa</li>
+          </ul>
+          <p class="desc">Una mezcla entre Monty Python y Sherlock Holmes. Accidentes, enredos y humor físico que no para. Éxito de crítica y público.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Un matrimonio sin filtros</h3>
+          <span class="tag tag-privado">Privado</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Lugar</span> Teatro Maravillas</li>
+            <li><span class="lbl">Fechas</span> Mié–Dom en cartel</li>
+            <li><span class="lbl">Intérpretes</span> Javier Veiga + Marta Hazas</li>
+          </ul>
+          <p class="desc">Comedia sobre la separación, las cámaras ocultas y la sociedad del espectáculo. Sátira inteligente con dos actores magnéticos.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Teatro Clásico del Siglo de Oro</h3>
+          <span class="tag tag-publico">Público</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Lugar</span> Centro Cultural Casa del Reloj — Nave de Terneras</li>
+            <li><span class="lbl">Fechas</span> 4 feb – 28 jun 2026</li>
+          </ul>
+          <p class="desc">La dama boba, El perro del hortelano, Don Gil de las calzas verdes y La francesa Laura. Teatro clásico español a precios populares.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FESTIVALES DE TEATRO -->
+    <h3 class="subseccion-titulo">Festivales teatrales del año</h3>
+    <div class="grid grid-3">
+      <div class="festival-card">
+        <h3>Festival de Otoño</h3>
+        <p class="fecha-fest">Noviembre 2026 · 44ª edición</p>
+        <p>El mejor festival de artes escénicas del país. Programación internacional de primer nivel en varios espacios de Madrid.</p>
+        <a href="https://www.teatrocanal.com" target="_blank" class="enlace-web" style="margin-top:10px">↗ Más info</a>
+      </div>
+      <div class="festival-card azul">
+        <h3>Suma Flamenca</h3>
+        <p class="fecha-fest">Oct–Nov 2026 · Teatros del Canal</p>
+        <p>21ª edición del festival más importante de flamenco de Madrid. Artistas de primer nivel en todas sus vertientes.</p>
+      </div>
+      <div class="festival-card verde">
+        <h3>Flamenco Joven</h3>
+        <p class="fecha-fest">Finales septiembre · Teatros del Canal</p>
+        <p>Los mejores artistas flamencos menores de 30 años. Revelaciones y nuevas voces del arte jondo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 5. HUMOR Y MONÓLOGOS ══ -->
+  <section class="seccion" id="humor">
+    <div class="seccion-header">
+      <div class="seccion-icon">😂</div>
+      <h2><small>Stand Up, Comedia & Impro</small>Humor, Monólogos & Shows Cómicos</h2>
+    </div>
+
+    <div class="grid grid-2">
+
+      <div class="card">
+        <div class="card-head">
+          <h3>El Club de la Comedia — La Hora y Media</h3>
+          <span class="tag tag-estrella">⭐ Referente</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Lugar</span> Teatro Príncipe Gran Vía · C. de las Tres Cruces, 8</li>
+            <li><span class="lbl">Fechas</span> Hasta 29 mayo 2026 · Varios días a la semana</li>
+            <li><span class="lbl">Metro</span> Gran Vía (L1, L5)</li>
+            <li><span class="lbl">Precio</span> Desde 20 €</li>
+          </ul>
+          <p class="desc">El programa de humor más famoso de España en formato teatro. Monologuistas de primera línea en sesiones diarias. Imprescindible para los amantes del humor.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>La Noche de la Risa</h3>
+          <span class="tag tag-privado">Privado</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Lugar</span> Teatro Capitol Gran Vía · C. Gran Vía, 41</li>
+            <li><span class="lbl">Fechas</span> Sábados 20:00 · Hasta 27 jun 2026</li>
+            <li><span class="lbl">Metro</span> Callao (L3, L5)</li>
+            <li><span class="lbl">Precio</span> Desde 15 €</li>
+          </ul>
+          <p class="desc">Varios monologuistas en un solo escenario: Jorge Bolaños, Bianca Kovacs, Carmen Alcayde, Raúl Ferve… Un maestro de ceremonias y mucha improvisación.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Miguel Lago — 25 Aniversario</h3>
+          <span class="tag tag-estrella">⭐ Especial</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Lugar</span> Teatro Alcázar · C. de Alcalá, 20</li>
+            <li><span class="lbl">Fechas</span> Hasta 28 mar 2026 · Sábados 22:30</li>
+            <li><span class="lbl">Metro</span> Sevilla (L2)</li>
+          </ul>
+          <p class="desc">El veterano monologuista celebra 25 años encima de los escenarios con un espectáculo sin decorados, directo al público. Comedia pura.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Los 30 son los nuevos… ¡Vete a la mierda! — Pablez</h3>
+          <span class="tag tag-privado">Privado</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Lugar</span> Teatro Soho Club</li>
+            <li><span class="lbl">Fechas</span> Hasta 19 jun 2026</li>
+          </ul>
+          <p class="desc">Más de cuatro años de éxito con este show generacional sobre la treintena. Humor ácido y muy reconocible.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Jamming Session (Improvisación)</h3>
+          <span class="tag tag-estrella">⭐ Único</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Lugar</span> Varios teatros Grupo Smedia</li>
+            <li><span class="lbl">Fechas</span> En cartel 2026</li>
+            <li><span class="lbl">Precio</span> Desde 15 €</li>
+          </ul>
+          <p class="desc">3 millones de espectadores y 20 temporadas. Humor improvisado con música en directo y el público como protagonista. Sin guion, sin argumento.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>El Golfo Comedy Club</h3>
+          <span class="tag tag-privado">Privado</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Lugar</span> C. del Príncipe, 11 (cerca de Sol) · También en Goya 43</li>
+            <li><span class="lbl">Fechas</span> Hasta 31 mar 2026 · Varias sesiones semanales</li>
+            <li><span class="lbl">Metro</span> Sol (L1, L2, L3)</li>
+          </ul>
+          <p class="desc">Varios monologuistas en cada sesión. Espectáculos de 70 a 120 minutos en sala íntima. Precio muy asequible.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- TEATROS HISTÓRICOS DE HUMOR -->
+    <h3 class="subseccion-titulo">Salas y teatros especializados en comedia</h3>
+    <div class="grid grid-3">
+      <div class="festival-card oro">
+        <h3>Pequeño Teatro Gran Vía</h3>
+        <p class="fecha-fest">C. Gran Vía, 66 · Santo Domingo L2</p>
+        <p>Casa de Corta el Cable Rojo. Comedia de improvisación de primer nivel.</p>
+      </div>
+      <div class="festival-card">
+        <h3>Teatro Capitol Gran Vía</h3>
+        <p class="fecha-fest">C. Gran Vía, 41 · Callao L3/L5</p>
+        <p>Monólogos, stand-up y shows de humor con los mejores cómicos del país.</p>
+      </div>
+      <div class="festival-card azul">
+        <h3>Teatro Infanta Isabel</h3>
+        <p class="fecha-fest">C. del Barquillo, 24 · Chueca L5</p>
+        <p>Comedias populares de calidad. Uno de los teatros más queridos de Madrid.</p>
+      </div>
+      <div class="festival-card verde">
+        <h3>Teatro Lara</h3>
+        <p class="fecha-fest">C. de la Corredera Baja de San Pablo, 15 · Tribunal L1</p>
+        <p>Programación variada de comedias, monólogos y espectáculos populares.</p>
+      </div>
+      <div class="festival-card">
+        <h3>Teatro Maravillas</h3>
+        <p class="fecha-fest">C. del Manuela Malasaña, 6 · San Bernardo L2</p>
+        <p>Comedias de texto con actores de primera línea en el corazón de Malasaña.</p>
+      </div>
+      <div class="festival-card oro">
+        <h3>Agrado Cabaret</h3>
+        <p class="fecha-fest">Varios puntos de Madrid</p>
+        <p>Monólogos desde 6 € (diario) y 7 € (fines de semana) con consumición incluida.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 6. EXPOSICIONES ══ -->
+  <section class="seccion" id="exposiciones">
+    <div class="seccion-header">
+      <div class="seccion-icon">🖼</div>
+      <h2><small>2026</small>Exposiciones Temporales Imprescindibles</h2>
+    </div>
+
+    <div class="alerta">⚠ Las fechas de las exposiciones temporales cambian. Verifica siempre en la web oficial antes de visitar.</div>
+
+    <!-- AHORA EN CARTEL -->
+    <h3 class="subseccion-titulo">En cartel ahora mismo (mar 2026)</h3>
+    <div class="grid grid-2">
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Hammershøi — El ojo que escucha</h3>
+          <span class="tag tag-estrella">⭐ Muy recomendada</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Lugar</span> Museo Thyssen-Bornemisza</li>
+            <li><span class="lbl">Fechas</span> 17 feb – 31 may 2026</li>
+            <li><span class="lbl">Metro</span> Banco de España (L2)</li>
+            <li><span class="lbl">Precio</span> Incluida en entrada general</li>
+          </ul>
+          <p class="desc">El misterioso pintor danés conocido como "el Vermeer del Norte". Interiores silenciosos y luz filtrada. Una de las exposiciones más esperadas del año.</p>
+          <a href="https://www.museothyssen.org/exposiciones" target="_blank" class="enlace-web">↗ Más información</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Helen Levitt (fotografía)</h3>
+          <span class="tag tag-privado">Fundación MAPFRE</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Lugar</span> Fundación MAPFRE · Sala Recoletos</li>
+            <li><span class="lbl">Fechas</span> 19 feb – 17 may 2026</li>
+            <li><span class="lbl">Metro</span> Colón (L4, L9)</li>
+          </ul>
+          <p class="desc">Cerca de 200 obras de la pionera fotógrafa neoyorquina, primera mujer en ganar la vida con la fotografía. Calles, niños, vida de barrio. Extraordinaria.</p>
+          <a href="https://www.fundacionmapfre.org" target="_blank" class="enlace-web">↗ Fundación MAPFRE</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Las mujeres en el Prado (s. XVIII)</h3>
+          <span class="tag tag-publico">Museo del Prado</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Lugar</span> Museo del Prado</li>
+            <li><span class="lbl">Fechas</span> Hasta 24 may 2026</li>
+            <li><span class="lbl">Metro</span> Banco de España / Atocha</li>
+          </ul>
+          <p class="desc">Un recorrido por la decisiva huella de las mujeres en la formación del Prado durante el siglo XVIII. Feminismo e historia del arte en el mejor museo del mundo.</p>
+          <a href="https://www.museodelprado.es/exposiciones" target="_blank" class="enlace-web">↗ Más info</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Disney: 100 años de magia</h3>
+          <span class="tag tag-privado">Fundación Canal</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Lugar</span> Fundación Canal · C. de Mateo Inurria, 2</li>
+            <li><span class="lbl">Fechas</span> Hasta 31 may 2026</li>
+            <li><span class="lbl">Metro</span> Plaza de Castilla (L1, L9, L10)</li>
+          </ul>
+          <p class="desc">Más de 250 piezas originales de los Archivos Walt Disney: bocetos, vestuario, maquetas. Para todas las edades.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Andrea Canepa — Palacio de Cristal</h3>
+          <span class="tag tag-publico">Reina Sofía · Gratis</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Lugar</span> Palacio de Cristal · Parque del Retiro</li>
+            <li><span class="lbl">Fechas</span> 13 ene 2026 – 1 ene 2027</li>
+            <li><span class="lbl">Precio</span> Gratuito</li>
+            <li><span class="lbl">Metro</span> Retiro (L2) · Ibiza (L9)</li>
+          </ul>
+          <p class="desc">Intervención artística sobre la lona del Palacio de Cristal en restauración. Arte público en el Retiro, todo el año.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Ana Locking — Nostalgia/Utopía</h3>
+          <span class="tag tag-publico">Sala Canal · Gratis</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Lugar</span> Sala Canal de Isabel II · C. de Santa Engracia, 125</li>
+            <li><span class="lbl">Fechas</span> 4 mar – 12 jul 2026</li>
+            <li><span class="lbl">Precio</span> Gratuito</li>
+            <li><span class="lbl">Metro</span> Ríos Rosas (L1)</li>
+          </ul>
+          <p class="desc">Retrospectiva de la diseñadora madrileña que fusiona moda y arte contemporáneo. Más de 20 años de trayectoria.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- PRÓXIMAS -->
+    <h3 class="subseccion-titulo">Próximamente (primavera–otoño 2026)</h3>
+    <div class="grid grid-2">
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Ewa Juszkiewicz — Thyssen</h3>
+          <span class="tag tag-privado">Thyssen</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Fechas</span> 26 may – 6 sept 2026</li>
+            <li><span class="lbl">Lugar</span> Museo Thyssen-Bornemisza</li>
+          </ul>
+          <p class="desc">Monográfica de la artista polaca cuya pintura minuciosa combina contenido provocador y subversivo. Una de las más interesantes del año.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>El universo freudiano de Dalí</h3>
+          <span class="tag tag-estrella">⭐ Muy esperada</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Fechas</span> 20 oct 2026 – 24 ene 2027</li>
+            <li><span class="lbl">Lugar</span> Museo Thyssen-Bornemisza</li>
+          </ul>
+          <p class="desc">La relación entre Salvador Dalí y el psicoanálisis de Freud. Una de las grandes exposiciones del otoño.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>CaixaForum — Gran exposición (abr–oct)</h3>
+          <span class="tag tag-privado">CaixaForum</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Fechas</span> 9 abr – 4 oct 2026</li>
+            <li><span class="lbl">Lugar</span> CaixaForum Madrid · Paseo del Prado, 36</li>
+            <li><span class="lbl">Metro</span> Estación del Arte (L1) / Atocha</li>
+          </ul>
+          <p class="desc">Gran retrospectiva histórica en el referente cultural de La Caixa en Madrid. Programación de nivel internacional.</p>
+          <a href="https://caixaforum.org/es/madrid" target="_blank" class="enlace-web">↗ CaixaForum Madrid</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>La Transición Estética — España 1960–2020</h3>
+          <span class="tag tag-privado">Fundación Juan March</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Fechas</span> 16 oct 2026 – 10 ene 2027</li>
+            <li><span class="lbl">Lugar</span> Fundación Juan March · C. de Castelló, 77</li>
+            <li><span class="lbl">Precio</span> Gratuito</li>
+            <li><span class="lbl">Metro</span> Núñez de Balboa (L9) / Velázquez (L4)</li>
+          </ul>
+          <p class="desc">Recorrido visual por el arte español de los últimos 60 años. La Fundación Juan March ofrece entrada siempre gratuita.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ESPACIOS GRATUITOS DE ARTE -->
+    <h3 class="subseccion-titulo">Espacios de arte siempre gratuitos</h3>
+    <div class="grid grid-3">
+      <div class="festival-card verde">
+        <h3>Fundación Juan March</h3>
+        <p class="fecha-fest">C. de Castelló, 77 · Núñez de Balboa L9</p>
+        <p>Exposiciones temporales de arte siempre gratuitas. Una joya en el barrio de Salamanca.</p>
+        <a href="https://www.march.es" target="_blank" class="enlace-web" style="margin-top:8px">↗ Programación</a>
+      </div>
+      <div class="festival-card azul">
+        <h3>Sala Canal de Isabel II</h3>
+        <p class="fecha-fest">C. de Santa Engracia, 125 · Ríos Rosas L1</p>
+        <p>Exposiciones fotográficas y de diseño en un edificio industrial emblemático. Entrada gratuita.</p>
+      </div>
+      <div class="festival-card">
+        <h3>CentroCentro Cibeles</h3>
+        <p class="fecha-fest">Plaza de Cibeles, 1 · Banco de España L2</p>
+        <p>Exposiciones de arte contemporáneo, diseño y arquitectura. Muchas muestras de acceso libre.</p>
+      </div>
+      <div class="festival-card oro">
+        <h3>Espacio Fundación Telefónica</h3>
+        <p class="fecha-fest">C. de Fuencarral, 3 · Gran Vía L1/L5</p>
+        <p>Arte digital, tecnología y creatividad en el corazón de Gran Vía. Acceso libre frecuente.</p>
+      </div>
+      <div class="festival-card verde">
+        <h3>La Casa Encendida</h3>
+        <p class="fecha-fest">Ronda de Valencia, 2 · Embajadores L3/L5</p>
+        <p>Centro cultural de Fundación Montemadrid. Arte contemporáneo, cine y programación social.</p>
+        <a href="https://www.lacasaencendida.es" target="_blank" class="enlace-web" style="margin-top:8px">↗ Programación</a>
+      </div>
+      <div class="festival-card azul">
+        <h3>Museo Reina Sofía — Edificio Nouvel</h3>
+        <p class="fecha-fest">Acceso gratuito en horas específicas (ver sección museos)</p>
+        <p>El edificio ampliado de Jean Nouvel acoge exposiciones complementarias a la colección permanente.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 7. LIBROS Y LITERATURA ══ -->
+  <section class="seccion" id="libros">
+    <div class="seccion-header">
+      <div class="seccion-icon">📚</div>
+      <h2><small>Literatura & Pensamiento</small>Libros, Presentaciones & Eventos Literarios</h2>
+    </div>
+
+    <div class="grid grid-2">
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Feria del Libro de Madrid 2026</h3>
+          <span class="tag tag-estrella">⭐ Imprescindible</span>
+        </div>
+        <div class="card-body">
+          <div class="rec-badge">★ El evento literario del año</div>
+          <ul class="info-list">
+            <li><span class="lbl">Fechas</span> 29 mayo – 14 junio 2026</li>
+            <li><span class="lbl">Lugar</span> Parque de El Retiro · Paseo Fernán Núñez</li>
+            <li><span class="lbl">Metro</span> Retiro (L2) · Estación del Arte (L1) · Ibiza (L9)</li>
+            <li><span class="lbl">Horario</span> Lu–Ju 10:30–14h y 17–21h · Vi hasta 22h · Sáb–Dom 10:30–15h y 17–21h</li>
+            <li><span class="lbl">Precio</span> Entrada gratuita al recinto</li>
+            <li><span class="lbl">Edición</span> 85ª edición · Tema central: <strong>El Humor</strong></li>
+          </ul>
+          <p class="desc">Más de 350 casetas, +100 presentaciones de libros, firmas de autores, mesas redondas, talleres y el nuevo Pabellón Iberoamericano. Autores como María Dueñas, Juan Gómez-Jurado, Julia Navarro, Santiago Posteguillo.</p>
+          <a href="https://ferialibromadrid.com" target="_blank" class="enlace-web">↗ ferialibromadrid.com</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>La Noche de los Libros 2026</h3>
+          <span class="tag tag-publico">Comunidad de Madrid</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Fecha</span> 24 de abril 2026 (por confirmar)</li>
+            <li><span class="lbl">Lugar</span> Toda la Comunidad de Madrid · ~500 actividades</li>
+            <li><span class="lbl">Precio</span> Gratuito (casi todas las actividades)</li>
+          </ul>
+          <p class="desc">21ª edición de la gran fiesta de la lectura. Charlas entre autores, recitales, teatro, rutas literarias, actividades para niños. Una noche mágica en la ciudad.</p>
+          <a href="https://www.esmadrid.com/agenda/la-noche-de-los-libros" target="_blank" class="enlace-web">↗ Más info</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Presentaciones en Bibliotecas Municipales</h3>
+          <span class="tag tag-gratis">Siempre gratis</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Frecuencia</span> Varias semanalmente · Todo el año</li>
+            <li><span class="lbl">Tipo</span> Presentaciones, recitales de poesía, clubes de lectura</li>
+            <li><span class="lbl">Precio</span> Gratuito</li>
+          </ul>
+          <p class="desc">Las bibliotecas públicas municipales de Madrid organizan continuamente presentaciones de libros y recitales. Acceso libre y gratuito. Agenda completa en la web.</p>
+          <a href="https://bibliotecas.madrid.es" target="_blank" class="enlace-web">↗ Portal Bibliotecas de Madrid</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Cuesta de Moyano</h3>
+          <span class="tag tag-gratis">Clásico madrileño</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Lugar</span> Cuesta de Claudio Moyano (junto al Jardín Botánico)</li>
+            <li><span class="lbl">Metro</span> Atocha Renfe</li>
+            <li><span class="lbl">Horario</span> Todos los días (casetas abren aprox. 9–20h)</li>
+            <li><span class="lbl">Precio</span> Entrada libre · Libros desde 1 €</li>
+          </ul>
+          <p class="desc">El paseo de libros antiguos y de ocasión más famoso de Madrid. Ideal para buscar joyas literarias a precios irrisorios. La Asociación Soy de la Cuesta organiza actividades periódicas.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- LIBRERÍAS CON AGENDA CULTURAL -->
+    <h3 class="subseccion-titulo">Librerías con programación cultural</h3>
+    <div class="grid grid-3">
+      <div class="festival-card verde">
+        <h3>La Central</h3>
+        <p class="fecha-fest">C. del Postigo de San Martín, 8 · Callao L3/L5</p>
+        <p>Presentaciones, debates y encuentros con autores frecuentes. Una de las mejores librerías de España.</p>
+      </div>
+      <div class="festival-card azul">
+        <h3>Tipos Infames</h3>
+        <p class="fecha-fest">C. de San Joaquín, 3 · Malasaña · Tribunal L1</p>
+        <p>Librería independiente de referencia con agenda cultural activa. Presentaciones y talleres.</p>
+      </div>
+      <div class="festival-card">
+        <h3>Librería Cervantes</h3>
+        <p class="fecha-fest">C. de Fuencarral, 29 · Tribunal L1/L10</p>
+        <p>Programación cultural regular con presentaciones y firma de libros.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 8. SIEMPRE GRATIS ══ -->
+  <section class="seccion" id="gratuitos">
+    <div class="seccion-header">
+      <div class="seccion-icon">🆓</div>
+      <h2><small>Cultura sin coste</small>Planes Culturales 100% Gratuitos</h2>
+    </div>
+
+    <div class="grid grid-3">
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Palacio de Cristal (Retiro)</h3>
+          <span class="tag tag-gratis">Gratis</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Gestión</span> Museo Reina Sofía</li>
+            <li><span class="lbl">Lugar</span> Parque de El Retiro</li>
+            <li><span class="lbl">Horario</span> Ma–Dom, horario variable</li>
+          </ul>
+          <p class="desc">Instalaciones artísticas en el emblemático palacio de cristal. Gratis siempre.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Mirador de la Cornisa</h3>
+          <span class="tag tag-gratis">Gratis</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Lugar</span> Viaducto / Calle Segovia</li>
+            <li><span class="lbl">Horario</span> Lu–Dom 12:00–22:00</li>
+            <li><span class="lbl">Metro</span> Ópera (L2, L5)</li>
+          </ul>
+          <p class="desc">Las mejores vistas de Madrid de forma gratuita. El horizonte con la Sierra de Guadarrama al fondo.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Banco de España — Alegorías Art Déco</h3>
+          <span class="tag tag-gratis">Gratis con reserva</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Lugar</span> C/ Alcalá, 48</li>
+            <li><span class="lbl">Fechas</span> Hasta 28 mar 2026</li>
+            <li><span class="lbl">Horario</span> Ma–Sáb 11–14h y 16–20h</li>
+            <li><span class="lbl">Metro</span> Banco de España (L2)</li>
+          </ul>
+          <p class="desc">Exposición sobre el impacto del Art Déco en el Banco de España. Gratuita con reserva previa. Acceso a la Cámara del Oro y el Patio de Operaciones.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Visitas al Palacio de Liria</h3>
+          <span class="tag tag-gratis">Lunes gratis</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Cuando</span> Lunes no festivos a las 10:00 (1 sesión gratuita)</li>
+            <li><span class="lbl">Reserva</span> Web oficial cada lunes a las 12:00 (semana siguiente)</li>
+            <li><span class="lbl">Metro</span> San Bernardo (L2)</li>
+          </ul>
+          <p class="desc">El palacio de la Casa de Alba con una colección de arte extraordinaria: Velázquez, Goya, Sorolla, Rubens. Solo 1 sesión gratuita semanal.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Filmoteca Española</h3>
+          <span class="tag tag-gratis">Casi gratis</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Lugar</span> C. de Magdalena, 10 · Antón Martín L1</li>
+            <li><span class="lbl">Precio</span> 2 € por sesión (cine de culto y archivo)</li>
+          </ul>
+          <p class="desc">Cine de culto, retrospectivas, documentales y material de archivo del patrimonio audiovisual español. A 2 € es casi gratis.</p>
+          <a href="https://www.culturaydeporte.gob.es/filmoteca" target="_blank" class="enlace-web">↗ Programación</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Conciertos en el Retiro</h3>
+          <span class="tag tag-gratis">Verano gratis</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Fechas</span> Primavera–Verano 2026 (consultar fechas)</li>
+            <li><span class="lbl">Lugar</span> Parque de El Retiro (quiosco de la música)</li>
+          </ul>
+          <p class="desc">El Ayuntamiento de Madrid organiza conciertos gratuitos en el Retiro durante los meses de primavera y verano. Música de todo tipo al aire libre.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Veranos de la Villa</h3>
+          <span class="tag tag-gratis">Julio–Agosto · Gratis</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Fechas</span> Julio–agosto 2026</li>
+            <li><span class="lbl">Lugar</span> Varios espacios de la ciudad</li>
+            <li><span class="lbl">Precio</span> Muchos espectáculos gratuitos</li>
+          </ul>
+          <p class="desc">El gran festival cultural del verano madrileño. Teatro, danza, música y cine en jardines, plazas y auditorios. Decenas de espectáculos gratuitos.</p>
+          <a href="https://www.esmadrid.com" target="_blank" class="enlace-web">↗ Consultar programa (desde junio)</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Museos de Metro de Madrid</h3>
+          <span class="tag tag-gratis">Gratis</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Sedes</span> Estación de Chamartín + Los Caños del Peral</li>
+            <li><span class="lbl">Reserva</span> museosmetromadrid.es</li>
+          </ul>
+          <p class="desc">Trenes históricos y arqueología bajo Madrid. Dos museos únicos del Metro, completamente gratuitos y con guía especializado.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Arte en galerías comerciales</h3>
+          <span class="tag tag-gratis">Gratis</span>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li><span class="lbl">Zona</span> Barrio de Salamanca · Justicia · Chueca</li>
+          </ul>
+          <p class="desc">Madrid tiene más de 150 galerías comerciales de arte de acceso libre. El barrio de Salamanca concentra la mayoría. Una tarde recorriendo galerías es cultura gratuita de calidad.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ RECURSOS Y WEBS ══ -->
+  <hr class="divider" />
+  <section class="seccion">
+    <div class="seccion-header">
+      <div class="seccion-icon">🔗</div>
+      <h2><small>Para actualizar esta guía</small>Webs oficiales de referencia</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="festival-card verde">
+        <h3>esmadrid.com</h3>
+        <p>Web oficial de Turismo Madrid. Agenda completa y actualizada.</p>
+        <a href="https://www.esmadrid.com" target="_blank" class="enlace-web" style="margin-top:8px">↗ esmadrid.com</a>
+      </div>
+      <div class="festival-card azul">
+        <h3>Teatro Real</h3>
+        <p>Ópera, conciertos, danza y más en el coliseo madrileño.</p>
+        <a href="https://www.teatroreal.es" target="_blank" class="enlace-web" style="margin-top:8px">↗ teatroreal.es</a>
+      </div>
+      <div class="festival-card">
+        <h3>Auditorio Nacional</h3>
+        <p>Toda la programación de música clásica y cámara.</p>
+        <a href="https://auditorionacional.inaem.gob.es" target="_blank" class="enlace-web" style="margin-top:8px">↗ auditorionacional.inaem.gob.es</a>
+      </div>
+      <div class="festival-card oro">
+        <h3>comediamadrid.com</h3>
+        <p>Agenda de humor, stand-up e improvisación en Madrid.</p>
+        <a href="https://comediamadrid.com" target="_blank" class="enlace-web" style="margin-top:8px">↗ comediamadrid.com</a>
+      </div>
+      <div class="festival-card verde">
+        <h3>timeout.es/madrid</h3>
+        <p>Guía cultural actualizada con recomendaciones de la redacción.</p>
+        <a href="https://www.timeout.es/madrid/es" target="_blank" class="enlace-web" style="margin-top:8px">↗ timeout.es/madrid</a>
+      </div>
+      <div class="festival-card azul">
+        <h3>Madrid Cultura</h3>
+        <p>Agenda de actividades culturales del Ayuntamiento de Madrid.</p>
+        <a href="https://www.madrid.es/portales/munimadrid/es/Inicio/Cultura-y-ocio/" target="_blank" class="enlace-web" style="margin-top:8px">↗ madrid.es/cultura</a>
+      </div>
+    </div>
+  </section>
+
+</div><!-- fin #contenido-guia -->
+
+
+
+
+<!-- ══ SECCIÓN CINE ══ -->
+<div id="seccion-cine">
+<div style="padding:32px 0 48px;">
+
+<div class="cine-header">
+  <div>
+    <div class="cine-semana-badge">Semana del 7 al 13 mar 2026</div>
+    <h2>🎬 Cartelera Madrid</h2>
+  </div>
+</div>
+
+<div class="cine-tip">
+  💡 <span><strong>Truco:</strong> El <strong>día del espectador</strong> varía por cadena — lunes en Verdi/Renoir (4,90 €), miércoles en Yelmo/Kinépolis/Cinesa (~5,50 €). Los precios indicados son la <strong>tarifa general</strong>. El día del espectador de cada cine aparece en gris verde junto a la dirección — úsalo como referencia, no como precio principal.</span>
+</div>
+
+<!-- PELÍCULA 1 -->
+<div class="pelicula-card">
+  <div class="pelicula-header">
+    <div class="pelicula-genero-dot" style="background:#f0e8f8;">🎭</div>
+    <div class="pelicula-info">
+      <h3>Hoppers</h3>
+      <div class="pelicula-meta">
+        <span class="pelicula-genero" style="background:#f0e8f8;color:#4a1870">Animación · Familiar</span>
+        <span class="pelicula-dur">⏱ 100 min</span>
+        <span class="pelicula-director">Dir. Daniel Chong (Pixar)</span>
+      </div>
+    </div>
+    <div class="pelicula-estreno">
+      <div class="estreno-label">Estreno</div>
+      <div class="estreno-fecha">6 mar 2026</div>
+    </div>
+  </div>
+  <p class="pelicula-desc">La nueva película de Pixar sigue a un grupo de jóvenes conejos que descubren que el mundo más allá de su madriguera es mucho más grande y extraño de lo que imaginaban. Aventura, emoción y el humor característico de Pixar.</p>
+  <div class="cines-tabla-titulo">🏟 Dónde verla en Madrid — ordenado por precio</div>
+  <div class="cines-tabla">
+    <div class="cine-fila">
+      <div><div class="cine-nombre">Círculo de Bellas Artes</div><div class="cine-zona">Centro · C/ Alcalá 42 <span style="color:var(--verde);font-weight:600">· Espectador mié: 4,50 €</span></div></div>
+      <span class="cine-formato">DOBLADA</span>
+      <div class="precio-tag mas-barato">5,50 € </div>
+    </div>
+    <div class="cine-fila">
+      <div><div class="cine-nombre">Yelmo Ideal</div><div class="cine-zona">Letras · Doctor Cortezo 6 <span style="color:var(--verde);font-weight:600">· Espectador mié: 5,50 €</span></div></div>
+      <span class="cine-formato vo">VO/DOBLADA</span>
+      <div class="precio-tag">6,90 €</div>
+    </div>
+    <div class="cine-fila">
+      <div><div class="cine-nombre">Yelmo Plenilunio</div><div class="cine-zona">San Blas · C/ La Gavia 2</div></div>
+      <span class="cine-formato">DOBLADA</span>
+      <div class="precio-tag">6,90 €</div>
+    </div>
+    <div class="cine-fila">
+      <div><div class="cine-nombre">Kinépolis Madrid</div><div class="cine-zona">Ciudad de la Imagen · Pozuelo <span style="color:var(--verde);font-weight:600">· Espectador mié: 5,50 €</span></div></div>
+      <span class="cine-formato">DOBLADA</span>
+      <div class="precio-tag">7,90 €</div>
+    </div>
+    <div class="cine-fila">
+      <div><div class="cine-nombre">Cinesa La Moraleja</div><div class="cine-zona">Norte · Alcobendas <span style="color:var(--verde);font-weight:600">· Espectador mié: 5,50 €</span></div></div>
+      <span class="cine-formato">DOBLADA</span>
+      <div class="precio-tag mas-caro">8,90 €</div>
+    </div>
+  </div>
+</div>
+
+<!-- PELÍCULA 2 -->
+<div class="pelicula-card">
+  <div class="pelicula-header">
+    <div class="pelicula-genero-dot" style="background:#fef3e2;">🌙</div>
+    <div class="pelicula-info">
+      <h3>Torrente, presidente</h3>
+      <div class="pelicula-meta">
+        <span class="pelicula-genero" style="background:#fef3e2;color:#7a4a00">Comedia</span>
+        <span class="pelicula-dur">⏱ 102 min</span>
+        <span class="pelicula-director">Dir. Santiago Segura</span>
+      </div>
+    </div>
+    <div class="pelicula-estreno">
+      <div class="estreno-label">Estreno</div>
+      <div class="estreno-fecha">13 mar 2026</div>
+    </div>
+  </div>
+  <p class="pelicula-desc">La sexta entrega de la saga más taquillera del cine español. El inefable José Luis Torrente se lanza a la política con el caos y la gamberrada que le caracterizan. Segura recupera al personaje doce años después de su última aparición.</p>
+  <div class="cines-tabla-titulo">🏟 Dónde verla en Madrid — ordenado por precio</div>
+  <div class="cines-tabla">
+    <div class="cine-fila">
+      <div><div class="cine-nombre">Yelmo Ideal</div><div class="cine-zona">Letras · Doctor Cortezo 6 <span style="color:var(--verde);font-weight:600">· Espectador mié: 5,50 €</span></div></div>
+      <span class="cine-formato">DOBLADA</span>
+      <div class="precio-tag mas-barato">6,90 €</div>
+    </div>
+    <div class="cine-fila">
+      <div><div class="cine-nombre">Yelmo La Vaguada</div><div class="cine-zona">Norte · C.C. La Vaguada <span style="color:var(--verde);font-weight:600">· Espectador mié: 5,50 €</span></div></div>
+      <span class="cine-formato">DOBLADA</span>
+      <div class="precio-tag">6,90 €</div>
+    </div>
+    <div class="cine-fila">
+      <div><div class="cine-nombre">mk2 Palacio de Hielo</div><div class="cine-zona">Hortaleza · C/ Silvano 77 <span style="color:var(--verde);font-weight:600">· Espectador mié: 6,50 €</span></div></div>
+      <span class="cine-formato">DOBLADA</span>
+      <div class="precio-tag">7,90 € </div>
+    </div>
+    <div class="cine-fila">
+      <div><div class="cine-nombre">Kinépolis Madrid</div><div class="cine-zona">Ciudad de la Imagen · Pozuelo <span style="color:var(--verde);font-weight:600">· Espectador mié: 5,50 €</span></div></div>
+      <span class="cine-formato">DOBLADA</span>
+      <div class="precio-tag">7,90 €</div>
+    </div>
+    <div class="cine-fila">
+      <div><div class="cine-nombre">Cinesa Xanadú</div><div class="cine-zona">Sur · Arroyomolinos <span style="color:var(--verde);font-weight:600">· Espectador mié: 5,50 €</span></div></div>
+      <span class="cine-formato">DOBLADA</span>
+      <div class="precio-tag mas-caro">8,90 €</div>
+    </div>
+  </div>
+</div>
+
+<!-- PELÍCULA 3 -->
+<div class="pelicula-card">
+  <div class="pelicula-header">
+    <div class="pelicula-genero-dot" style="background:#e8eef8;">🕵️</div>
+    <div class="pelicula-info">
+      <h3>El mago del Kremlin</h3>
+      <div class="pelicula-meta">
+        <span class="pelicula-genero" style="background:#e8eef8;color:#1a3a5c">Thriller político</span>
+        <span class="pelicula-dur">⏱ 118 min</span>
+        <span class="pelicula-director">Dir. Olivier Assayas · Paul Dano, Jude Law</span>
+      </div>
+    </div>
+    <div class="pelicula-estreno">
+      <div class="estreno-label">Estreno</div>
+      <div class="estreno-fecha">6 mar 2026</div>
+      <div class="vo-badge">VO disponible</div>
+    </div>
+  </div>
+  <p class="pelicula-desc">Adaptación de la novela de Giuliano da Empoli sobre el asesor del Kremlin que se convierte en el spin doctor más poderoso del mundo. Cine político de alto voltaje dirigido por el autor de «Irma Vep» y «Después de mayo».</p>
+  <div class="cines-tabla-titulo">🏟 Dónde verla en Madrid — ordenado por precio</div>
+  <div class="cines-tabla">
+    <div class="cine-fila">
+      <div><div class="cine-nombre">Cines Renoir Plaza España</div><div class="cine-zona">Centro · Martín de los Heros 12 <span style="color:var(--verde);font-weight:600">· Espectador lun: 4,90 €</span></div></div>
+      <span class="cine-formato vo">VO subtitulada</span>
+      <div class="precio-tag mas-barato">7,50 € </div>
+    </div>
+    <div class="cine-fila">
+      <div><div class="cine-nombre">Cines Renoir Retiro</div><div class="cine-zona">Retiro · C/ Narváez 42 <span style="color:var(--verde);font-weight:600">· Espectador lun: 4,90 €</span></div></div>
+      <span class="cine-formato vo">VO subtitulada</span>
+      <div class="precio-tag">7,50 €</div>
+    </div>
+    <div class="cine-fila">
+      <div><div class="cine-nombre">Cines Golem</div><div class="cine-zona">Centro · Martín de los Heros 14 <span style="color:var(--verde);font-weight:600">· Espectador mar–vie: 6,70 €</span></div></div>
+      <span class="cine-formato vo">VO subtitulada</span>
+      <div class="precio-tag">7,90 €</div>
+    </div>
+    <div class="cine-fila">
+      <div><div class="cine-nombre">mk2 Cine Paz</div><div class="cine-zona">Chamberí · C/ Fuencarral 125 <span style="color:var(--verde);font-weight:600">· Espectador mié: 6,50 €</span></div></div>
+      <span class="cine-formato vo">VO subtitulada</span>
+      <div class="precio-tag">7,90 €</div>
+    </div>
+    <div class="cine-fila">
+      <div><div class="cine-nombre">Yelmo Ideal</div><div class="cine-zona">Letras · Doctor Cortezo 6 <span style="color:var(--verde);font-weight:600">· Espectador mié: 5,50 €</span></div></div>
+      <span class="cine-formato vo">VO subtitulada</span>
+      <div class="precio-tag mas-caro">6,90 €</div>
+    </div>
+  </div>
+</div>
+
+<!-- PELÍCULA 4 -->
+<div class="pelicula-card">
+  <div class="pelicula-header">
+    <div class="pelicula-genero-dot" style="background:#ecf8f2;">🌿</div>
+    <div class="pelicula-info">
+      <h3>La Grazia</h3>
+      <div class="pelicula-meta">
+        <span class="pelicula-genero" style="background:#ecf8f2;color:#1a5c38">Drama · Autor</span>
+        <span class="pelicula-dur">⏱ 124 min</span>
+        <span class="pelicula-director">Dir. Paolo Sorrentino · Toni Servillo</span>
+      </div>
+    </div>
+    <div class="pelicula-estreno">
+      <div class="estreno-label">Estreno</div>
+      <div class="estreno-fecha">6 mar 2026</div>
+      <div class="vo-badge">VO disponible</div>
+    </div>
+  </div>
+  <p class="pelicula-desc">El nuevo filme del director de «La gran belleza» y «Fue la mano de Dios». Sorrentino regresa a su Nápoles natal para explorar gracia, redención y belleza a través de una historia íntima y visualmente deslumbrante. Candidata a los premios europeos.</p>
+  <div class="cines-tabla-titulo">🏟 Dónde verla en Madrid — ordenado por precio</div>
+  <div class="cines-tabla">
+    <div class="cine-fila">
+      <div><div class="cine-nombre">Cines Verdi</div><div class="cine-zona">Chamberí · Bravo Murillo 28 <span style="color:var(--verde);font-weight:600">· Espectador lun: 4,90 €</span></div></div>
+      <span class="cine-formato vo">VO subtitulada</span>
+      <div class="precio-tag mas-barato">7,50 € </div>
+    </div>
+    <div class="cine-fila">
+      <div><div class="cine-nombre">Cines Renoir Princesa</div><div class="cine-zona">Centro · C/ Princesa 5 <span style="color:var(--verde);font-weight:600">· Espectador lun: 4,90 €</span></div></div>
+      <span class="cine-formato vo">VO subtitulada</span>
+      <div class="precio-tag">7,50 €</div>
+    </div>
+    <div class="cine-fila">
+      <div><div class="cine-nombre">Cines Golem</div><div class="cine-zona">Centro · Martín de los Heros 14 <span style="color:var(--verde);font-weight:600">· Espectador mar–vie: 6,70 €</span></div></div>
+      <span class="cine-formato vo">VO subtitulada</span>
+      <div class="precio-tag">7,90 €</div>
+    </div>
+    <div class="cine-fila">
+      <div><div class="cine-nombre">Cineteca Madrid</div><div class="cine-zona">Arganzuela · Matadero</div></div>
+      <span class="cine-formato vo">VO subtitulada</span>
+      <div class="precio-tag mas-barato" style="color:var(--verde)">Gratis</div>
+    </div>
+  </div>
+</div>
+
+<!-- PELÍCULA 5 — Fiesta del Cine junio -->
+<div class="pelicula-card" style="border-left:3px solid var(--oro);">
+  <div class="pelicula-header">
+    <div class="pelicula-genero-dot" style="background:#fff8e0;">⭐</div>
+    <div class="pelicula-info">
+      <h3>Fiesta del Cine 2026</h3>
+      <div class="pelicula-meta">
+        <span class="pelicula-genero" style="background:#fff8e0;color:#7a5800">Evento especial</span>
+        <span class="pelicula-dur">📅 8–11 junio 2026</span>
+      </div>
+    </div>
+    <div class="pelicula-estreno">
+      <div class="estreno-label">Precio especial</div>
+      <div class="estreno-fecha" style="color:var(--verde);font-size:1.3rem;">3,50 €</div>
+    </div>
+  </div>
+  <p class="pelicula-desc">Cuatro días al año en que todos los cines de España ofrecen entradas a 3,50 €. La edición 2026 será del 8 al 11 de junio. Participan Yelmo, Cinesa, Kinépolis, Renoir, Verdi, mk2, Golem y más de 600 salas en toda España. No incluye sesiones IMAX, 4DX ni eventos especiales.</p>
+  <div class="cines-tabla-titulo">🏟 Cines participantes en Madrid</div>
+  <div class="cines-tabla">
+    <div class="cine-fila">
+      <div><div class="cine-nombre">Todos los cines adheridos</div><div class="cine-zona">Yelmo · Cinesa · Kinépolis · Renoir · Verdi · mk2 · Golem · Odeón · Embajadores</div></div>
+      <span class="cine-formato">TODOS LOS FORMATOS 2D</span>
+      <div class="precio-tag mas-barato" style="color:var(--verde)">3,50 €</div>
+    </div>
+  </div>
+</div>
+
+<!-- RESUMEN PRECIOS -->
+<div style="background:white;border:1px solid var(--borde);border-radius:14px;padding:20px 24px;margin-top:24px;">
+  <div style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--gris);margin-bottom:14px;">Tabla de precios generales por cadena · tarifa general sin descuentos</div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;">
+    <div style="background:#faf8f4;border-radius:10px;padding:12px 14px;">
+      <div style="font-weight:700;font-size:13px;color:var(--oscuro);margin-bottom:4px;">Círculo Bellas Artes</div>
+      <div style="font-size:12px;color:var(--gris);">Lun–Jue: 7,50 € | V–D: 8 €</div>
+      <div style="font-size:11px;color:var(--verde);margin-top:3px;">Mié espectador: 4,50 €</div>
+    </div>
+    <div style="background:#faf8f4;border-radius:10px;padding:12px 14px;">
+      <div style="font-weight:700;font-size:13px;color:var(--oscuro);margin-bottom:4px;">Cines Renoir / Golem</div>
+      <div style="font-size:12px;color:var(--gris);">General: 7,50–7,90 €</div>
+      <div style="font-size:11px;color:var(--verde);margin-top:3px;">Lun espectador: 4,90 €</div>
+    </div>
+    <div style="background:#faf8f4;border-radius:10px;padding:12px 14px;">
+      <div style="font-weight:700;font-size:13px;color:var(--oscuro);margin-bottom:4px;">Cines Verdi</div>
+      <div style="font-size:12px;color:var(--gris);">General: 7,50 € | Mar–Jue: 7 €</div>
+      <div style="font-size:11px;color:var(--verde);margin-top:3px;">Lun espectador: 4,90 €</div>
+    </div>
+    <div style="background:#faf8f4;border-radius:10px;padding:12px 14px;">
+      <div style="font-weight:700;font-size:13px;color:var(--oscuro);margin-bottom:4px;">mk2 (Paz / Palacio Hielo)</div>
+      <div style="font-size:12px;color:var(--gris);">General: 7,90 € | Tarjeta mk2: 6,50 €</div>
+      <div style="font-size:11px;color:var(--verde);margin-top:3px;">Mié espectador: 6,50 €</div>
+    </div>
+    <div style="background:#faf8f4;border-radius:10px;padding:12px 14px;">
+      <div style="font-weight:700;font-size:13px;color:var(--oscuro);margin-bottom:4px;">Yelmo Cines</div>
+      <div style="font-size:12px;color:var(--gris);">General: 6,90–9,50 € (según sala)</div>
+      <div style="font-size:11px;color:var(--verde);margin-top:3px;">Mié espectador: 5,50 €</div>
+    </div>
+    <div style="background:#faf8f4;border-radius:10px;padding:12px 14px;">
+      <div style="font-weight:700;font-size:13px;color:var(--oscuro);margin-bottom:4px;">Kinépolis Madrid</div>
+      <div style="font-size:12px;color:var(--gris);">General: 7,90–9 €</div>
+      <div style="font-size:11px;color:var(--verde);margin-top:3px;">Mié espectador: 5,50 €</div>
+    </div>
+    <div style="background:#faf8f4;border-radius:10px;padding:12px 14px;">
+      <div style="font-weight:700;font-size:13px;color:var(--oscuro);margin-bottom:4px;">Cinesa</div>
+      <div style="font-size:12px;color:var(--gris);">General: 8,90–11 €</div>
+      <div style="font-size:11px;color:var(--verde);margin-top:3px;">Mié espectador: 5,50 €</div>
+    </div>
+    <div style="background:#e8f5ee;border-radius:10px;padding:12px 14px;border:1px solid #b0d8c0;">
+      <div style="font-weight:700;font-size:13px;color:#1a5c38;margin-bottom:4px;">Filmoteca Española</div>
+      <div style="font-size:12px;color:var(--gris);">General: 4 € | Reducida: 2 €</div>
+      <div style="font-size:11px;color:var(--verde);margin-top:3px;">Plaza de las Letras · C/ Magdalena</div>
+    </div>
+    <div style="background:#e8f5ee;border-radius:10px;padding:12px 14px;border:1px solid #b0d8c0;">
+      <div style="font-weight:700;font-size:13px;color:#1a5c38;margin-bottom:4px;">Cineteca Madrid</div>
+      <div style="font-size:12px;color:var(--gris);">Muchas sesiones gratuitas</div>
+      <div style="font-size:11px;color:var(--verde);margin-top:3px;">Matadero · Arganzuela · Gratis</div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+<!-- ══ SECCIÓN MAPA ══ -->
+<div id="seccion-mapa">
+<div style="padding:32px 0 48px;">
+
+<div class="mapa-header">
+  <div>
+    <div class="cine-semana-badge">Madrid Cultural 2026</div>
+    <h2>🗺 Mapa de espacios culturales</h2>
+  </div>
+</div>
+
+<div class="mapa-filtros" id="mapa-filtros">
+  <button class="mapa-filtro-btn activo" data-cat="todos" onclick="filtrarMapa(this)">Todos</button>
+  <button class="mapa-filtro-btn" data-cat="opera" onclick="filtrarMapa(this)">🎭 Ópera</button>
+  <button class="mapa-filtro-btn" data-cat="musica" onclick="filtrarMapa(this)">🎻 Música</button>
+  <button class="mapa-filtro-btn" data-cat="teatro" onclick="filtrarMapa(this)">🎪 Teatro</button>
+  <button class="mapa-filtro-btn" data-cat="museo" onclick="filtrarMapa(this)">🏛 Museos</button>
+  <button class="mapa-filtro-btn" data-cat="cine" onclick="filtrarMapa(this)">🎬 Cines</button>
+</div>
+
+<div class="mapa-container">
+  <div id="mapa-div" style="width:100%;height:520px;"></div>
+</div>
+
+<div class="mapa-legend">
+  <span class="mapa-legend-title">Leyenda</span>
+  <div class="legend-item"><div class="legend-dot" style="background:#9b4ab8"></div>Ópera</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#3a6aac"></div>Música</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#d07030"></div>Teatro / Circo</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#e0102a"></div>Museos</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#7a3ab0"></div>Cines</div>
+</div>
+
+</div>
+</div>
+
+</main>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal-overlay" onclick="cerrarModal(event)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="cerrarModalBtn()">✕</button>
+    <div id="modal-contenido"></div>
+  </div>
+</div>
+
+<button id="btn-top" title="Ir arriba">↑</button>
+<style>
+#btn-top{position:fixed;bottom:28px;right:28px;z-index:500;width:44px;height:44px;border-radius:50%;background:var(--oscuro);color:var(--oro);border:1.5px solid rgba(212,168,71,0.5);font-size:18px;font-weight:800;cursor:pointer;opacity:0;transform:translateY(16px);transition:opacity .3s,transform .3s cubic-bezier(.34,1.56,.64,1),background .15s;pointer-events:none;display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,0.3)}
+#btn-top.visible{opacity:1;transform:translateY(0);pointer-events:all}
+#btn-top:hover{background:var(--oro);color:var(--oscuro)}
+</style>
+
+<script>
+// ═══════════════════════════════════════
+//  DATOS
+// ═══════════════════════════════════════
+const EVENTOS = [
+  // ── ÓPERA & LÍRICA
+  { id:1, nombre:"Carmen — Bizet (Teatro Real)", cat:"opera", gratis:false, precio:"Desde 12 €", lugar:"Teatro Real · Plaza de Oriente", fechas:[{m:3,d:14},{m:3,d:17},{m:3,d:20},{m:3,d:24},{m:3,d:27},{m:4,d:2},{m:4,d:5},{m:4,d:9}], desc:"Una de las óperas más amadas del mundo. Protagonizada por María José Montiel. Dirección Gustavo Gimeno.", url:"https://www.teatroreal.es/es/temporada-actual/opera", color:"opera" },
+  { id:2, nombre:"Giulio Cesare in Egitto — Händel", cat:"opera", gratis:false, precio:"Desde 20 €", lugar:"Teatro Real", fechas:[{m:3,d:19},{m:3,d:21}], desc:"Il Pomo d'Oro dirigido por Francesco Corti. Con Jakub Józef Orliński y Sabine Devieilhe.", url:"https://www.teatroreal.es", color:"opera" },
+  { id:3, nombre:"Romeo y Julieta — Gounod", cat:"opera", gratis:false, precio:"Desde 15 €", lugar:"Teatro Real", fechas:[{m:5,d:10},{m:5,d:13},{m:5,d:17},{m:5,d:20},{m:5,d:24},{m:6,d:1},{m:6,d:5}], desc:"Shakespeare y Gounod. Amor imposible en el coliseo madrileño.", url:"https://www.teatroreal.es", color:"opera" },
+  { id:4, nombre:"Il Trovatore — Verdi", cat:"opera", gratis:false, precio:"Desde 15 €", lugar:"Teatro Real", fechas:[{m:6,d:12},{m:6,d:16},{m:6,d:20},{m:6,d:25},{m:7,d:2}], desc:"Drama, venganza y amor imposible. Gran Verdi en el Real.", url:"https://www.teatroreal.es", color:"opera" },
+  { id:5, nombre:"Anna Netrebko — Recital", cat:"opera", gratis:false, precio:"Desde 45 €", lugar:"Teatro Real", fechas:[{m:6,d:30}], desc:"La soprano más famosa del mundo en recital exclusivo. Adquiere entradas con antelación.", url:"https://www.teatroreal.es", color:"opera" },
+  { id:6, nombre:"Zarzuela — Teatro de la Zarzuela", cat:"opera", gratis:false, precio:"Desde 6 €", lugar:"Teatro de la Zarzuela · C. Jovellanos, 4", fechas:[{m:3,d:13},{m:3,d:20},{m:4,d:3},{m:4,d:17},{m:5,d:8}], desc:"Género lírico español por excelencia. Programación variada toda la temporada.", url:"https://teatrodelazarzuela.mcu.es", color:"opera" },
+
+  // ── MÚSICA CLÁSICA
+  { id:10, nombre:"Novena de Mahler — Orq. Radio Frankfurt", cat:"musica", gratis:false, precio:"Consultar", lugar:"Auditorio Nacional · Sala Sinfónica", fechas:[{m:3,d:24}], desc:"Una de las grandes sinfonías del repertorio. Orquesta de la Radio de Frankfurt.", url:"https://www.lafilarmonica.es", color:"musica" },
+  { id:11, nombre:"Pasión según San Mateo — Bach (Herreweghe)", cat:"musica", gratis:false, precio:"Consultar", lugar:"Auditorio Nacional", fechas:[{m:3,d:31}], desc:"Philippe Herreweghe dirige la obra cumbre de Bach. Acontecimiento musical del año.", url:"https://www.lafilarmonica.es", color:"musica" },
+  { id:12, nombre:"Tres Últimas Sonatas — Beethoven (Varvara)", cat:"musica", gratis:false, precio:"Consultar", lugar:"Auditorio Nacional", fechas:[{m:4,d:28}], desc:"Varvara interpreta las tres últimas sonatas de Beethoven. Recital de piano extraordinario.", url:"https://www.lafilarmonica.es", color:"musica" },
+  { id:13, nombre:"1ª Sinfonía Mahler — Orq. Gürzenich Colonia", cat:"musica", gratis:false, precio:"Consultar", lugar:"Auditorio Nacional", fechas:[{m:5,d:26}], desc:"La Titán de Mahler con una de las mejores orquestas de Alemania.", url:"https://www.lafilarmonica.es", color:"musica" },
+  { id:14, nombre:"Concierto Oboe Mozart + Sinfonía — Filarmonia", cat:"musica", gratis:false, precio:"Consultar", lugar:"Auditorio Nacional", fechas:[{m:3,d:26}], desc:"Concierto para Oboe de Mozart y gran sinfonía. Orquesta Filarmonía de Madrid.", url:"https://www.orquestafilarmonia.com", color:"musica" },
+  { id:15, nombre:"Clarinete Weber + Carmina Burana", cat:"musica", gratis:false, precio:"Consultar", lugar:"Auditorio Nacional", fechas:[{m:4,d:16}], desc:"Weber y el espectacular Carmina Burana de Orff. Madrid Sinfónica.", url:"https://madridsinfonica.com", color:"musica" },
+  { id:16, nombre:"Sinfonía de los Mil — Mahler (Madrid Sinfónica)", cat:"musica", gratis:false, precio:"Consultar", lugar:"Auditorio Nacional", fechas:[{m:6,d:16}], desc:"La obra más colosal de Mahler: 1000 músicos en escena. Espectáculo histórico.", url:"https://madridsinfonica.com", color:"musica" },
+  { id:17, nombre:"Domingos de Cámara — Teatro Real", cat:"musica", gratis:false, precio:"Desde 10 €", lugar:"Teatro Real · Sala de Cámara", fechas:[{m:3,d:15},{m:4,d:12},{m:5,d:17}], desc:"Música de cámara con solistas de la Orquesta del Teatro Real. Domingos a las 12:00.", url:"https://www.teatroreal.es/es/temporada-actual/conciertos", color:"musica" },
+  { id:18, nombre:"Especial San Isidro — Zarzuela & Ópera Española", cat:"musica", gratis:false, precio:"Consultar", lugar:"Auditorio Nacional", fechas:[{m:5,d:9}], desc:"Celebración del patrón de Madrid con lo mejor de la lírica española.", url:"https://madridsinfonica.com", color:"musica" },
+
+  // ── TEATRO
+  { id:20, nombre:"The Book of Mormon (Musical)", cat:"teatro", gratis:false, precio:"Desde 20 €", lugar:"Teatro Calderón · C. Atocha, 18", fechas:[{m:3,d:7},{m:3,d:8},{m:3,d:14},{m:3,d:15},{m:3,d:21},{m:3,d:22},{m:3,d:28},{m:3,d:29},{m:4,d:4},{m:4,d:5},{m:4,d:11},{m:4,d:12},{m:4,d:18},{m:4,d:19},{m:4,d:25},{m:4,d:26},{m:5,d:2},{m:5,d:3}], desc:"El musical más gamberro de Broadway. Premio Talía al Mejor Musical 2024. Humor adulto feroz.", url:"https://www.teatrocalderon.es", color:"teatro" },
+  { id:21, nombre:"Los Miserables (Musical)", cat:"teatro", gratis:false, precio:"Desde 25 €", lugar:"Teatro Nuevo Apolo · Plaza Tirso de Molina", fechas:[{m:3,d:13},{m:3,d:14},{m:3,d:20},{m:3,d:21},{m:3,d:27},{m:3,d:28},{m:4,d:3},{m:4,d:4},{m:4,d:10},{m:4,d:11}], desc:"56 millones de espectadores en el mundo. El gran musical de Victor Hugo. Imprescindible.", url:"https://www.teatronuevoapolo.com", color:"teatro" },
+  { id:22, nombre:"Teatro Clásico Siglo de Oro", cat:"teatro", gratis:false, precio:"Desde 8 €", lugar:"Casa del Reloj — Nave de Terneras", fechas:[{m:3,d:6},{m:3,d:13},{m:3,d:20},{m:3,d:27},{m:4,d:3},{m:4,d:10},{m:4,d:17},{m:4,d:24},{m:5,d:8},{m:5,d:15},{m:5,d:22},{m:6,d:5},{m:6,d:12},{m:6,d:19},{m:6,d:26}], desc:"La dama boba, El perro del hortelano, Don Gil de las calzas verdes. Teatro clásico a precios populares.", url:"https://www.madrid.es/portales/munimadrid/es/Inicio/Cultura-y-ocio/", color:"teatro" },
+  { id:23, nombre:"Un matrimonio sin filtros", cat:"teatro", gratis:false, precio:"Desde 15 €", lugar:"Teatro Maravillas", fechas:[{m:3,d:8},{m:3,d:15},{m:3,d:22},{m:3,d:29},{m:4,d:5},{m:4,d:12},{m:4,d:19},{m:4,d:26}], desc:"Javier Veiga y Marta Hazas en comedia sobre la separación y la sociedad del espectáculo.", url:"https://www.teatromaravillas.es", color:"teatro" },
+  { id:24, nombre:"Festival de Otoño", cat:"teatro", gratis:false, precio:"Variable", lugar:"Varios espacios Madrid", fechas:[{m:11,d:6},{m:11,d:7},{m:11,d:13},{m:11,d:14},{m:11,d:20},{m:11,d:21}], desc:"44ª edición del mejor festival de artes escénicas del país. Programación internacional.", url:"https://www.teatrocanal.com", color:"teatro" },
+  { id:25, nombre:"Suma Flamenca", cat:"teatro", gratis:false, precio:"Desde 12 €", lugar:"Teatros del Canal", fechas:[{m:10,d:9},{m:10,d:16},{m:10,d:23},{m:11,d:6},{m:11,d:13}], desc:"21ª edición del festival más importante de flamenco de Madrid.", url:"https://www.teatrocanal.com", color:"teatro" },
+
+  // ── HUMOR & MONÓLOGOS
+  { id:30, nombre:"El Club de la Comedia — La Hora y Media", cat:"humor", gratis:false, precio:"Desde 20 €", lugar:"Teatro Príncipe Gran Vía · C. Las Tres Cruces, 8", fechas:[{m:3,d:7},{m:3,d:8},{m:3,d:14},{m:3,d:15},{m:3,d:21},{m:3,d:22},{m:3,d:28},{m:3,d:29},{m:4,d:4},{m:4,d:5},{m:4,d:11},{m:4,d:18},{m:4,d:25},{m:5,d:2},{m:5,d:9},{m:5,d:16},{m:5,d:23}], desc:"El programa de humor más famoso de España en formato teatro. Monologuistas de primera.", url:"https://entradas.teatropgranvia.es", color:"humor" },
+  { id:31, nombre:"La Noche de la Risa", cat:"humor", gratis:false, precio:"Desde 15 €", lugar:"Teatro Capitol Gran Vía · C. Gran Vía, 41", fechas:[{m:3,d:8},{m:3,d:15},{m:3,d:22},{m:3,d:29},{m:4,d:5},{m:4,d:12},{m:4,d:19},{m:4,d:26},{m:5,d:3},{m:5,d:10},{m:5,d:17},{m:5,d:24},{m:5,d:31},{m:6,d:7},{m:6,d:14},{m:6,d:21},{m:6,d:27}], desc:"Varios monologuistas en escena. Jorge Bolaños, Bianca Kovacs, Carmen Alcayde, Raúl Ferve.", url:"https://www.teatrocapitol.es", color:"humor" },
+  { id:32, nombre:"Miguel Lago — 25 Aniversario", cat:"humor", gratis:false, precio:"Desde 18 €", lugar:"Teatro Alcázar · C. Alcalá, 20", fechas:[{m:3,d:8},{m:3,d:15},{m:3,d:22}], desc:"25 años de comedia. Sin decorados, directo al público. Comedia pura.", url:"https://www.teatroalcazar.es", color:"humor" },
+  { id:33, nombre:"Corta el Cable Rojo (improvisación)", cat:"humor", gratis:false, precio:"Desde 12 €", lugar:"Pequeño Teatro Gran Vía · C. Gran Vía, 66", fechas:[{m:3,d:7},{m:3,d:8},{m:3,d:14},{m:3,d:15},{m:3,d:21},{m:3,d:22},{m:3,d:28},{m:3,d:29},{m:4,d:4},{m:4,d:5},{m:4,d:11},{m:4,d:12}], desc:"14ª temporada. ¡+199.999 espectadores! Impro con proyecciones y música en vivo.", url:"https://www.cortaelcablerojo.com", color:"humor" },
+  { id:34, nombre:"Pablez — Los 30 son los nuevos…", cat:"humor", gratis:false, precio:"Desde 14 €", lugar:"Teatro Soho Club", fechas:[{m:3,d:13},{m:3,d:20},{m:3,d:27},{m:4,d:3},{m:4,d:10},{m:4,d:17},{m:4,d:24},{m:5,d:8},{m:5,d:15},{m:5,d:22},{m:6,d:5}], desc:"Más de cuatro años de éxito con este show generacional sobre la treintena.", url:"https://comediamadrid.com", color:"humor" },
+
+  // ── EXPOSICIONES
+  { id:40, nombre:"Hammershøi — El ojo que escucha (Thyssen)", cat:"exposicion", gratis:false, precio:"Con entrada museo (13 €)", lugar:"Museo Thyssen-Bornemisza", fechas:[{m:3,d:1},{m:3,d:8},{m:3,d:15},{m:3,d:22},{m:3,d:29},{m:4,d:5},{m:4,d:12},{m:4,d:19},{m:4,d:26},{m:5,d:3},{m:5,d:10},{m:5,d:17},{m:5,d:24},{m:5,d:31}], desc:"El misterioso pintor danés 'el Vermeer del Norte'. Hasta 31 mayo 2026.", url:"https://www.museothyssen.org/exposiciones", color:"exposicion" },
+  { id:41, nombre:"Helen Levitt — Fundación MAPFRE", cat:"exposicion", gratis:false, precio:"6 €", lugar:"Fundación MAPFRE · Sala Recoletos", fechas:[{m:3,d:1},{m:3,d:8},{m:3,d:15},{m:3,d:22},{m:3,d:29},{m:4,d:5},{m:4,d:12},{m:4,d:19},{m:4,d:26},{m:5,d:3},{m:5,d:10},{m:5,d:17}], desc:"Pionera fotógrafa neoyorquina. 200 obras. Hasta 17 mayo 2026.", url:"https://www.fundacionmapfre.org", color:"exposicion" },
+  { id:42, nombre:"Andrea Canepa — Palacio de Cristal", cat:"exposicion", gratis:true, precio:"Gratis", lugar:"Palacio de Cristal · Parque del Retiro", fechas:[{m:3,d:1},{m:3,d:8},{m:3,d:15},{m:3,d:22},{m:3,d:29},{m:4,d:5},{m:4,d:12},{m:5,d:10},{m:6,d:1},{m:7,d:5},{m:8,d:2},{m:9,d:6},{m:10,d:4},{m:11,d:1},{m:12,d:6}], desc:"Instalación artística en el Palacio de Cristal del Retiro. Todo 2026 de forma gratuita.", url:"https://www.museoreinasofia.es", color:"exposicion" },
+  { id:43, nombre:"Ana Locking — Sala Canal (GRATIS)", cat:"exposicion", gratis:true, precio:"Gratis", lugar:"Sala Canal de Isabel II · Ríos Rosas", fechas:[{m:3,d:1},{m:3,d:8},{m:3,d:15},{m:3,d:22},{m:3,d:29},{m:4,d:5},{m:4,d:12},{m:4,d:26},{m:5,d:10},{m:5,d:24},{m:6,d:7},{m:6,d:21},{m:7,d:5}], desc:"Retrospectiva de la diseñadora madrileña. Moda y arte contemporáneo. Hasta 12 julio.", url:"https://www.madrid.es/portales/munimadrid/es/Inicio/Cultura-y-ocio/", color:"exposicion" },
+  { id:44, nombre:"Ewa Juszkiewicz — Thyssen", cat:"exposicion", gratis:false, precio:"Con entrada museo (13 €)", lugar:"Museo Thyssen-Bornemisza", fechas:[{m:5,d:26},{m:6,d:7},{m:6,d:21},{m:7,d:5},{m:7,d:19},{m:8,d:2},{m:8,d:16},{m:8,d:30},{m:9,d:6}], desc:"Monográfica de la pintora polaca. Contenido subversivo y técnica minuciosa.", url:"https://www.museothyssen.org", color:"exposicion" },
+  { id:45, nombre:"El universo freudiano de Dalí — Thyssen", cat:"exposicion", gratis:false, precio:"Con entrada museo (13 €)", lugar:"Museo Thyssen-Bornemisza", fechas:[{m:10,d:20},{m:11,d:1},{m:11,d:15},{m:12,d:6},{m:12,d:20}], desc:"La relación entre Dalí y Freud. Gran exposición del otoño.", url:"https://www.museothyssen.org", color:"exposicion" },
+  { id:46, nombre:"La Transición Estética — Fundación Juan March", cat:"exposicion", gratis:true, precio:"Gratis", lugar:"Fundación Juan March · C. Castelló, 77", fechas:[{m:10,d:16},{m:10,d:25},{m:11,d:8},{m:11,d:22},{m:12,d:6}], desc:"Arte español 1960–2020. La Fundación Juan March ofrece siempre entrada gratuita.", url:"https://www.march.es", color:"exposicion" },
+
+  // ── MUSEOS (horarios gratuitos)
+  { id:50, nombre:"Prado — Acceso gratuito (18:00–20:00)", cat:"museo", gratis:true, precio:"Gratis", lugar:"Museo del Prado · Paseo del Prado", fechas:[{m:3,d:9},{m:3,d:10},{m:3,d:11},{m:3,d:12},{m:3,d:16},{m:3,d:17},{m:3,d:18},{m:3,d:19},{m:3,d:23},{m:3,d:24},{m:3,d:25},{m:3,d:26}], desc:"Acceso gratuito Lun–Sáb 18–20h y Dom 17–19h. Cola mínima llegando 20 min antes.", url:"https://www.museodelprado.es", color:"museo" },
+  { id:51, nombre:"Prado — Noche de museos (1er sáb mes)", cat:"museo", gratis:true, precio:"Gratis", lugar:"Museo del Prado", fechas:[{m:3,d:7},{m:4,d:4},{m:5,d:2},{m:6,d:6},{m:7,d:4},{m:8,d:1},{m:9,d:5},{m:10,d:3},{m:11,d:7},{m:12,d:5}], desc:"1er sábado de cada mes: 20:30–23:30. Entrada gratuita y ambiente especial.", url:"https://www.museodelprado.es", color:"museo" },
+  { id:52, nombre:"Reina Sofía — Acceso gratuito", cat:"museo", gratis:true, precio:"Gratis", lugar:"Museo Nacional Reina Sofía", fechas:[{m:3,d:9},{m:3,d:11},{m:3,d:12},{m:3,d:13},{m:3,d:14},{m:3,d:16},{m:3,d:18},{m:3,d:19},{m:3,d:20},{m:3,d:21}], desc:"Lun, Mié–Sáb 19–21h y Dom 12:30–14:30 gratis. El Guernica de Picasso.", url:"https://www.museoreinasofia.es", color:"museo" },
+  { id:53, nombre:"Thyssen — Lunes gratuitos (12–16h)", cat:"museo", gratis:true, precio:"Gratis", lugar:"Museo Thyssen-Bornemisza", fechas:[{m:3,d:9},{m:3,d:16},{m:3,d:23},{m:3,d:30},{m:4,d:6},{m:4,d:13},{m:4,d:20},{m:4,d:27},{m:5,d:4},{m:5,d:11},{m:5,d:18},{m:5,d:25}], desc:"Colección permanente gratuita los lunes 12–16h. También sábados por la noche.", url:"https://www.museothyssen.org", color:"museo" },
+  { id:54, nombre:"Día Internacional de los Museos — TODO GRATIS", cat:"museo", gratis:true, precio:"Gratis", lugar:"Todos los museos estatales Madrid", fechas:[{m:5,d:18}], desc:"18 de mayo: todos los museos estatales abren gratis. El día más importante del año para visitar museos.", url:"https://www.museodelprado.es", color:"museo" },
+  { id:55, nombre:"Aniversario Museo del Prado — Gratis", cat:"museo", gratis:true, precio:"Gratis", lugar:"Museo del Prado", fechas:[{m:11,d:19}], desc:"19 de noviembre, aniversario del Prado. Apertura gratuita todo el día.", url:"https://www.museodelprado.es", color:"museo" },
+  { id:56, nombre:"Fiesta Nacional — Museos gratis", cat:"museo", gratis:true, precio:"Gratis", lugar:"Museos estatales Madrid", fechas:[{m:10,d:12}], desc:"12 de octubre: Prado, Reina Sofía, Thyssen y arqueológico abren gratis.", url:"https://www.museodelprado.es", color:"museo" },
+
+
+  // ── OCNE: CICLO SINFÓNICO 25/26 (Auditorio Nacional)
+  { id:70, nombre:"OCNE · Dvořák: Réquiem — Lyniv / Coro ORCAM ⭐", cat:"musica", gratis:false, precio:"Desde 10 €", lugar:"Auditorio Nacional · Sala Sinfónica · P. Príncipe de Vergara 146", fechas:[{m:3,d:20},{m:3,d:21},{m:3,d:22}], desc:"Debut de Oksana Lyniv con la OCNE. El gran Réquiem en Si bemol menor de Dvořák con el Coro de la Comunidad de Madrid. Sonja Šarić, Anna Brull, Nutthaporn Thammathi, Petar Naydenov.", url:"https://ocne.mcu.es/", color:"musica" },
+  { id:71, nombre:"OCNE · Wozzeck — Berg (versión concierto)", cat:"musica", gratis:false, precio:"Desde 10 €", lugar:"Auditorio Nacional · Sala Sinfónica", fechas:[{m:10,d:3},{m:10,d:4},{m:10,d:5}], desc:"Apertura de temporada con David Afkham. La gran ópera expressionista de Alban Berg en versión de concierto con el Coro Nacional.", url:"https://ocne.mcu.es/", color:"musica" },
+  { id:72, nombre:"OCNE · El libro de los siete sellos — F. Schmidt", cat:"musica", gratis:false, precio:"Desde 10 €", lugar:"Auditorio Nacional · Sala Sinfónica", fechas:[{m:11,d:14},{m:11,d:15},{m:11,d:16}], desc:"Franz Schmidt. David Afkham dirige una de las obras corales-orquestales más monumentales del siglo XX.", url:"https://ocne.mcu.es/", color:"musica" },
+  { id:73, nombre:"OCNE · Sinfonía nº9 — Mahler (Afkham)", cat:"musica", gratis:false, precio:"Desde 10 €", lugar:"Auditorio Nacional · Sala Sinfónica", fechas:[{m:5,d:29},{m:5,d:30},{m:5,d:31}], desc:"El gran testamento sinfónico de Mahler. Última temporada de David Afkham como director titular de la OCNE.", url:"https://ocne.mcu.es/", color:"musica" },
+  { id:74, nombre:"OCNE · War Requiem — Britten (Afkham)", cat:"musica", gratis:false, precio:"Desde 10 €", lugar:"Auditorio Nacional · Sala Sinfónica", fechas:[{m:4,d:24},{m:4,d:25},{m:4,d:26}], desc:"Benjamin Britten. Una de las obras pacifistas más poderosas del siglo XX, con textos de Wilfred Owen. David Afkham.", url:"https://ocne.mcu.es/", color:"musica" },
+  { id:75, nombre:"OCNE · Die Walküre Acto I — Wagner (Afkham)", cat:"musica", gratis:false, precio:"Desde 10 €", lugar:"Auditorio Nacional · Sala Sinfónica", fechas:[{m:3,d:6},{m:3,d:7},{m:3,d:8}], desc:"Wagner en versión de concierto. Primer acto de La Valquiria con grandes solistas. David Afkham.", url:"https://ocne.mcu.es/", color:"musica" },
+  { id:76, nombre:"OCNE · Marisa Manchado, Korngold, Shostakóvich", cat:"musica", gratis:false, precio:"Desde 10 €", lugar:"Auditorio Nacional · Sala Sinfónica", fechas:[{m:11,d:21},{m:11,d:22},{m:11,d:23}], desc:"Estreno de Suite La Regenta de Marisa Manchado (Premio Nacional de Música) + Korngold + Shostakóvich.", url:"https://ocne.mcu.es/", color:"musica" },
+  { id:77, nombre:"OCNE · Debussy & Chaikovski — González-Monjas", cat:"musica", gratis:false, precio:"Desde 10 €", lugar:"Auditorio Nacional · Sala Sinfónica", fechas:[{m:4,d:17},{m:4,d:18},{m:4,d:19}], desc:"Roberto González-Monjas debuta con la OCNE con Lili Boulanger, Debussy y Chaikovski.", url:"https://ocne.mcu.es/", color:"musica" },
+  { id:78, nombre:"OCNE · Buddha Passion — Tan Dun", cat:"musica", gratis:false, precio:"Desde 10 €", lugar:"Auditorio Nacional · Sala Sinfónica", fechas:[{m:6,d:5},{m:6,d:6},{m:6,d:7}], desc:"Tan Dun dirige su propia obra Buddha Passion. Espectáculo orquestal y coral de dimensiones épicas.", url:"https://ocne.mcu.es/", color:"musica" },
+  { id:79, nombre:"OCNE · Focus Festival — Pioneras y exiliadas", cat:"musica", gratis:false, precio:"Consultar", lugar:"Auditorio Nacional + Fundación Juan March", fechas:[{m:2,d:6},{m:2,d:7},{m:2,d:8},{m:2,d:13},{m:2,d:14}], desc:"6ª edición del Focus Festival: 'Pioneras y exiliadas: diálogos creativos con Latinoamérica'. Música española e iberoamericana del siglo XX.", url:"https://ocne.mcu.es/", color:"musica" },
+  { id:80, nombre:"OCNE Satélites · Réquiem Alemán — Brahms (Coro Nac.)", cat:"musica", gratis:false, precio:"Desde 8 €", lugar:"Auditorio Nacional · Sala Sinfónica", fechas:[{m:4,d:3},{m:4,d:4}], desc:"El Coro Nacional de España interpreta el sublime Réquiem Alemán de Brahms. Una de las cimas de la música coral.", url:"https://ocne.mcu.es/", color:"musica" },
+  { id:81, nombre:"OCNE Satélites · Pequeña Misa Solemne — Rossini", cat:"musica", gratis:false, precio:"Desde 8 €", lugar:"Auditorio Nacional · Sala Sinfónica", fechas:[{m:5,d:22},{m:5,d:23}], desc:"El Coro Nacional de España con la Piccola Messa Solenne de Rossini. Una obra de intimidad y belleza únicas.", url:"https://ocne.mcu.es/", color:"musica" },
+  { id:82, nombre:"OCNE Descubre · Lina González-Granados — estreno", cat:"musica", gratis:false, precio:"Desde 6 €", lugar:"Auditorio Nacional · Sala Sinfónica", fechas:[{m:3,d:27},{m:3,d:28},{m:3,d:29}], desc:"Lina González-Granados dirige el estreno de 'Ecos del ingenioso errante' de Javier Martínez Campos + Falla.", url:"https://ocne.mcu.es/", color:"musica" },
+  { id:83, nombre:"CNDM · Universo Shostakóvich — Cuarteto Casals", cat:"musica", gratis:false, precio:"Desde 12 €", lugar:"Auditorio Nacional · Sala de Cámara", fechas:[{m:3,d:19},{m:4,d:9}], desc:"Los 15 cuartetos de Shostakóvich íntegros con el Cuarteto Casals. Ciclo de 5 conciertos (nov 2025 – abr 2026). Diario íntimo del compositor.", url:"https://auditorionacional.inaem.gob.es", color:"musica" },
+  { id:84, nombre:"CNDM · Liceo de Cámara XXI — temporada", cat:"musica", gratis:false, precio:"Desde 12 €", lugar:"Auditorio Nacional · Sala de Cámara", fechas:[{m:3,d:23},{m:4,d:20},{m:5,d:11},{m:6,d:8}], desc:"Los mejores conjuntos de cámara internacionales. Ciclo de referencia del CNDM.", url:"https://auditorionacional.inaem.gob.es", color:"musica" },
+  { id:85, nombre:"CNDM · Universo Barroco Sinfónica — Scarlatti 300", cat:"musica", gratis:false, precio:"Desde 12 €", lugar:"Auditorio Nacional", fechas:[{m:4,d:14},{m:4,d:15},{m:5,d:5},{m:5,d:6}], desc:"3er centenario de Alessandro Scarlatti. Vespres d'Arnadí, Los Elementos y grandes intérpretes del barroco.", url:"https://auditorionacional.inaem.gob.es", color:"musica" },
+  { id:86, nombre:"OCNE · Oda a la Naturaleza — Sinf. 5 (Filarmónica)", cat:"musica", gratis:false, precio:"Desde 10 €", lugar:"Auditorio Nacional · Sala Sinfónica", fechas:[{m:3,d:10},{m:3,d:11},{m:3,d:12}], desc:"Programa Sinfónico 5: Una Oda a la Naturaleza. Obras de Debussy, Saint-Saëns y repertorio impresionista.", url:"https://auditorionacional.inaem.gob.es", color:"musica" },
+  { id:87, nombre:"Impacta · Juan Diego Flórez — recital", cat:"musica", gratis:false, precio:"Desde 25 €", lugar:"Auditorio Nacional · Sala Sinfónica", fechas:[{m:3,d:11}], desc:"El tenor peruano más famoso del mundo en recital en el Auditorio Nacional. Entradas limitadas.", url:"https://auditorionacional.inaem.gob.es", color:"musica" },
+  { id:88, nombre:"Réquiem de Mozart — Orq. Clásica Santa Cecilia", cat:"musica", gratis:false, precio:"Consultar", lugar:"Auditorio Nacional · Sala de Cámara", fechas:[{m:3,d:26}], desc:"Orquesta Clásica Santa Cecilia + Excelentia Vocal Ensemble. Dir. José Luis López Antón. El Réquiem inacabado de Mozart.", url:"https://funksocialclub.com/eventos/requiem-de-mozart-orquesta-clasica-santa-cecilia-auditorio-nacional-madrid-26-marzo-2026/", color:"musica" },
+
+
+  // ── DANZA & BALLET (Teatro Real)
+  { id:90, nombre:"BNE · Homenaje a José Granero — Teatro Real ⭐", cat:"teatro", gratis:false, precio:"Desde 15 €", lugar:"Teatro Real · Plaza de Oriente", fechas:[{m:10,d:16},{m:10,d:17},{m:10,d:18},{m:10,d:19}], desc:"Ballet Nacional de España rinde homenaje al coreógrafo José Granero (1936–2006) con Medea, Bolero y Leyenda. Dir. Rubén Olmo. Abre la temporada de danza 25/26.", url:"https://www.teatroreal.es/es/temporada-actual/danza", color:"teatro" },
+  { id:91, nombre:"New Adventures · El lago de los cisnes — Bourne", cat:"teatro", gratis:false, precio:"Desde 20 €", lugar:"Teatro Real", fechas:[{m:11,d:19},{m:11,d:20},{m:11,d:21},{m:11,d:22}], desc:"La versión de Matthew Bourne del Lago de los cisnes (solo hombres) que inspiró Billy Elliot. Un clásico contemporáneo que llega por fin a España.", url:"https://www.teatroreal.es/es/temporada-actual/danza", color:"teatro" },
+  { id:92, nombre:"Real Ballet de Suecia · Julieta y Romeo — Mats Ek", cat:"teatro", gratis:false, precio:"Desde 20 €", lugar:"Teatro Real", fechas:[{m:5,d:7},{m:5,d:8},{m:5,d:9},{m:5,d:10}], desc:"Mats Ek reinventa a Shakespeare con Tchaikovsky. La historia de amor sin balcón ni espadas: solo la danza. Compañía fundada en 1773.", url:"https://www.teatroreal.es/es/temporada-actual/danza", color:"teatro" },
+  { id:93, nombre:"CND · Luz Arcas / Kor'sia — Matadero CDM", cat:"teatro", gratis:false, precio:"Desde 12 €", lugar:"Centro Danza Matadero CDM · Paseo de la Chopera 14", fechas:[{m:5,d:26},{m:5,d:27},{m:5,d:28},{m:5,d:29},{m:5,d:30},{m:5,d:31}], desc:"Compañía Nacional de Danza + Luz Arcas y Kor'sia en el CDM de Matadero. Danza contemporánea de primer nivel.", url:"https://www.mataderomadrid.org", color:"teatro" },
+  { id:94, nombre:"FlamencOh! — YLLANA · Gran Teatro Príncipe Pío", cat:"teatro", gratis:false, precio:"Desde 25 €", lugar:"Gran Teatro CaixaBank Príncipe Pío", fechas:[{m:7,d:3},{m:7,d:4},{m:7,d:5},{m:7,d:10},{m:7,d:11},{m:7,d:12},{m:7,d:17},{m:7,d:18},{m:7,d:19},{m:7,d:24},{m:7,d:25},{m:7,d:26}], desc:"El grupo YLLANA devuelve la vida al flamenco con humor, acrobacia y música en directo. Julio–julio 2026.", url:"https://teatromadrid.com", color:"teatro" },
+
+  // ── TEATRO ESPAÑOL: Temporada 2025–26
+  { id:100, nombre:"Luces de bohemia — Valle-Inclán (Teatro Español)", cat:"teatro", gratis:false, precio:"Desde 10 €", lugar:"Teatro Español · C. del Príncipe, 25", fechas:[{m:3,d:7},{m:3,d:8},{m:3,d:14},{m:3,d:15},{m:3,d:21},{m:3,d:22}], desc:"Reposición del gran éxito: Ginés García Millán como Max Estrella. 100% de ocupación la temporada pasada. Eduardo Vasco dirige el esperpento fundacional.", url:"https://www.teatroespanol.es", color:"teatro" },
+  { id:101, nombre:"Malquerida — Benavente (Aitana Sánchez-Gijón)", cat:"teatro", gratis:false, precio:"Desde 10 €", lugar:"Teatro Español · Sala Principal", fechas:[{m:3,d:13},{m:3,d:20},{m:3,d:27},{m:4,d:3},{m:4,d:10},{m:4,d:17},{m:4,d:24}], desc:"Aitana Sánchez-Gijón encarna a Raimunda. La misma actriz que hace 35 años hizo a Acacia, la hija. Tragedia de pasiones ocultas.", url:"https://www.teatroespanol.es", color:"teatro" },
+  { id:102, nombre:"1984 — Orwell (Fernán Gómez)", cat:"teatro", gratis:false, precio:"Desde 8 €", lugar:"Teatro Fernán Gómez · Plaza de Colón", fechas:[{m:3,d:6},{m:3,d:7},{m:3,d:8},{m:3,d:13},{m:3,d:14},{m:3,d:15},{m:3,d:20},{m:3,d:21},{m:3,d:22},{m:3,d:27},{m:3,d:28},{m:3,d:29},{m:4,d:3},{m:4,d:4},{m:4,d:5}], desc:"Adaptación teatral de la novela de Orwell. David Lázaro, Javier Ruiz de Alegría y Cristina Arranz. Direcc. Carlos Martínez-Abarca.", url:"https://www.teatrofernangomez.es", color:"teatro" },
+  { id:103, nombre:"El veneno del teatro — Rodolfo Sirera", cat:"teatro", gratis:false, precio:"Desde 8 €", lugar:"Teatro Fernán Gómez · Sala Guirau", fechas:[{m:4,d:9},{m:4,d:10},{m:4,d:11},{m:4,d:16},{m:4,d:17},{m:4,d:18},{m:4,d:24},{m:4,d:25},{m:5,d:2},{m:5,d:3}], desc:"Silvia Maya y Marta Sangú. Una pieza sobre teatro, poder y veneno. Producc. MGM.", url:"https://www.teatrofernangomez.es", color:"teatro" },
+  { id:104, nombre:"Una noche sin luna — Juan Diego Botto (García Lorca)", cat:"teatro", gratis:false, precio:"Desde 12 €", lugar:"Teatro Español", fechas:[{m:5,d:7},{m:5,d:8},{m:5,d:9},{m:5,d:14},{m:5,d:15},{m:5,d:16},{m:5,d:21},{m:5,d:22},{m:5,d:23}], desc:"Juan Diego Botto escribe e interpreta un monólogo sobre García Lorca y su muerte. Obra muy esperada de la temporada.", url:"https://www.teatroespanol.es", color:"teatro" },
+  { id:105, nombre:"La escopeta nacional — Berlanga/Echanove", cat:"teatro", gratis:false, precio:"Desde 10 €", lugar:"Teatro Español · Sala Principal", fechas:[{m:6,d:16},{m:6,d:19},{m:6,d:20},{m:6,d:21},{m:6,d:26},{m:6,d:27},{m:6,d:28},{m:7,d:3},{m:7,d:4},{m:7,d:5}], desc:"Adaptación teatral del guion de Azcona y Berlanga. Dir. Juan Echanove. Sátira mordaz sobre el poder y las élites españolas. 50 años después.", url:"https://www.teatroespanol.es", color:"teatro" },
+  { id:106, nombre:"Cartas de mujeres — Benavente (Salón de los Balcones)", cat:"teatro", gratis:false, precio:"Desde 8 €", lugar:"Teatro Español · Salón de los Balcones", fechas:[{m:3,d:19},{m:3,d:21},{m:3,d:22},{m:3,d:26},{m:3,d:28},{m:3,d:29},{m:4,d:2},{m:4,d:4},{m:4,d:5}], desc:"Jacinto Benavente en pequeño formato. Dirección Verónica Gracia. Teatro íntimo de texto.", url:"https://www.teatroespanol.es", color:"teatro" },
+
+  // ── TEATROS DEL CANAL: Temporada 2025–26
+  { id:110, nombre:"Canal · Zarzuela nueva con Alondra de la Parra", cat:"opera", gratis:false, precio:"Desde 12 €", lugar:"Teatros del Canal · C. Cea Bermúdez, 1", fechas:[{m:4,d:3},{m:4,d:4},{m:4,d:5},{m:4,d:10},{m:4,d:11},{m:4,d:12}], desc:"Nueva zarzuela de Javier Carmena. Dir. escénica: Albert Boadella-Martina Cabanas. Dir. musical: Alondra de la Parra con la ORCAM.", url:"https://www.teatroscanal.com", color:"opera" },
+  { id:111, nombre:"Canal · CANAL BAILA — Danza española y flamenca", cat:"teatro", gratis:false, precio:"Desde 10 €", lugar:"Teatros del Canal", fechas:[{m:3,d:26},{m:3,d:27},{m:3,d:28},{m:4,d:16},{m:4,d:17},{m:4,d:18}], desc:"Creaciones propias del Canal: estrenos absolutos de danza española contemporánea y flamenco.", url:"https://www.teatroscanal.com", color:"teatro" },
+  { id:112, nombre:"Canal · Teatralia — Espectáculo internacional infancia", cat:"teatro", gratis:false, precio:"Consultar", lugar:"Teatros del Canal + Circo Price", fechas:[{m:3,d:27},{m:3,d:28},{m:3,d:29},{m:4,d:3},{m:4,d:4},{m:4,d:5}], desc:"Festival Teatralia: Día Mundial del Teatro con programación internacional para público infantil y familiar.", url:"https://www.teatroscanal.com", color:"teatro" },
+
+  // ── TEATRO DE LA ABADÍA: Temporada 2025–26
+  { id:115, nombre:"Dos monólogos sobre la empatía — Esbec (Abadía)", cat:"teatro", gratis:false, precio:"Desde 8 €", lugar:"Teatro de la Abadía · C. Fernández de los Ríos, 42", fechas:[{m:3,d:5},{m:3,d:6},{m:3,d:7},{m:3,d:8},{m:3,d:11},{m:3,d:12},{m:3,d:13},{m:3,d:14},{m:3,d:18},{m:3,d:19},{m:3,d:20},{m:3,d:21},{m:3,d:22}], desc:"José María Esbec presenta dos monólogos sobre la empatía, la ética y la felicidad. Sala José Luis Alonso.", url:"https://www.teatroabadia.com", color:"teatro" },
+
+  // ── CIRCO & MAGIA (Teatro Circo Price)
+  { id:120, nombre:"XVI Festival Internacional de Magia — Jorge Blass", cat:"teatro", gratis:false, precio:"Desde 18 €", lugar:"Teatro Circo Price · Ronda de Atocha, 35", fechas:[{m:2,d:12},{m:2,d:18},{m:2,d:19},{m:2,d:20},{m:2,d:21},{m:2,d:25},{m:2,d:26},{m:2,d:27},{m:2,d:28},{m:3,d:4},{m:3,d:5},{m:3,d:6},{m:3,d:7},{m:3,d:11},{m:3,d:12},{m:3,d:13},{m:3,d:14},{m:3,d:15}], desc:"Dir. Jorge Blass. Magia de cerca y gran formato. +30.000 espectadores. Dani Daortiz, Anthony Blake, mentalistas y concurso jóvenes talentos.", url:"https://www.teatrocircoprice.es", color:"teatro" },
+  { id:121, nombre:"Vetus Venustas — Circo-documental artistas 65–78 años", cat:"teatro", gratis:false, precio:"Desde 15 €", lugar:"Teatro Circo Price", fechas:[{m:4,d:18},{m:4,d:19}], desc:"Pioneros del Nuevo Circo entre 65 y 78 años en escena. Homenaje a la memoria, resiliencia y maestría del arte circense.", url:"https://www.teatrocircoprice.es", color:"teatro" },
+  { id:122, nombre:"Cenicienta — Circo y libro (Circo Price)", cat:"teatro", gratis:false, precio:"Desde 12 €", lugar:"Teatro Circo Price", fechas:[{m:4,d:24},{m:4,d:25},{m:4,d:26},{m:4,d:30},{m:5,d:1},{m:5,d:2},{m:5,d:3}], desc:"Adaptación circense del clásico de Perrault. Mes del circo coincidiendo con el Día Internacional del Libro.", url:"https://www.teatrocircoprice.es", color:"teatro" },
+  { id:123, nombre:"Ícaro de Daniele Finzi Pasca — para 1 espectador", cat:"teatro", gratis:false, precio:"Consultar", lugar:"Teatro Circo Price", fechas:[{m:5,d:8},{m:5,d:9}], desc:"Espectáculo concebido para un único espectador por el creador suizo Daniele Finzi Pasca. Experiencia íntima y única. Plazas muy limitadas.", url:"https://www.teatrocircoprice.es", color:"teatro" },
+  { id:124, nombre:"Yé (L'eau) — Circus Baobab: circo + danza + clima", cat:"teatro", gratis:false, precio:"Desde 15 €", lugar:"Teatro Circo Price", fechas:[{m:5,d:22},{m:5,d:23},{m:5,d:24},{m:5,d:27},{m:5,d:28},{m:5,d:29},{m:5,d:30},{m:5,d:31}], desc:"Emergencia climática y resiliencia a través de circo y danza. Compañía Circus Baobab. Gran formato visual.", url:"https://www.teatrocircoprice.es", color:"teatro" },
+  { id:125, nombre:"The Mirror — Gravity & Other Myths (Australia)", cat:"teatro", gratis:false, precio:"Desde 20 €", lugar:"Teatro Circo Price", fechas:[{m:10,d:22},{m:10,d:23},{m:10,d:24},{m:10,d:25},{m:10,d:28},{m:10,d:29},{m:10,d:30},{m:10,d:31}], desc:"Compañía australiana de referencia mundial. Acrobacia extrema, tecnología y reflexión sobre la identidad. Circo contemporáneo de máximo nivel.", url:"https://www.teatrocircoprice.es", color:"teatro" },
+  { id:126, nombre:"Madrid a la carpa — Circo de la Comunidad de Madrid", cat:"teatro", gratis:false, precio:"Consultar", lugar:"Teatro Circo Price", fechas:[{m:5,d:12},{m:5,d:13},{m:5,d:14},{m:5,d:15},{m:5,d:16},{m:5,d:17}], desc:"San Isidro 2026: visibilidad a compañías circenses locales de la Comunidad de Madrid. Novedad 2026.", url:"https://www.teatrocircoprice.es", color:"teatro" },
+
+  // ── ÓPERA TEATRO REAL completa
+  { id:130, nombre:"El sueño de una noche de verano — Britten (Teatro Real)", cat:"opera", gratis:false, precio:"Desde 15 €", lugar:"Teatro Real", fechas:[{m:3,d:10},{m:3,d:13},{m:3,d:15},{m:3,d:17},{m:3,d:19},{m:3,d:22}], desc:"Nueva producción. Shakespeare y Britten. Dir. musical Gustavo Gimeno.", url:"https://www.teatroreal.es/es/temporada-actual/opera", color:"opera" },
+  { id:131, nombre:"Voces del Real · Asmik Grigorian — recital soprano", cat:"opera", gratis:false, precio:"Desde 30 €", lugar:"Teatro Real", fechas:[{m:4,d:22}], desc:"La soprano lituana más aclamada del momento en recital exclusivo. Una de las citas más esperadas de la temporada.", url:"https://www.teatroreal.es/es/temporada-actual/conciertos", color:"opera" },
+  { id:132, nombre:"Voces del Real · Gerald Finley — recital barítono", cat:"opera", gratis:false, precio:"Desde 25 €", lugar:"Teatro Real", fechas:[{m:3,d:25}], desc:"El gran barítono canadiense Gerald Finley en recital en el Teatro Real. Ciclo Voces del Real.", url:"https://www.teatroreal.es/es/temporada-actual/conciertos", color:"opera" },
+  { id:133, nombre:"La novia vendida — Smetana (Teatro Real, nueva prod.)", cat:"opera", gratis:false, precio:"Desde 15 €", lugar:"Teatro Real", fechas:[{m:6,d:19},{m:6,d:22},{m:6,d:25},{m:6,d:28},{m:7,d:1},{m:7,d:4}], desc:"Nueva producción. La gran ópera cómica checa de Smetana estrena en el Teatro Real.", url:"https://www.teatroreal.es", color:"opera" },
+  { id:134, nombre:"Ariadna y Barbazul — Dukas (La Fura dels Baus)", cat:"opera", gratis:false, precio:"Desde 15 €", lugar:"Teatro Real", fechas:[{m:4,d:26},{m:4,d:29},{m:5,d:2},{m:5,d:5},{m:5,d:8}], desc:"Àlex Ollé (La Fura dels Baus) dirige. Pinchas Steinberg vuelve al Real tras 20 años. Paul Dukas, el mito de Barbazul.", url:"https://www.teatroreal.es", color:"opera" },
+
+  // ── LIBROS & LITERATURA
+  { id:60, nombre:"Feria del Libro de Madrid 2026", cat:"libro", gratis:true, precio:"Entrada gratis al recinto", lugar:"Parque de El Retiro · Paseo Fernán Núñez", fechas:[{m:5,d:29},{m:5,d:30},{m:5,d:31},{m:6,d:1},{m:6,d:5},{m:6,d:6},{m:6,d:7},{m:6,d:8},{m:6,d:12},{m:6,d:13},{m:6,d:14}], desc:"85ª edición. Más de 350 casetas. Firmados, presentaciones, mesas redondas. Tema: El Humor.", url:"https://ferialibromadrid.com", color:"libro" },
+  { id:61, nombre:"La Noche de los Libros 2026", cat:"libro", gratis:true, precio:"Gratis", lugar:"Toda Madrid · +500 actividades", fechas:[{m:4,d:24}], desc:"21ª edición. Charlas, recitales, teatro, rutas literarias. Una noche mágica literaria.", url:"https://www.esmadrid.com", color:"libro" },
+  { id:62, nombre:"Veranos de la Villa (varios espectáculos)", cat:"teatro", gratis:true, precio:"Muchos gratuitos", lugar:"Varios espacios · Madrid", fechas:[{m:7,d:10},{m:7,d:17},{m:7,d:24},{m:8,d:7},{m:8,d:14},{m:8,d:21}], desc:"El gran festival cultural del verano madrileño. Teatro, danza, música y cine.", url:"https://www.esmadrid.com", color:"teatro" },
+];
+
+const MESES = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+const MESES_ABREV = ['En','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
+
+// ═══════════════════════════════════════
+//  ESTADO
+// ═══════════════════════════════════════
+let vista = 'mes';
+let mes = new Date().getMonth() + 1;
+let anio = new Date().getFullYear();
+let semLunes = (() => { const d = new Date(); d.setHours(0,0,0,0); d.setDate(d.getDate()-((d.getDay()+6)%7)); return d; })();
+let filtCat = 'todos';
+let filtGratis = false;
+let filtCompradas = false;
+let filtPosibles = false;
+let panelOpen = false;
+
+// Persistencia localStorage
+const entradas = new Map(); // id → 'comprada'|'posible'
+const notas = {};
+try { const s=localStorage.getItem('mc_e'); if(s){const o=JSON.parse(s);Object.entries(o).forEach(([k,v])=>entradas.set(+k,v));} } catch(e){}
+try { const s=localStorage.getItem('mc_n'); if(s) Object.assign(notas,JSON.parse(s)); } catch(e){}
+
+function saveEntradas(){ try{const o={};entradas.forEach((v,k)=>o[k]=v);localStorage.setItem('mc_e',JSON.stringify(o));}catch(e){} }
+function saveNotas(){ try{localStorage.setItem('mc_n',JSON.stringify(notas));}catch(e){} }
+
+// ═══════════════════════════════════════
+//  NAVEGACIÓN ENTRE SECCIONES
+// ═══════════════════════════════════════
+function mostrarCalendario(e) {
+  e.preventDefault();
+  document.getElementById('seccion-calendario').style.display = 'block';
+  document.getElementById('contenido-guia').style.display = 'none';
+  render();
+  renderEntradas();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function mostrarGuia(e) {
+  e.preventDefault();
+  document.getElementById('seccion-calendario').style.display = 'none';
+  document.getElementById('contenido-guia').style.display = 'block';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function mostrarCine(event) {
+  if(event) event.preventDefault();
+  document.getElementById('seccion-calendario').style.display='none';
+  if(document.getElementById('seccion-mapa')) document.getElementById('seccion-mapa').style.display='none';
+  document.getElementById('contenido-guia').style.display='none';
+  document.getElementById('seccion-cine').style.display='block';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function mostrarMapa(event) {
+  if(event) event.preventDefault();
+  document.getElementById('seccion-calendario').style.display='none';
+  document.getElementById('contenido-guia').style.display='none';
+  document.getElementById('seccion-cine').style.display='none';
+  document.getElementById('seccion-mapa').style.display='block';
+  window.scrollTo({top:0,behavior:'smooth'});
+  if(!window._mapaIniciado) iniciarMapa();
+}
+
+function irSeccion(e, id) {
+  e.preventDefault();
+  document.getElementById('seccion-calendario').style.display = 'none';
+  document.getElementById('contenido-guia').style.display = 'block';
+  setTimeout(() => { const el=document.getElementById(id); if(el) el.scrollIntoView({behavior:'smooth'}); }, 60);
+}
+
+// ═══════════════════════════════════════
+//  FILTROS
+// ═══════════════════════════════════════
+function setCat(btn) {
+  filtCat = btn.dataset.cat;
+  document.querySelectorAll('.filtro-btn[data-cat]').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  render();
+}
+function toggleGratis(btn) {
+  filtGratis = !filtGratis;
+  btn.classList.toggle('gratis-on', filtGratis);
+  render();
+}
+function toggleCompradas(btn) {
+  filtCompradas = !filtCompradas; if(filtCompradas) filtPosibles=false;
+  btn.classList.toggle('comprada-on', filtCompradas);
+  document.getElementById('btn-posibles').classList.remove('posible-on');
+  render();
+}
+function togglePosibles(btn) {
+  filtPosibles = !filtPosibles; if(filtPosibles) filtCompradas=false;
+  btn.classList.toggle('posible-on', filtPosibles);
+  document.getElementById('btn-compradas').classList.remove('comprada-on');
+  render();
+}
+function filtrados() {
+  const q = (document.getElementById('buscador')?.value||'').toLowerCase().trim();
+  return EVENTOS.filter(ev => {
+    if (filtCat !== 'todos' && ev.cat !== filtCat) return false;
+    if (filtGratis && !ev.gratis) return false;
+    if (filtCompradas && entradas.get(ev.id) !== 'comprada') return false;
+    if (filtPosibles && entradas.get(ev.id) !== 'posible') return false;
+    if (q && !ev.nombre.toLowerCase().includes(q) && !ev.lugar.toLowerCase().includes(q) && !(ev.desc||'').toLowerCase().includes(q)) return false;
+    return true;
+  });
+}
+
+// ═══════════════════════════════════════
+//  NAVEGACIÓN TEMPORAL
+// ═══════════════════════════════════════
+function anterior() {
+  if (vista==='semana') { semLunes=new Date(semLunes); semLunes.setDate(semLunes.getDate()-7); }
+  else { mes--; if(mes<1){mes=12;anio--;} }
+  render();
+}
+function siguiente() {
+  if (vista==='semana') { semLunes=new Date(semLunes); semLunes.setDate(semLunes.getDate()+7); }
+  else { mes++; if(mes>12){mes=1;anio++;} }
+  render();
+}
+function hoy() {
+  const d=new Date(); mes=d.getMonth()+1; anio=d.getFullYear();
+  semLunes=new Date(d); semLunes.setDate(d.getDate()-((d.getDay()+6)%7));
+  render();
+}
+function setVista(v, btn) {
+  vista=v;
+  document.querySelectorAll('.vista-tab').forEach(t=>t.classList.remove('activo'));
+  btn.classList.add('activo');
+  render();
+}
+
+// ═══════════════════════════════════════
+//  RENDER DISPATCHER
+// ═══════════════════════════════════════
+function render() {
+  const vMes=document.getElementById('v-mes');
+  const vSem=document.getElementById('v-semana');
+  const vLis=document.getElementById('v-lista');
+  if(!vMes) return;
+  vMes.style.display = vista==='mes' ? 'block':'none';
+  vSem.style.display = vista==='semana' ? 'block':'none';
+  vLis.style.display = vista==='lista' ? 'block':'none';
+  if(vista==='mes') renderMes();
+  else if(vista==='semana') renderSemana();
+  else renderLista();
+}
+
+// ═══════════════════════════════════════
+//  RENDER MES
+// ═══════════════════════════════════════
+function renderMes() {
+  const titulo = document.getElementById('cal-titulo');
+  if(titulo) titulo.textContent = MESES[mes-1] + ' ' + anio;
+  const evs = filtrados();
+  const hoyD = new Date(); hoyD.setHours(0,0,0,0);
+  const primerDow = new Date(anio,mes-1,1).getDay();
+  const diasMes = new Date(anio,mes,0).getDate();
+  const offset = primerDow===0 ? 6 : primerDow-1;
+  const porDia = {};
+  evs.forEach(ev => ev.fechas.forEach(f => { if(f.m===mes){if(!porDia[f.d])porDia[f.d]=[];porDia[f.d].push(ev);} }));
+  const DOW = ['Lun','Mar','Mié','Jue','Vie','Sáb','Dom'];
+  let html = '<div class="cal-grid-header">'
+    + DOW.map((d,i)=>`<div class="cal-dow${i>=5?' finde':''}">${d}</div>`).join('')
+    + '</div><div class="cal-grid">';
+  for(let i=0;i<offset;i++) html+='<div class="cal-day vacio"></div>';
+  for(let d=1;d<=diasMes;d++){
+    const dow=(offset+d-1)%7;
+    const esFinde=dow>=5;
+    const dFecha=new Date(anio,mes-1,d); dFecha.setHours(0,0,0,0);
+    const esHoy=dFecha.getTime()===hoyD.getTime();
+    const esPasado=dFecha<hoyD;
+    let cls='cal-day'+(esFinde?' finde':'')+(esHoy?' hoy':'')+(esPasado?' pasado':'');
+    let numHtml=esHoy?`<div class="num-dia">${d}</div>`:`<div class="num-dia">${d}</div>`;
+    const evsDia=porDia[d]||[];
+    const MAX=3;
+    let pillsHtml=evsDia.slice(0,MAX).map(ev=>{
+      const est=entradas.get(ev.id);
+      let ecls='cal-evento '+ev.color;
+      if(est==='comprada') ecls+=' ev-comprada';
+      else if(est==='posible') ecls+=' ev-posible';
+      if(ev.gratis) ecls+=' gratis-tag';
+      return `<div class="${ecls}" onclick="abrirModal(${ev.id})" title="${ev.nombre}">${ev.nombre}</div>`;
+    }).join('');
+    if(evsDia.length>MAX) pillsHtml+=`<div class="cal-mas" onclick="abrirDia(${d},[${evsDia.map(e=>e.id).join(',')}])">+${evsDia.length-MAX} más</div>`;
+    html+=`<div class="${cls}">${numHtml}${pillsHtml}</div>`;
+  }
+  html+='</div>';
+  document.getElementById('v-mes').innerHTML=html;
+}
+
+// ═══════════════════════════════════════
+//  RENDER SEMANA
+// ═══════════════════════════════════════
+function renderSemana() {
+  const evs=filtrados();
+  const hoyD=new Date(); hoyD.setHours(0,0,0,0);
+  const dias=[];
+  for(let i=0;i<7;i++){const d=new Date(semLunes);d.setDate(semLunes.getDate()+i);d.setHours(0,0,0,0);dias.push(d);}
+  const domingo=dias[6];
+  const titulo=document.getElementById('cal-titulo');
+  if(titulo){
+    const f={day:'numeric',month:'short'};
+    titulo.textContent=dias[0].toLocaleDateString('es-ES',f)+' – '+domingo.toLocaleDateString('es-ES',f);
+  }
+  const NAMES=['Lun','Mar','Mié','Jue','Vie','Sáb','Dom'];
+  let html='<div class="semana-grid">';
+  dias.forEach((dia,i)=>{
+    const esHoy=dia.getTime()===hoyD.getTime();
+    const esPasado=dia<hoyD;
+    const esFinde=i>=5;
+    const m=dia.getMonth()+1,dN=dia.getDate(),a=dia.getFullYear();
+    const dEvs=evs.filter(ev=>ev.fechas.some(f=>f.m===m&&f.d===dN));
+    let cls='semana-col'+(esFinde?' finde':'')+(esPasado?' pasado':'');
+    let hdrCls='semana-header'+(esHoy?' es-hoy':'');
+    let evHtml=dEvs.length===0?'<div class="semana-vacio">—</div>':dEvs.map(ev=>{
+      const est=entradas.get(ev.id);
+      let ecls='semana-evento '+ev.color;
+      if(est==='comprada') ecls+=' ev-comprada';
+      else if(est==='posible') ecls+=' ev-posible';
+      return `<div class="${ecls}" onclick="abrirModal(${ev.id})" title="${ev.nombre}">${ev.nombre}</div>`;
+    }).join('');
+    html+=`<div class="${cls}"><div class="${hdrCls}"><span class="semana-dia-nombre">${NAMES[i]}</span><span class="semana-dia-num">${dN}</span></div><div class="semana-eventos">${evHtml}</div></div>`;
+  });
+  html+='</div>';
+  document.getElementById('v-semana').innerHTML=html;
+}
+
+// ═══════════════════════════════════════
+//  RENDER LISTA
+// ═══════════════════════════════════════
+function renderLista() {
+  document.getElementById('cal-titulo').textContent='Todos los eventos';
+  const evs=filtrados();
+  const hoyD=new Date(); hoyD.setHours(0,0,0,0);
+  const pares=[];
+  evs.forEach(ev=>ev.fechas.forEach(f=>{
+    const fecha=new Date(anio,f.m-1,f.d); fecha.setHours(0,0,0,0);
+    pares.push({fecha,ev});
+  }));
+  pares.sort((a,b)=>a.fecha-b.fecha);
+  const porMes={};
+  pares.forEach(({fecha,ev})=>{
+    const k=fecha.getFullYear()+'-'+(fecha.getMonth()+1);
+    if(!porMes[k]) porMes[k]={label:MESES[fecha.getMonth()]+' '+fecha.getFullYear(),items:[]};
+    porMes[k].items.push({fecha,ev});
+  });
+  if(!Object.keys(porMes).length){
+    document.getElementById('v-lista').innerHTML='<p style="text-align:center;color:var(--gris);padding:48px 0">No hay eventos con estos filtros</p>';
+    return;
+  }
+  let html=Object.values(porMes).map(({label,items})=>`
+    <div class="lista-mes-grupo"><h4 class="lista-mes-titulo">${label}</h4>
+    ${items.map(({fecha,ev})=>{
+      const est=entradas.get(ev.id);
+      const esPasado=fecha<hoyD;
+      let cls='lista-evento-item'+(esPasado?' lista-pasado':'')+(est?' tiene-entrada':'');
+      const badge=est==='comprada'?'<span class="badge-comprada">✓ Comprada</span>':est==='posible'?'<span class="badge-posible">♥ Quiero ir</span>':'';
+      return `<div class="${cls}" onclick="abrirModal(${ev.id})">
+        <div class="lista-cat-dot ${ev.color}"></div>
+        <div class="lista-fecha-col"><div class="lista-dia">${fecha.getDate()}</div><div class="lista-mes-abrev">${MESES_ABREV[fecha.getMonth()]}</div></div>
+        <div class="lista-info"><div class="lista-nombre">${ev.nombre}${badge}</div><div class="lista-meta">${ev.lugar.split('·')[0].trim()}</div></div>
+        <div class="lista-precio-col"><span class="tag-precio ${ev.gratis?'gratis':'pago'}">${ev.gratis?'Gratis':ev.precio}</span></div>
+      </div>`;
+    }).join('')}</div>`).join('');
+  document.getElementById('v-lista').innerHTML=html;
+}
+
+// ═══════════════════════════════════════
+//  MODAL
+// ═══════════════════════════════════════
+function abrirModal(id) {
+  const ev=EVENTOS.find(e=>e.id===id); if(!ev) return;
+  const est=entradas.get(id);
+  const nota=notas[id]||'';
+  const fechasStr=ev.fechas.slice(0,6).map(f=>`${f.d} ${MESES_ABREV[f.m-1]}`).join(' · ')+(ev.fechas.length>6?` · +${ev.fechas.length-6} más`:'');
+  const LABELS={opera:'Ópera & Lírica',musica:'Música Clásica',teatro:'Teatro / Danza / Circo',humor:'Humor & Monólogos',exposicion:'Exposición',museo:'Museo',libro:'Literatura',cine:'Cine'};
+  const COLORS={opera:'#6a1a80',musica:'var(--azul)',teatro:'#a0520d',humor:'#8a6a00',exposicion:'var(--verde)',museo:'var(--rojo)',libro:'#7a5010',cine:'#4a1870'};
+  document.getElementById('modal-contenido').innerHTML=`
+    <div class="modal-cat-bar" style="height:4px;background:${COLORS[ev.cat]||'var(--borde)'};margin:-0px -2px 16px;border-radius:2px 2px 0 0;"></div>
+    <div class="modal-tipo" style="color:${COLORS[ev.cat]||'var(--gris)'}">${LABELS[ev.cat]||ev.cat}</div>
+    <div class="modal-titulo">${ev.nombre}</div>
+    <ul class="info-list">
+      <li><span class="lbl">Lugar</span>${ev.lugar}</li>
+      <li><span class="lbl">Fechas</span>${fechasStr}</li>
+      <li><span class="lbl">Precio</span><span class="tag-precio ${ev.gratis?'gratis':'pago'}">${ev.precio}</span></li>
+    </ul>
+    <p class="modal-desc">${ev.desc||''}</p>
+    <div class="modal-compra-row">
+      ${ev.url?`<a href="${ev.url}" target="_blank" rel="noopener" class="${ev.gratis?'btn-gratis-link':'btn-compra'}">${ev.gratis?'🆓 Web oficial':'🎟 Comprar entradas'}</a>`:''}
+    </div>
+    <div class="modal-entradas-titulo">¿Qué quieres hacer?</div>
+    <div class="modal-entradas-btns">
+      <button class="btn-estado comprada${est==='comprada'?' activo':''}" onclick="setEstado(${id},'comprada')">${est==='comprada'?'✓ Entrada comprada':'✓ Marcar como comprada'}</button>
+      <button class="btn-estado posible${est==='posible'?' activo':''}" onclick="setEstado(${id},'posible')">${est==='posible'?'♥ En mi lista':'♥ Quiero ir'}</button>
+      ${est?`<button class="btn-estado quitar" onclick="setEstado(${id},null)">✕ Quitar</button>`:''}
+    </div>
+    <div class="modal-notas-titulo">📝 Notas personales</div>
+    <div class="modal-notas">
+      <textarea id="nota-${id}" placeholder="Butaca, acompañante, confirmación…">${nota}</textarea>
+      <button class="btn-guardar-nota" onclick="guardarNota(${id})">Guardar nota</button>
+    </div>
+  `;
+  document.getElementById('modal-overlay').classList.add('abierto');
+}
+function setEstado(id, estado) {
+  if(estado===null) entradas.delete(id); else entradas.set(id,estado);
+  saveEntradas();
+  abrirModal(id);
+  render();
+  renderEntradas();
+}
+function guardarNota(id) {
+  const ta=document.getElementById('nota-'+id);
+  if(ta){ notas[id]=ta.value; saveNotas(); const btn=ta.nextElementSibling; if(btn){btn.textContent='✓ Guardado';setTimeout(()=>btn.textContent='Guardar nota',1500);} }
+}
+function abrirDia(d, ids) {
+  const evsDia=ids.map(id=>EVENTOS.find(e=>e.id===id)).filter(Boolean);
+  document.getElementById('modal-contenido').innerHTML=`
+    <div class="modal-tipo">Día ${d} de ${MESES[mes-1]}</div>
+    <div class="modal-titulo">Todos los eventos</div>
+    ${evsDia.map(ev=>`<div style="padding:11px 0;border-bottom:1px dotted var(--borde);cursor:pointer" onclick="abrirModal(${ev.id})">
+      <strong style="font-size:14px">${ev.nombre}</strong><br>
+      <span style="font-size:12px;color:var(--gris)">${ev.lugar.split('·')[0].trim()} · ${ev.precio}</span>
+    </div>`).join('')}
+  `;
+  document.getElementById('modal-overlay').classList.add('abierto');
+}
+function cerrarModal(e) { if(e.target===document.getElementById('modal-overlay')){document.getElementById('modal-overlay').classList.remove('abierto');} }
+function cerrarModalBtn() { document.getElementById('modal-overlay').classList.remove('abierto'); }
+
+// ═══════════════════════════════════════
+//  PANEL ENTRADAS
+// ═══════════════════════════════════════
+function togglePanel() {
+  panelOpen=!panelOpen;
+  document.getElementById('mei-body').classList.toggle('open',panelOpen);
+  document.getElementById('mei-arrow').classList.toggle('open',panelOpen);
+}
+function renderEntradas() {
+  const body=document.getElementById('mei-body');
+  const sub=document.getElementById('sub-entradas');
+  if(!body) return;
+  const compradas=[],posibles=[];
+  entradas.forEach((est,id)=>{
+    const ev=EVENTOS.find(e=>e.id===id); if(!ev) return;
+    if(est==='comprada') compradas.push(ev); else posibles.push(ev);
+  });
+  const total=compradas.length+posibles.length;
+  if(sub) sub.textContent=total===0?'Sin entradas guardadas · haz clic en un evento para añadir':`${compradas.length} comprada${compradas.length!==1?'s':''} · ${posibles.length} en lista`;
+  if(total===0){
+    body.innerHTML='<p style="font-size:13px;color:var(--gris);padding:8px 0">Aún no has guardado ninguna entrada. Abre cualquier evento del calendario y elige <strong>Comprada</strong> o <strong>Quiero ir</strong>.</p>';
+    return;
+  }
+  const grp=(evs,titulo,cls)=>evs.length===0?'':
+    `<div class="mei-grupo"><div class="mei-grupo-titulo ${cls}">${titulo} (${evs.length})</div>
+    ${evs.map(ev=>{
+      const nFirst=ev.fechas.slice().sort((a,b)=>a.m-b.m||a.d-b.d)[0];
+      const nota=notas[ev.id];
+      return `<div class="mei-item" onclick="abrirModal(${ev.id})">
+        <div class="mei-dot ${ev.color}"></div>
+        <div class="mei-info">
+          <div class="mei-nombre">${ev.nombre}</div>
+          <div class="mei-meta">${nFirst?nFirst.d+' '+MESES_ABREV[nFirst.m-1]+' · ':''} ${ev.lugar.split('·')[0].trim()}</div>
+          ${nota?`<div class="mei-nota">📝 ${nota}</div>`:''}
+        </div>
+        <button class="mei-del" onclick="event.stopPropagation();setEstado(${ev.id},null)" title="Quitar">✕</button>
+      </div>`;
+    }).join('')}</div>`;
+  body.innerHTML=grp(compradas,'✓ Entradas compradas','titulo-comprada')+grp(posibles,'♥ Quiero ir','titulo-posible');
+}
+
+// ═══════════════════════════════════════
+//  INIT
+// ═══════════════════════════════════════
+document.addEventListener('DOMContentLoaded', () => {
+  // Ensure correct initial state
+  document.getElementById('seccion-calendario').style.display = 'none';
+  document.getElementById('contenido-guia').style.display = 'block';
+  // Run a silent initial render so calendar is ready
+  render();
+  renderEntradas();
+  // Scroll-to-top button
+  const btn=document.getElementById('btn-top');
+  window.addEventListener('scroll',()=>btn.classList.toggle('visible',window.scrollY>300));
+  btn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+  // Escape closes modal
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape') cerrarModalBtn(); });
+});
+
+
+// ═══════════════════════════════════════
+//  MAPA LEAFLET
+// ═══════════════════════════════════════
+const LUGARES = [
+  {name:"Teatro Real", cat:"opera", color:"#9b4ab8", lat:40.4181, lng:-3.7103, pid:"ChIJZY540HsoQg0Rrq2nqutjg6I"},
+  {name:"Auditorio Nacional", cat:"musica", color:"#3a6aac", lat:40.446, lng:-3.6777, pid:"ChIJLcz9ocMoQg0RC3ldRYQ9AyU"},
+  {name:"Teatro Español", cat:"teatro", color:"#d07030", lat:40.4149, lng:-3.7002, pid:"ChIJ6QwArYEoQg0RoyXEbH4qnxA"},
+  {name:"Teatro Circo Price", cat:"teatro", color:"#d07030", lat:40.406, lng:-3.6986, pid:"ChIJ0TocOiwmQg0RORcnJzivH6c"},
+  {name:"Teatros del Canal", cat:"teatro", color:"#d07030", lat:40.4383, lng:-3.7052, pid:"ChIJBTeB0VgoQg0Rt6ZtvniYzGM"},
+  {name:"Teatro Fernán Gómez", cat:"teatro", color:"#d07030", lat:40.4249, lng:-3.6899, pid:"ChIJ3zrVrZEoQg0RwUiAjBQfKgM"},
+  {name:"Teatro de la Abadía", cat:"teatro", color:"#d07030", lat:40.4353, lng:-3.7094, pid:"ChIJ57kctl0oQg0Rj6US_LbdU-o"},
+  {name:"Museo del Prado", cat:"museo", color:"#e0102a", lat:40.4138, lng:-3.6921, pid:"ChIJ7aLYZp0oQg0RWoitk33wlBA"},
+  {name:"Museo Reina Sofía", cat:"museo", color:"#e0102a", lat:40.4079, lng:-3.6946, pid:"ChIJvQc62ygmQg0Rcb-6WdEUmDA"},
+  {name:"Museo Thyssen", cat:"museo", color:"#e0102a", lat:40.416, lng:-3.6949, pid:"ChIJv-yiGoMoQg0Rj1LLgnhKk1o"},
+  {name:"Cines Renoir P. España", cat:"cine", color:"#7a3ab0", lat:40.4244, lng:-3.7134, pid:"ChIJgevRKsgpQg0R5tw3uCSXbEw"},
+  {name:"Cines Verdi", cat:"cine", color:"#7a3ab0", lat:40.4366, lng:-3.704, pid:"ChIJP2Nnzq0pQg0RvckI8JsydOk"},
+  {name:"Cines Golem", cat:"cine", color:"#7a3ab0", lat:40.4247, lng:-3.7136, pid:"ChIJFQfKnm8oQg0Ru0_cIEAMtxU"},
+  {name:"mk2 Cine Paz", cat:"cine", color:"#7a3ab0", lat:40.4309, lng:-3.7034, pid:"ChIJSSJFLGAoQg0RjtGMTBYKEa0"},
+  {name:"Filmoteca Española", cat:"cine", color:"#7a3ab0", lat:40.4123, lng:-3.7022, pid:"ChIJjc2sryomQg0R5vvLvf0s1Cc"},
+  {name:"Yelmo Cines Ideal", cat:"cine", color:"#7a3ab0", lat:40.4138, lng:-3.7038, pid:"ChIJ__-_7X8oQg0RBUv4ezw7UbY"},
+  {name:"Cineteca Madrid", cat:"cine", color:"#7a3ab0", lat:40.3916, lng:-3.6965, pid:"ChIJLzxJSUgmQg0RBTfHHwBeI_k"},
+  {name:"Kinépolis Madrid", cat:"cine", color:"#7a3ab0", lat:40.3939, lng:-3.7968, pid:"ChIJARSJM5GIQQ0RXGxHuKtRge4"},
+];
+
+let _mapaObj = null;
+let _mapaMarkers = [];
+let _mapaCatActual = 'todos';
+
+function iniciarMapa() {
+  window._mapaIniciado = true;
+  _mapaObj = L.map('mapa-div', {zoomControl:true}).setView([40.418, -3.703], 13);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '© OpenStreetMap · © CartoDB',
+    subdomains: 'abcd', maxZoom: 19
+  }).addTo(_mapaObj);
+  
+  LUGARES.forEach(loc => {
+    const marker = L.circleMarker([loc.lat, loc.lng], {
+      radius: 9,
+      fillColor: loc.color,
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.92
+    });
+    marker.bindPopup(`
+      <div style="font-family:'DM Sans',sans-serif;padding:4px 0;">
+        <div style="font-weight:700;font-size:14px;color:#1a1208;margin-bottom:4px;">${loc.name}</div>
+        <div style="font-size:12px;display:inline-block;padding:2px 8px;border-radius:4px;background:${loc.color}22;color:${loc.color};font-weight:700;text-transform:uppercase;letter-spacing:.5px">${loc.cat}</div>
+      </div>
+    `, {maxWidth:200});
+    marker._cat = loc.cat;
+    marker.addTo(_mapaObj);
+    _mapaMarkers.push(marker);
+  });
+}
+
+function filtrarMapa(btn) {
+  document.querySelectorAll('.mapa-filtro-btn').forEach(b => b.classList.remove('activo'));
+  btn.classList.add('activo');
+  const cat = btn.dataset.cat;
+  _mapaCatActual = cat;
+  if(!_mapaObj) return;
+  _mapaMarkers.forEach(m => {
+    if(cat === 'todos' || m._cat === cat) {
+      if(!_mapaObj.hasLayer(m)) m.addTo(_mapaObj);
+    } else {
+      if(_mapaObj.hasLayer(m)) _mapaObj.removeLayer(m);
+    }
+  });
+}
+
+</script>
+</body>
+</html>
